@@ -1,0 +1,10 @@
+MapLibre GL JS 5.6.2. BSD-3-Clause.
+https://unpkg.com/maplibre-gl@5.6.2/
+
+Photography style derived from VersaTiles Colorful (generated style metadata: CC0).
+https://tiles.versatiles.org/assets/styles/colorful/style.json
+https://github.com/versatiles-org/versatiles-style
+Country labels omitted; uppercase text disabled.
+Vector tiles: https://tiles.versatiles.org/tiles/osm/{z}/{x}/{y}
+OpenStreetMap and ESA WorldCover attribution is retained on the map.
+Public service documentation: https://versatiles.org/

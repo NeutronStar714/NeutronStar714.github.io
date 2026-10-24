@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.rock-page{background:#0b0c0e;color:#f0f0ec;min-width:280px;padding-bottom:74px}
+.rock-page .site-header.site-header{position:fixed;top:0;left:0;right:0}
+.rock-page main{max-width:none;padding:0;margin:0}
+.rock-banner{position:relative;margin:0;background:#160807}
+.rock-banner-image{position:relative;overflow:hidden}
+.rock-banner-image img{display:block;width:100%;height:auto}
+.rock-banner figcaption{position:absolute;z-index:1;left:0;right:0;bottom:0;margin:0;padding:42px clamp(22px,5vw,80px) clamp(16px,2vw,28px);background:linear-gradient(transparent,#050506cf);color:#f0f0ec;font:400 clamp(13px,1.35vw,17px)/1.35 'Roadgeek Series D',Arial,sans-serif;text-shadow:0 2px 10px #000}
+.rock-single{max-width:1450px;margin:auto;padding:clamp(28px,3vw,44px) clamp(22px,5vw,80px) clamp(100px,11vw,160px)}
+.single-heading{border-top:1px solid #ffffff38;padding-top:18px;margin-bottom:clamp(30px,4vw,52px)}
+.single-heading h1{font:400 clamp(34px,5vw,66px)/1.07 'Roadgeek Series D',Arial,sans-serif;letter-spacing:0;margin:0;text-wrap:balance}
+.single-content{display:flex;align-items:center;gap:clamp(24px,7vw,96px)}
+.single-cover{display:block;flex:0 0 auto;width:min(50%,340px);height:auto;aspect-ratio:1;object-fit:cover;box-shadow:0 22px 65px #0008}
+.single-listen{flex:1;min-width:0}
+.single-artist{margin:0 0 19px;color:#e4e5e2;font:400 clamp(21px,2.9vw,36px)/1.1 'Roadgeek Series D',Arial,sans-serif}
+.single-player{display:flex;align-items:center;gap:20px;padding:20px 0;border-top:1px solid #ffffff60;border-bottom:1px solid #ffffff38}
+.single-play{display:grid;place-items:center;flex:none;width:60px;height:60px;border:1px solid #fff8;border-radius:50%;background:transparent;color:#fff;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.single-play:hover{background:#f0f0ec;color:#141517;transform:scale(1.04)}
+.single-play:focus-visible,.single-progress input:focus-visible{outline:2px solid #b9d8ed;outline-offset:5px}
+.single-play svg{width:23px;height:23px;fill:currentColor}
+.single-pause-icon,.single-player.is-playing .single-play-icon{display:none}
+.single-player.is-playing .single-pause-icon{display:block}
+.single-progress{min-width:0;flex:1}
+.single-progress input{display:block;width:100%;height:20px;margin:0;accent-color:#f0f0ec;cursor:pointer}
+.single-time{display:block;margin-top:5px;color:#aeb4b6;font:400 14px/1.25 'Roadgeek Series D',Arial,sans-serif}
+.single-error{color:#f1b7ad;font-size:15px}
+.rock-story{margin-top:clamp(52px,7vw,96px)}
+.rock-story h2{margin:0 0 22px;font:400 clamp(26px,3vw,36px)/1.15 'Roadgeek Series D',Arial,sans-serif;letter-spacing:0}
+.rock-story-content{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(280px,1fr);align-items:start;column-gap:clamp(40px,6vw,88px);color:#d1d3d2;font-size:clamp(17px,1.6vw,20px);line-height:1.75;overflow-wrap:anywhere}
+.rock-story-content p{margin:0 0 1.5em;white-space:pre-line}
+.rock-story-body{max-width:66ch}
+.rock-story-credits{margin:0;white-space:pre-line}
+.rock-recording-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:28px;max-width:1100px;margin:36px auto 0}
+.rock-recording-photos figure{margin:0;min-width:0}
+.rock-recording-photos img{display:block;width:100%;height:auto;aspect-ratio:4/3}
+.rock-recording-photos figcaption{margin-top:12px;color:#aeb4b6;font:400 13px/1.6 'Cascadia Code',monospace;overflow-wrap:anywhere}
+.rock-footer{max-width:1450px;margin:auto;padding:26px clamp(22px,5vw,80px);border-top:1px solid #ffffff33;display:flex;justify-content:space-between;gap:24px;color:#aeb4b6;font-size:16px}
+.rock-footer a{color:#f0f0ec}
+@media(max-width:960px){.rock-story-content{grid-template-columns:minmax(0,1fr);row-gap:8px}}
+@media(max-width:800px){.single-content{gap:22px}.single-cover{width:50%}.single-player{gap:12px;padding:12px 0}.single-play{width:48px;height:48px}.single-play svg{width:20px;height:20px}}
+@media(max-width:650px){.rock-recording-photos{grid-template-columns:1fr;gap:30px}}
+@media(max-width:600px){.rock-page{padding-bottom:60px}.rock-banner figcaption{padding:34px 20px 14px;font-size:14px}.single-heading h1{font-size:clamp(26px,6.5vw,35px)}.single-artist{font-size:clamp(18px,4.5vw,23px);margin-bottom:13px}.single-time{font-size:12px}.single-player{gap:9px}.single-play{width:43px;height:43px}.single-play svg{width:17px;height:17px}}
+@media(prefers-reduced-motion:reduce){.single-play{transition:none}}

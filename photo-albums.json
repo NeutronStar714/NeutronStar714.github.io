@@ -1,0 +1,367 @@
+{
+  "version": 1,
+  "albums": [
+    {
+      "id": "road-systems",
+      "title": "Road systems across the country",
+      "photoIds": [
+        "candidate-01",
+        "candidate-02",
+        "candidate-03",
+        "candidate-04",
+        "candidate-05",
+        "candidate-06",
+        "candidate-07",
+        "candidate-08",
+        "candidate-09"
+      ],
+      "coverId": "candidate-01"
+    },
+    {
+      "id": "blue-hour",
+      "title": "The blue hour",
+      "photoIds": [
+        "candidate-10",
+        "candidate-11",
+        "candidate-12",
+        "candidate-13",
+        "candidate-14",
+        "candidate-15"
+      ],
+      "coverId": "candidate-10"
+    },
+    {
+      "id": "3300-kelvin",
+      "title": "3300 degrees Kelvin",
+      "photoIds": [
+        "candidate-22",
+        "candidate-23",
+        "candidate-24"
+      ],
+      "coverId": "candidate-22"
+    },
+    {
+      "id": "figures-in-motion",
+      "title": "Figures in motion",
+      "photoIds": [
+        "candidate-19",
+        "candidate-20",
+        "candidate-21"
+      ],
+      "coverId": "candidate-19"
+    },
+    {
+      "id": "hiking",
+      "title": "Hiking, on the way",
+      "photoIds": [
+        "candidate-15",
+        "candidate-16",
+        "candidate-17",
+        "candidate-18"
+      ],
+      "coverId": "candidate-16"
+    },
+    {
+      "id": "band",
+      "title": "Shots for the band",
+      "photoIds": [
+        "candidate-25",
+        "candidate-26"
+      ],
+      "coverId": "candidate-25"
+    }
+  ],
+  "photos": [
+    {
+      "id": "candidate-01",
+      "filename": "1.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/01-full.webp",
+      "screen": "assets/photo-albums/01-screen.webp",
+      "thumbnail": "assets/photo-albums/01-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-02",
+      "filename": "2.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/02-full.webp",
+      "screen": "assets/photo-albums/02-screen.webp",
+      "thumbnail": "assets/photo-albums/02-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-03",
+      "filename": "3.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/03-full.webp",
+      "screen": "assets/photo-albums/03-screen.webp",
+      "thumbnail": "assets/photo-albums/03-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-04",
+      "filename": "4.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/04-full.webp",
+      "screen": "assets/photo-albums/04-screen.webp",
+      "thumbnail": "assets/photo-albums/04-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-05",
+      "filename": "5.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/05-full.webp",
+      "screen": "assets/photo-albums/05-screen.webp",
+      "thumbnail": "assets/photo-albums/05-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-06",
+      "filename": "6.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/06-full.webp",
+      "screen": "assets/photo-albums/06-screen.webp",
+      "thumbnail": "assets/photo-albums/06-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-07",
+      "filename": "7.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/07-full.webp",
+      "screen": "assets/photo-albums/07-screen.webp",
+      "thumbnail": "assets/photo-albums/07-thumb.webp",
+      "width": 7728,
+      "height": 5152
+    },
+    {
+      "id": "candidate-08",
+      "filename": "8.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/08-full.webp",
+      "screen": "assets/photo-albums/08-screen.webp",
+      "thumbnail": "assets/photo-albums/08-thumb.webp",
+      "width": 7728,
+      "height": 5152
+    },
+    {
+      "id": "candidate-09",
+      "filename": "9.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/09-full.webp",
+      "screen": "assets/photo-albums/09-screen.webp",
+      "thumbnail": "assets/photo-albums/09-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-10",
+      "filename": "10.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/10-full.webp",
+      "screen": "assets/photo-albums/10-screen.webp",
+      "thumbnail": "assets/photo-albums/10-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-11",
+      "filename": "11.jpg",
+      "caption": "",
+      "src": "assets/photo-albums/11-full.webp",
+      "screen": "assets/photo-albums/11-screen.webp",
+      "thumbnail": "assets/photo-albums/11-thumb.webp",
+      "width": 7728,
+      "height": 5152
+    },
+    {
+      "id": "candidate-12",
+      "filename": "12.jpg",
+      "caption": "",
+      "src": "assets/photo-albums/12-full.webp",
+      "screen": "assets/photo-albums/12-screen.webp",
+      "thumbnail": "assets/photo-albums/12-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-13",
+      "filename": "13.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/13-full.webp",
+      "screen": "assets/photo-albums/13-screen.webp",
+      "thumbnail": "assets/photo-albums/13-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-14",
+      "filename": "14.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/14-full.webp",
+      "screen": "assets/photo-albums/14-screen.webp",
+      "thumbnail": "assets/photo-albums/14-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-15",
+      "filename": "15.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/15-full.webp",
+      "screen": "assets/photo-albums/15-screen.webp",
+      "thumbnail": "assets/photo-albums/15-thumb.webp",
+      "width": 4912,
+      "height": 3264
+    },
+    {
+      "id": "candidate-16",
+      "filename": "16.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/16-full.webp",
+      "screen": "assets/photo-albums/16-screen.webp",
+      "thumbnail": "assets/photo-albums/16-thumb.webp",
+      "width": 4912,
+      "height": 3264
+    },
+    {
+      "id": "candidate-17",
+      "filename": "17.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/17-full.webp",
+      "screen": "assets/photo-albums/17-screen.webp",
+      "thumbnail": "assets/photo-albums/17-thumb.webp",
+      "width": 4912,
+      "height": 3264
+    },
+    {
+      "id": "candidate-18",
+      "filename": "18.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/18-full.webp",
+      "screen": "assets/photo-albums/18-screen.webp",
+      "thumbnail": "assets/photo-albums/18-thumb.webp",
+      "width": 5472,
+      "height": 3648
+    },
+    {
+      "id": "candidate-19",
+      "filename": "19.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/19-full.webp",
+      "screen": "assets/photo-albums/19-screen.webp",
+      "thumbnail": "assets/photo-albums/19-thumb.webp",
+      "width": 6000,
+      "height": 4000
+    },
+    {
+      "id": "candidate-20",
+      "filename": "20.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/20-full.webp",
+      "screen": "assets/photo-albums/20-screen.webp",
+      "thumbnail": "assets/photo-albums/20-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-21",
+      "filename": "21.jpg",
+      "caption": "",
+      "src": "assets/photo-albums/21-full.webp",
+      "screen": "assets/photo-albums/21-screen.webp",
+      "thumbnail": "assets/photo-albums/21-thumb.webp",
+      "width": 5158,
+      "height": 3439
+    },
+    {
+      "id": "candidate-22",
+      "filename": "22.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/22-full.webp",
+      "screen": "assets/photo-albums/22-screen.webp",
+      "thumbnail": "assets/photo-albums/22-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-23",
+      "filename": "23.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/23-full.webp",
+      "screen": "assets/photo-albums/23-screen.webp",
+      "thumbnail": "assets/photo-albums/23-thumb.webp",
+      "width": 6192,
+      "height": 4128
+    },
+    {
+      "id": "candidate-24",
+      "filename": "24.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/24-full.webp",
+      "screen": "assets/photo-albums/24-screen.webp",
+      "thumbnail": "assets/photo-albums/24-thumb.webp",
+      "width": 5472,
+      "height": 3648
+    },
+    {
+      "id": "candidate-25",
+      "filename": "25.JPG",
+      "caption": "",
+      "src": "assets/photo-albums/25-full.webp",
+      "screen": "assets/photo-albums/25-screen.webp",
+      "thumbnail": "assets/photo-albums/25-thumb.webp",
+      "width": 7728,
+      "height": 5152
+    },
+    {
+      "id": "candidate-26",
+      "filename": "26.jpg",
+      "caption": "",
+      "src": "assets/photo-albums/26-full.webp",
+      "screen": "assets/photo-albums/26-screen.webp",
+      "thumbnail": "assets/photo-albums/26-thumb.webp",
+      "width": 7728,
+      "height": 5152
+    },
+    {
+      "id": "a2c963cf70414496be964e9b0ce817d8",
+      "placeId": "71debcacf8384a43a8c25ac592e6cde4",
+      "src": "assets/photography/a2c963cf70414496be964e9b0ce817d8.jpg",
+      "caption": "A cow enjoying hay in the winter of Lijiang, Yunnan at the foot of the Jade Dragon Snow Mountain",
+      "captionKey": "photography.a-cow-enjoying-hay-in-the-winter-of-li-4662fda1",
+      "width": 7728,
+      "height": 5152,
+      "preview": "assets/photography/a2c963cf70414496be964e9b0ce817d8-preview.webp",
+      "thumbnail": "assets/photography/a2c963cf70414496be964e9b0ce817d8-thumbnail.webp",
+      "coordinates": null,
+      "filename": "a2c963cf70414496be964e9b0ce817d8",
+      "screen": "assets/photography/a2c963cf70414496be964e9b0ce817d8.jpg"
+    },
+    {
+      "id": "490b8fb3957948a89001e22779ed588f",
+      "placeId": "395149900e25411c8647f766506e2368",
+      "src": "assets/photography/490b8fb3957948a89001e22779ed588f.jpg",
+      "caption": "Train passing in the blue hour, shot with a 8-second shutter",
+      "captionKey": "photography.train-passing-in-the-blue-hour-shot-wi-5338af64",
+      "width": 6192,
+      "height": 4128,
+      "coordinates": {
+        "lat": 32.144332,
+        "lng": 118.984223,
+        "source": "manual"
+      },
+      "filename": "490b8fb3957948a89001e22779ed588f",
+      "screen": "assets/photography/490b8fb3957948a89001e22779ed588f.jpg",
+      "thumbnail": "assets/photography/490b8fb3957948a89001e22779ed588f.jpg"
+    }
+  ]
+}
