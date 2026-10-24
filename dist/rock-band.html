@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0c0e">
+<meta name="description" content="G10, the rock band NeutronStar714 records and produces with. See the live show and listen to Anyone.">
+<title>Rock Band — NeutronStar714</title>
+<link rel="stylesheet" href="styles.css?v=13">
+<link rel="stylesheet" href="player.css?v=3">
+<link rel="stylesheet" href="site-nav.css?v=4">
+<link rel="stylesheet" href="rock-band.css?v=5">
+<script defer src="site-player.js?v=6"></script>
+<script defer src="site-nav.js?v=5"></script>
+<script defer src="site-copy.js?v=5"></script>
+</head>
+<body class="rock-page" id="top">
+<a class="skip" href="#rock-main">Skip to G10</a>
+<header class="site-header">
+  <a class="identity" href="index.html"><img class="artist-logo" src="assets/neutronstar714-logo.png" alt="" width="42" height="42"><span class="artist-name">NeutronStar714</span></a>
+  <nav class="primary-nav" aria-label="Main navigation">
+    <a data-section="home" href="index.html">Home</a>
+    <a data-section="discography" href="discography.html">Discography</a>
+    <a data-section="rock" href="rock-band.html" aria-current="page">Rock Band</a>
+    <a data-section="products" href="products.html">Products</a>
+    <a data-section="photography" href="photography.html">Photography</a>
+    <a data-section="about" href="about.html">About me</a>
+  </nav>
+</header>
+
+<main id="rock-main">
+  <section class="rock-opening">
+    <figure class="rock-banner">
+      <div class="rock-banner-image">
+        <img src="assets/g10-liveshow.webp" alt="G10 performing under red and white stage lights at Nanjing 1701 Live House" width="2400" height="1600" fetchpriority="high">
+      </div>
+      <figcaption>NeutronStar714 (2nd from left) performing with G10 at Nanjing 1701 Live House, 2026/6/10</figcaption>
+    </figure>
+  </section>
+
+  <section class="rock-single" aria-labelledby="single-heading">
+    <div class="single-heading">
+      <h1 id="single-heading">"Anyone?"—our first single.</h1>
+    </div>
+    <div class="single-content">
+      <img class="single-cover" src="assets/g10-anyone-cover.webp" alt="Anyone single cover showing a figure running toward headlights at night" width="1200" height="1200" loading="lazy">
+      <div class="single-listen">
+        <p class="single-artist">G10—"Anyone"</p>
+        <div class="single-player" aria-label="Anyone audio player">
+          <button class="single-play" type="button" aria-label="Play Anyone" aria-pressed="false">
+            <svg class="single-play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5 19 12 8 19Z"/></svg>
+            <svg class="single-pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3v14H7zm7 0h3v14h-3z"/></svg>
+          </button>
+          <div class="single-progress">
+            <label class="sr-only" for="single-seek">Anyone playback position</label>
+            <input id="single-seek" type="range" min="0" max="100" step="0.1" value="0">
+            <span class="single-time">0:00 / 0:00</span>
+          </div>
+          <audio id="anyone-audio" preload="metadata" src="musicsources/g10-Anyone.mp3"></audio>
+        </div>
+        <p class="single-error" role="status" hidden>Could not load Anyone</p>
+      </div>
+    </div>
+    <section class="rock-story" aria-labelledby="rock-story-heading">
+      <h2 id="rock-story-heading">Made by us</h2>
+      <div class="rock-story-content">
+        <p class="rock-story-source" hidden>We recorded the instruments ourselves, and I mixed the tracks without external guidance from professionals.</p>
+        <p class="rock-story-body" data-site-copy-ignore>We recorded the instruments ourselves, and I mixed the tracks without external guidance from professionals.</p>
+        <aside class="rock-story-credits" data-site-copy-ignore hidden></aside>
+      </div>
+      <div class="rock-recording-photos">
+        <figure>
+          <img src="assets/g10-drum-recording.webp" alt="Ryan Xu playing the drums for Anyone during a recording session" width="1600" height="1200" loading="lazy" decoding="async">
+          <figcaption>Ryan Xu playing the drums for Anyone during a recording session</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/g10-bass-recording.webp" alt="MellonKolly recording bass for Anyone in our mini-studio" width="1600" height="1200" loading="lazy" decoding="async">
+          <figcaption>MellonKolly recording bass for Anyone in our mini-studio</figcaption>
+        </figure>
+      </div>
+    </section>
+  </section>
+</main>
+
+<footer class="rock-footer"><span>NeutronStar714</span><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>

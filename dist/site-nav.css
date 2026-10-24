@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.site-page{display:contents}
+.site-page[hidden],.site-audio-store[hidden]{display:none!important}
+
+/* The same navigation stays in view on every page. */
+body .site-header.site-header {
+  position: sticky;
+  top: 0;
+  left: auto;
+  right: auto;
+  z-index: 20;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  min-height: 82px;
+  padding: 12px clamp(22px, 5vw, 80px);
+  border: 0;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  backdrop-filter: none;
+  text-shadow: 0 1px 12px #02070cc9, 0 1px 3px #02070c;
+}
+
+body .site-header .primary-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(17px, 2.2vw, 34px);
+  min-width: 0;
+  margin-left: auto;
+  color: #cbd1d4;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+body .site-header .primary-nav a {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  min-height: 44px;
+  padding: 2px 0 0;
+  border-bottom: 2px solid transparent;
+  color: inherit;
+  font: inherit;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+body .site-header .primary-nav a:hover,
+body .site-header .primary-nav a[aria-current] {
+  color: #fff;
+  border-bottom-color: #b9d8ed;
+}
+
+/* The discography keeps its full-screen carousel beneath the same top bar. */
+.discography-page .site-header.site-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  zoom: 1;
+}
+
+@media (max-width: 950px) {
+  body .site-header.site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+    padding: 10px 20px 0;
+  }
+
+  body .site-header .primary-nav {
+    justify-content: flex-start;
+    gap: 22px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  body .site-header .primary-nav::-webkit-scrollbar { display: none; }
+  html { scroll-padding-top: 125px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body .site-header .primary-nav a { transition: none; }
+}

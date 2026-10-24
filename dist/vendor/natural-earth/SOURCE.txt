@@ -1,0 +1,14 @@
+Natural Earth 1:110m countries via world-atlas 2.0.2.
+Source: https://unpkg.com/world-atlas@2.0.2/countries-110m.json
+Natural Earth data: public domain, https://www.naturalearthdata.com/about/terms-of-use/
+TopoJSON converted to GeoJSON without changing coordinates.
+
+China regional road and province-boundary layers:
+https://naciscdn.org/naturalearth/10m/cultural/ne_10m_roads.zip
+https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_1_states_provinces_lines.zip
+Source documentation:
+https://www.naturalearthdata.com/downloads/10m-cultural-vectors/roads/
+https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/
+Clipped to longitude 73–136, latitude 17–54, rounded to 5 decimals, simplified
+for the national overview and closer views. No labels or source attributes included.
+Rebuild with tools/build-photography-map.py using local source archives.

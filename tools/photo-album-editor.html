@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Photograph albums editor</title><link rel="stylesheet" href="/__album-editor/editor.css"><script defer src="/site-copy.js?v=5"></script><script defer src="/__album-editor/editor.js"></script></head>
+<body data-page="editor">
+<header class="editor-header"><h1>Photograph albums</h1><div><a href="/photography.html" target="_blank" rel="noopener">View photography</a><details><summary>Editor options</summary><button type="button" id="archive-editor">Archive editor</button></details></div></header>
+<p id="editor-status" role="status" aria-live="polite">Loading photographs</p>
+<main class="editor-layout">
+  <section class="photo-pool" aria-labelledby="pool-heading">
+    <header class="pool-heading"><div><h2 id="pool-heading">Photo pool</h2><p>Drag photographs into any album. They stay in the pool and can belong to more than one album.</p></div><label class="upload-button">Add photographs<input id="photo-upload" type="file" accept="image/*,.jpg,.jpeg,.mpo" multiple></label></header>
+    <div class="pool-actions"><label for="album-target">Album<select id="album-target"></select></label><button type="button" id="add-selected">Add selected to album</button><span><span id="selected-count" data-site-copy-ignore></span> selected</span></div>
+    <button id="retry-upload" type="button" hidden>Retry upload</button>
+    <div id="photo-pool-grid" class="pool-grid" aria-label="Available photographs"></div>
+  </section>
+  <aside class="album-editor" aria-label="Album arrangement">
+    <nav id="album-list" aria-label="Albums"></nav>
+    <form id="new-album"><label for="new-album-title">New album</label><div><input id="new-album-title" required maxlength="200"><button type="submit">Create</button></div></form>
+    <section id="album-workspace" hidden>
+      <form id="rename-album"><label for="album-title">Album title</label><div><input id="album-title" required maxlength="200"><button type="submit">Save title</button></div></form>
+      <p class="arrange-help">Drop photographs here to add them. Drag within this album to reorder. Drag a photograph back to the pool to remove it from this album.</p>
+      <div id="album-photos" class="album-photos" aria-label="Photographs in this album"></div>
+      <button type="button" id="delete-album">Delete album</button>
+    </section>
+  </aside>
+</main>
+<template id="editor-messages"><span>Caption (optional)</span><span>Save caption</span><span>Caption saved.</span><span>Saved.</span><span>Saving…</span><span>Could not save. Your changes are still here; try again.</span><span>Refresh the editor and try again.</span><span>Remove from album</span><span>Set as cover</span><span>Album cover</span><span>Move earlier</span><span>Move later</span><span>Drop photographs here</span><span>Photographs added to the pool.</span><span>Select photographs first.</span><span>Delete this album? Its photographs will stay in the pool.</span><span>Archive this editor? You can reactivate it with photography-tool.py.</span><span>Editor archived. Run python photography-tool.py enable to reactivate it.</span></template>
+</body></html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0d0f">
+<meta name="description" content="Photographs by NeutronStar714, from hiking trips across China and places closer to home.">
+<title>Photography — NeutronStar714</title>
+<link rel="stylesheet" href="styles.css?v=13">
+<link rel="stylesheet" href="player.css?v=3">
+<link rel="stylesheet" href="site-nav.css?v=4">
+<link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
+<link rel="stylesheet" href="photography.css?v=5">
+<script defer src="site-player.js?v=6"></script>
+<script defer src="site-nav.js?v=5"></script>
+<script defer src="site-copy.js?v=5"></script>
+</head>
+<body class="photography-page" id="top">
+<a class="skip" href="#photography-main">Skip to photographs</a>
+<header class="site-header">
+  <a class="identity" href="index.html"><img class="artist-logo" src="assets/neutronstar714-logo.png" alt="" width="42" height="42"><span class="artist-name">NeutronStar714</span></a>
+  <nav class="primary-nav" aria-label="Main navigation">
+    <a data-section="home" href="index.html">Home</a>
+    <a data-section="discography" href="discography.html">Discography</a>
+    <a data-section="rock" href="rock-band.html">Rock Band</a>
+    <a data-section="products" href="products.html">Products</a>
+    <a data-section="photography" href="photography.html" aria-current="page">Photography</a>
+    <a data-section="about" href="about.html">About me</a>
+  </nav>
+</header>
+<main class="photography-main" id="photography-main">
+  <div class="photography-opening">
+  <section class="photography-intro">
+    <h1>Photography</h1>
+    <p>Photographs from hiking trips across China, and the people, architecture, and infrastructure around Nanjing.</p>
+    <div class="archive-location-selects">
+      <label for="archive-region">Region<select id="archive-region"><option value="">All regions</option></select></label>
+      <label for="archive-location">Location<select id="archive-location" disabled><option value="">All locations</option></select></label>
+    </div>
+  </section>
+  <div class="map-photo-rail map-photo-rail-left" hidden aria-label="Nearby photographs"></div>
+  <section class="photography-map-section" aria-label="Places I photograph">
+    <div class="archive-map-frame">
+      <div class="photography-map" id="photography-map" role="region" aria-label="Map of photography locations" tabindex="0"></div>
+      <button class="map-overview" type="button" aria-label="Show the China overview" title="Show the China overview"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9V4h5m6 0h5v5m0 6v5h-5m-6 0H4v-5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+      <aside class="map-place-preview" hidden aria-live="polite"><button type="button" class="place-preview-close" aria-label="Close place preview">×</button><h2></h2><p>Photographs from this place will appear here.</p></aside>
+    </div>
+    <div class="map-status" hidden role="status"><p>Street detail is unavailable right now. You can still open the places and photographs.</p><button class="map-retry" type="button">Retry map</button></div>
+    <div class="map-place-fallback" aria-label="Photography locations" hidden></div>
+  </section>
+  <div class="map-photo-rail map-photo-rail-right" hidden aria-label="More nearby photographs"></div>
+  </div>
+  <section class="photographs" aria-labelledby="photographs-heading">
+    <h2 id="photographs-heading">Photographs</h2>
+    <p class="photography-empty">Photographs will appear here as I add them.</p>
+    <div class="photograph-list"></div>
+  </section>
+</main>
+<dialog class="photograph-viewer" aria-label="Photograph viewer">
+  <div class="viewer-shell">
+    <button class="viewer-close" type="button" aria-label="Close photograph">×</button>
+    <header class="viewer-header"><div><h2 id="viewer-title">Photography</h2><p class="viewer-place"></p></div></header>
+    <div class="viewer-content">
+      <section class="viewer-panel" id="viewer-photograph" aria-label="Photograph">
+        <div class="viewer-image-viewport" tabindex="0" role="group" aria-label="Zoomable photograph"><div class="viewer-image"></div></div>
+        <div class="viewer-photo-writing"><blockquote class="viewer-quote" hidden></blockquote><p class="viewer-quote-credit" hidden></p><p class="viewer-caption"></p><p class="viewer-credit" hidden></p></div>
+        <div class="viewer-zoom-controls" role="group" aria-label="Photograph zoom"><button class="viewer-zoom-out" type="button" aria-label="Zoom out">−</button><button class="viewer-zoom-fit" type="button" aria-label="Fit image">Fit</button><button class="viewer-zoom-in" type="button" aria-label="Zoom in">+</button></div>
+        <button class="viewer-open-story" type="button" hidden>Read the story</button>
+        <div class="viewer-photo-switch" hidden><button type="button" class="photo-previous" aria-label="Previous photograph">←</button><span class="photo-position" data-site-copy-ignore></span><button type="button" class="photo-next" aria-label="Next photograph">→</button></div>
+      </section>
+      <section class="viewer-panel viewer-reading" id="viewer-story" aria-label="Story" hidden><h3>The story</h3><div class="viewer-context"></div></section>
+      <section class="viewer-panel viewer-reading" id="viewer-sources" aria-label="Notes and sources" hidden><h3>Notes and sources</h3><figure class="viewer-documentary" hidden></figure><blockquote class="viewer-extract" hidden></blockquote><p class="viewer-extract-credit" hidden></p><ul class="viewer-source-list"></ul></section>
+    </div>
+    <footer class="viewer-footer">
+      <div class="viewer-steps" aria-label="Photograph and story"><button type="button" data-stage="photograph" aria-controls="viewer-photograph">Photograph</button><button type="button" data-stage="story" aria-controls="viewer-story">Story</button><button type="button" data-stage="sources" aria-controls="viewer-sources">Notes and sources</button></div>
+      <div class="viewer-turn"><button class="viewer-back" type="button" aria-label="Previous section">←</button><button class="viewer-next" type="button">Read the story</button></div>
+    </footer>
+  </div>
+</dialog>
+<template id="photography-messages"><span data-message="story">Read the story</span><span data-message="sources">Notes and sources</span><span data-message="return">Return to the map</span><span data-message="open">Open photograph</span><span data-message="documentary">Documentary extract</span><span data-message="all-regions">All regions</span><span data-message="all-locations">All locations</span></template>
+<footer class="photography-footer"><span>NeutronStar714</span><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>

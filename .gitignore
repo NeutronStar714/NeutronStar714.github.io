@@ -1,2 +1,16 @@
 ﻿.sites-runtime/
 work/
+.local/
+
+# Local browser profiles and Python caches
+.chrome-product-check/
+.edge-preview/
+__pycache__/
+*.py[cod]
+
+# Original media stays local; deployment copies are in dist/.
+/musicsources/
+
+# Operating system metadata
+.DS_Store
+Thumbs.db

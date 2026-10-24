@@ -1,5 +1,52 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101112"><meta name="description" content="The NeutronStar714 discography. Electronic albums, collections, EPs and singles, 2020–2025. Listen to selected excerpts."><title>Discography — NeutronStar714</title><link rel="stylesheet" href="styles.css"><script defer src="releases.js"></script><script defer src="app.js"></script></head>
-<body><a class="skip" href="#timeline">Skip to releases</a><header><a class="identity" href="#top"><img class="artist-logo" src="assets/neutronstar714-logo.png" alt="" width="42" height="42"><span class="artist-name">NeutronStar714</span></a><a class="nav-current" href="#timeline">Discography</a><span class="header-note">Independent electronic music</span></header>
-<main id="top"><section class="intro"><div class="eyebrow">NEUTRONSTAR714 / RELEASE ARCHIVE</div><h1>Discography<span class="period">.</span></h1><div class="intro-bottom"><p>Albums, fragments, and everything in between.</p><span>2025 — 2020 <span aria-hidden="true">↓</span></span></div></section><div class="timeline-heading"><span>08 RELEASES</span><span>SELECTED EXCERPTS</span><span>LATEST FIRST</span></div><div id="timeline" class="timeline" aria-label="Releases from latest to earliest"></div><noscript>Please enable JavaScript to view the discography and audio excerpts.</noscript></main>
-<footer><a class="identity" href="#top"><img class="artist-logo" src="assets/neutronstar714-logo.png" alt="" width="42" height="42"><span class="artist-name">NeutronStar714</span></a><span>Electronic music · 2020—2025</span><a href="#top">Back to top ↑</a></footer></body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0c0e">
+<meta name="description" content="NeutronStar714's electronic music, G10 recordings, audio plugins, and photography.">
+<title>NeutronStar714</title>
+<link rel="stylesheet" href="styles.css?v=13">
+<link rel="stylesheet" href="landing.css?v=9">
+<link rel="stylesheet" href="player.css?v=3">
+<script defer src="site-player.js?v=6"></script>
+<script defer src="site-nav.js?v=5"></script>
+<script defer src="site-copy.js?v=5"></script>
+<link rel="stylesheet" href="site-nav.css?v=4">
+</head>
+<body class="home-hub" id="top">
+<a class="skip" href="#work">Skip to the work</a>
+<div class="top-scene" aria-hidden="true"><canvas id="neutron-scene"></canvas></div>
+<header class="site-header">
+  <a class="identity" href="index.html"><img class="artist-logo" src="assets/neutronstar714-logo.png" alt="" width="42" height="42"><span class="artist-name">NeutronStar714</span></a>
+  <nav class="primary-nav" aria-label="Main navigation">
+    <a data-section="home" href="index.html" aria-current="page">Home</a>
+    <a data-section="discography" href="discography.html">Discography</a>
+    <a data-section="rock" href="rock-band.html">Rock Band</a>
+    <a data-section="products" href="products.html">Products</a>
+    <a data-section="photography" href="photography.html">Photography</a>
+    <a data-section="about" href="about.html">About me</a>
+  </nav>
+</header>
+
+<main id="home-main">
+  <section class="opening" aria-labelledby="page-title">
+    <div class="opening-copy">
+      <h1 id="page-title">Sound, software,<br> and the way I see.</h1>
+    </div>
+    <nav class="orbit-system" id="work" aria-label="Explore my work">
+      <div class="orbit-rings" aria-hidden="true"><span></span><span></span></div>
+      <a class="orbit-core" href="about.html" aria-label="About NeutronStar714"><img src="assets/neutron-star-714.png" alt="" width="180" height="180"></a>
+      <div class="orbit-track">
+        <div class="orbit-satellite" style="--phase:0s"><div class="orbit-offset"><div class="orbit-counter"><a class="orbit-link discography-orbit" href="discography.html"><span class="orbit-picture"><img src="assets/retrocomtemporary-cover-720.jpg" alt="" width="112" height="112" decoding="async"></span><span class="orbit-label">Discography</span></a></div></div></div>
+        <div class="orbit-satellite" style="--phase:-54s"><div class="orbit-offset"><div class="orbit-counter"><a class="orbit-link rock-orbit" href="rock-band.html"><span class="orbit-picture"><img src="assets/g10-portrait.webp" alt="" width="112" height="112" decoding="async"></span><span class="orbit-label">Rock Band</span></a></div></div></div>
+        <div class="orbit-satellite" style="--phase:-18s"><div class="orbit-offset"><div class="orbit-counter"><a class="orbit-link products-orbit" href="products.html"><span class="orbit-picture"><img src="assets/home-snow.webp" alt="" width="442" height="394" decoding="async"></span><span class="orbit-label">Products</span></a></div></div></div>
+        <div class="orbit-satellite" style="--phase:-36s"><div class="orbit-offset"><div class="orbit-counter"><a class="orbit-link photography-orbit" href="photography.html"><span class="orbit-picture"><img src="assets/home-blue-hour.webp" alt="" width="720" height="480" decoding="async"></span><span class="orbit-label">Photography</span></a></div></div></div>
+      </div>
+    </nav>
+    <div class="orbit-controls"><button class="orbit-pause" type="button" aria-pressed="false"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path class="orbit-pause-icon" d="M5 3v10M11 3v10" fill="none" stroke="currentColor" stroke-width="2"/><path class="orbit-play-icon" d="m5 3 8 5-8 5Z" fill="currentColor"/></svg><span>Pause orbit</span></button><p class="opening-lead">I’m NeutronStar714. I make electronic music, build audio effects, record with my band G10, and take photographs.</p></div>
+  </section>
+</main>
+<template id="home-messages"><span data-message="pause">Pause orbit</span><span data-message="resume">Resume orbit</span></template>
+</body>
+</html>

@@ -1,0 +1,100 @@
+{
+  "version": 2,
+  "places": [
+    {
+      "id": "kashgar",
+      "name": "Kashgar",
+      "lat": 39.4704,
+      "lng": 75.9898,
+      "level": "region"
+    },
+    {
+      "id": "shangri-la",
+      "name": "Shangri-La",
+      "lat": 27.8297,
+      "lng": 99.7008,
+      "level": "region"
+    },
+    {
+      "id": "huangshan",
+      "name": "Huangshan City",
+      "lat": 29.7147,
+      "lng": 118.3375,
+      "level": "region"
+    },
+    {
+      "id": "wuyuan",
+      "name": "Wuyuan County",
+      "lat": 29.2481,
+      "lng": 117.8617,
+      "level": "region"
+    },
+    {
+      "id": "nanjing",
+      "name": "Nanjing",
+      "lat": 32.0603,
+      "lng": 118.7969,
+      "level": "region"
+    },
+    {
+      "id": "71debcacf8384a43a8c25ac592e6cde4",
+      "name": "Lijiang",
+      "lat": 27.0,
+      "lng": 100.2,
+      "locationPrecision": "approximate",
+      "level": "region"
+    },
+    {
+      "id": "b507b946842443d2886c6aa276009a7e",
+      "name": "Downtown",
+      "lat": 32.013549,
+      "lng": 118.759179,
+      "level": "location",
+      "parentId": "nanjing"
+    },
+    {
+      "id": "1a46590347a643faaf66cddc66de288f",
+      "name": "Banqiao",
+      "lat": 31.945489,
+      "lng": 118.678178,
+      "level": "location",
+      "parentId": "nanjing"
+    },
+    {
+      "id": "395149900e25411c8647f766506e2368",
+      "name": "Qixia",
+      "lat": 32.144347,
+      "lng": 118.98436,
+      "level": "location",
+      "parentId": "nanjing"
+    }
+  ],
+  "photos": [
+    {
+      "id": "a2c963cf70414496be964e9b0ce817d8",
+      "placeId": "71debcacf8384a43a8c25ac592e6cde4",
+      "src": "assets/photography/a2c963cf70414496be964e9b0ce817d8.jpg",
+      "caption": "A cow enjoying hay in the winter of Lijiang, Yunnan at the foot of the Jade Dragon Snow Mountain",
+      "captionKey": "photography.a-cow-enjoying-hay-in-the-winter-of-li-4662fda1",
+      "width": 7728,
+      "height": 5152,
+      "preview": "assets/photography/a2c963cf70414496be964e9b0ce817d8-preview.webp",
+      "thumbnail": "assets/photography/a2c963cf70414496be964e9b0ce817d8-thumbnail.webp",
+      "coordinates": null
+    },
+    {
+      "id": "490b8fb3957948a89001e22779ed588f",
+      "placeId": "395149900e25411c8647f766506e2368",
+      "src": "assets/photography/490b8fb3957948a89001e22779ed588f.jpg",
+      "caption": "Train passing in the blue hour, shot with a 8-second shutter",
+      "captionKey": "photography.train-passing-in-the-blue-hour-shot-wi-5338af64",
+      "width": 6192,
+      "height": 4128,
+      "coordinates": {
+        "lat": 32.144332,
+        "lng": 118.984223,
+        "source": "manual"
+      }
+    }
+  ]
+}

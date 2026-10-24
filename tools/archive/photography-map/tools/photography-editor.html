@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photography editor — NeutronStar714</title>
+<link rel="stylesheet" href="/styles.css?v=13">
+<link rel="stylesheet" href="/vendor/maplibre/maplibre-gl.css">
+<link rel="stylesheet" href="/photography.css?v=5">
+<link rel="stylesheet" href="/__photo-editor/editor.css">
+<script type="module" src="/__photo-editor/editor.js?v=4"></script>
+<script defer src="/site-copy.js?v=5"></script>
+</head>
+<body class="photo-editor" data-page="editor">
+<header class="editor-header"><a href="/photography.html">View photography</a><details class="editor-options"><summary>Editor options</summary><p>Archiving disables this local editor and preserves your photographs.</p><button id="archive-editor" type="button">Archive editor</button></details></header>
+<main class="editor-main">
+  <h1>Photography editor</h1>
+  <p class="editor-intro">Regions contain named locations. Each photograph has its own anonymous coordinates. The editor stays on your computer and is excluded from the published site.</p>
+  <div id="editor-workspace">
+    <div class="editor-layout">
+      <section aria-labelledby="editor-map-heading">
+        <h2 id="editor-map-heading">Map</h2>
+        <p>Select what you want to move, then click the map. Moving a region or location changes its anchor; photograph coordinates stay where you put them.</p>
+        <div class="photography-map" id="editor-map" role="region" aria-label="Choose a photography location on the map" tabindex="0"></div>
+        <p id="map-pick-status" role="status" aria-live="polite"></p>
+        <button id="finish-map-pick" type="button" hidden>Return to details</button>
+        <button id="use-map-center" type="button">Use map center</button>
+      </section>
+      <section>
+        <form id="place-form">
+          <h2>Regions and locations</h2>
+          <label for="place-choice">Edit an existing region or location</label>
+          <select id="place-choice"><option value="">Add a new region or location</option></select>
+          <button id="new-place" type="button">Add new</button>
+          <label for="place-level">Level</label>
+          <select id="place-level"><option value="region">Region</option><option value="location">Location</option></select>
+          <div id="place-parent-field" hidden><label for="place-parent">Parent region</label><select id="place-parent"><option value="">Choose a region</option></select></div>
+          <label for="place-name">Name</label>
+          <input id="place-name" name="name" maxlength="150" required>
+          <div class="coordinate-fields">
+            <div><label for="latitude">Latitude</label><input id="latitude" type="number" min="-90" max="90" step="any" required></div>
+            <div><label for="longitude">Longitude</label><input id="longitude" type="number" min="-180" max="180" step="any" required></div>
+          </div>
+          <button id="pick-place-point" type="button">Place or move on map</button>
+          <button type="submit">Save region or location</button>
+          <details id="delete-place-panel" hidden><summary>Delete this region or location</summary>
+            <p>Photographs and coordinates are preserved. Locations return their photographs to the parent region. To delete a region with content, choose another region to receive it.</p>
+            <label for="delete-target">Move content to region</label><select id="delete-target"><option value="">Use parent region, or delete if empty</option></select>
+            <button id="delete-place" type="button">Delete selected region or location</button>
+          </details>
+        </form>
+      </section>
+    </div>
+    <section class="editor-upload" aria-labelledby="upload-heading">
+      <h2 id="upload-heading">Photographs</h2>
+      <p>Add photographs up to 30 MB each. JPEG (including camera MPO), PNG, WebP, TIFF, AVIF, BMP, and JPEG 2000 are supported. Choose a region and optionally a named location. GPS supplies each photograph’s anonymous coordinates; missing GPS can be placed manually or left unlocated.</p>
+      <div class="coordinate-fields">
+        <label>Region<select id="photo-region"><option value="">All regions</option></select></label>
+        <label>Location<select id="photo-location" disabled><option value="">All locations</option></select></label>
+      </div>
+      <form id="photo-form" novalidate>
+        <label for="photo-files">Photographs</label>
+        <input id="photo-files" type="file" accept="image/jpeg,image/png,image/webp,image/tiff,image/avif,image/bmp,image/jp2,.jpg,.jpeg,.mpo,.png,.webp,.tif,.tiff,.avif,.bmp,.jp2,.j2k" multiple required>
+        <div id="upload-previews"></div>
+        <button id="save-photos" type="submit">Save photographs</button>
+        <p id="upload-status" role="status" aria-live="polite"></p>
+        <div id="upload-errors" role="alert" tabindex="-1" hidden></div>
+      </form>
+      <h3>Saved photographs</h3>
+      <div id="saved-photos"></div>
+    </section>
+  </div>
+  <p id="editor-status" role="status" aria-live="polite"></p>
+  <section id="editor-archived" hidden>
+    <h2>Editor archived</h2>
+    <p>The editor and upload endpoints are disabled. Your places, photographs, and captions are preserved.</p>
+    <p>To reactivate it, run this command in the website directory:</p>
+    <pre>python photography-tool.py enable</pre>
+    <a href="/photography.html">View photography</a>
+  </section>
+  <p class="editor-note">Captions and place names are appended to website-text.md. Existing entries are preserved. Publish only the dist folder.</p>
+  <template id="editor-messages">
+    <span data-message="ready">Ready to edit.</span>
+    <span data-message="saving">Saving…</span>
+    <span data-message="place-saved">Place saved.</span>
+    <span data-message="photos-saved">Photographs saved.</span>
+    <span data-message="story-saved">Story saved.</span>
+    <span data-message="save-story">Save story</span>
+    <span data-message="story-error">Check the story and source links. Sources need a title and an http or https address.</span>
+    <span data-message="error">Could not save. Check the place, coordinates, or photograph and try again.</span>
+    <span data-message="size-error">This photograph is larger than 30 MB. Export a smaller JPEG and try again.</span>
+    <span data-message="resolution-error">This photograph exceeds 60 megapixels. Export a smaller version and try again.</span>
+    <span data-message="format-error">Choose a JPEG, PNG, or WebP photograph.</span>
+    <span data-message="image-error">The server could not read this photograph. Try exporting it as a new JPEG.</span>
+    <span data-message="place-error">Choose a saved place before uploading photographs.</span>
+    <span data-message="text-error">Enter a caption for each photograph. Captions may contain up to 5,000 characters.</span>
+    <span data-message="coordinate-error">Enter a latitude between −90 and 90 and a longitude between −180 and 180.</span>
+    <span data-message="session-error">The editor session expired after a server restart. Reload the editor, then select your photograph again.</span>
+    <span data-message="upload-error">The upload could not be read. Your photograph and caption are still selected; try saving again.</span>
+    <span data-message="map-error">The map could not load. You can still enter coordinates and upload photographs.</span>
+    <span data-message="caption">Caption</span>
+    <span data-message="empty">No photographs for this place yet.</span>
+    <span data-message="gps-reading">Checking embedded GPS…</span>
+    <span data-message="gps-found">Embedded GPS found. Review the pin and name this place.</span>
+    <span data-message="gps-missing">No embedded GPS. Choose a saved place or locate this photograph on the map.</span>
+    <span data-message="gps-error">Could not check GPS. You can still choose the location manually.</span>
+    <span data-message="map-picking">Click the map to locate the selected photograph.</span>
+    <span data-message="map-picked">Pin placed. Click again to adjust, then return to your photograph.</span>
+    <span data-message="location-required">Choose a saved place, or enter a place name and valid coordinates for every photograph.</span>
+    <span data-message="location-saved">Using this saved place.</span>
+    <span data-message="location-manual">Using your chosen coordinates.</span>
+    <span data-message="no-location">No location data</span>
+    <span data-message="gps-ready">Coordinates from embedded GPS.</span>
+    <span data-message="region-required">Choose a region for each photograph. A named location is optional.</span>
+    <span data-message="hierarchy-error">Choose a valid parent region. Existing entries keep their region or location level.</span>
+    <span data-message="reassignment-error">Choose another region to receive the locations and photographs before deleting this region.</span>
+    <span data-message="place-deleted">Region or location deleted. All photographs and Markdown entries were preserved.</span>
+    <span data-message="photo-saved">Photograph details saved.</span>
+    <span data-message="save-photo">Save caption and location</span>
+    <span data-message="map-picking-photo">Click the map to set this photograph’s anonymous coordinates.</span>
+    <span data-message="map-picking-place">Click the map to set the region or location anchor.</span>
+    <span data-message="map-picked-details">Position set. Click again to adjust, then return to details and save.</span>
+    <span data-message="upload-format-error">This image format cannot be decoded. Export the photograph as JPEG, PNG, WebP, TIFF, or AVIF and try again.</span>
+    <span data-message="storage-error">The preview server could not write the photograph. Your selected files and captions are still here; check the folder permissions and try again.</span>
+    <span data-message="network-error">The upload was interrupted. Your selected files and captions are still here. Check that the preview server is running, then retry.</span>
+    <span data-message="choose-files">Choose photographs to upload first.</span>
+    <span data-message="upload-incomplete">Complete the marked fields before saving.</span>
+    <span data-message="detected-format">Detected image format:</span>
+    <span data-message="upload-complete">Photographs saved and added to the archive.</span>
+    <span data-message="upload-count">Saved photographs:</span>
+    <span data-message="upload-progress">Saving photograph:</span>
+    <span data-message="refresh-error">The photograph was saved, but the archive could not refresh. Retry to reload the saved photographs.</span>
+  </template>
+  <template id="photo-location-fields">
+    <fieldset class="photo-location-fields">
+      <legend>Region, location and coordinates</legend>
+      <label>Region<select name="region" required><option value="">Choose a region</option></select></label>
+      <label>Location (optional)<select name="location"><option value="">Region only</option></select></label>
+      <p class="location-status" role="status" aria-live="polite"></p>
+      <div class="coordinate-fields">
+        <label>Latitude<input name="lat" type="number" min="-90" max="90" step="any"></label>
+        <label>Longitude<input name="lng" type="number" min="-180" max="180" step="any"></label>
+      </div>
+      <div class="location-actions">
+        <button type="button" data-action="pick">Locate on map</button>
+        <button type="button" data-action="gps" disabled>Use embedded GPS</button>
+        <button type="button" data-action="clear">Clear coordinates</button>
+      </div>
+    </fieldset>
+  </template>
+  <template id="photo-story-fields">
+    <details class="photo-story-fields"><summary>Story and sources (optional)</summary>
+      <fieldset>
+        <label>Photograph title<input name="title" maxlength="200"></label>
+        <label>Photographer credit<input name="credit" maxlength="300"></label>
+        <label>Quotation<textarea name="quote" maxlength="2000"></textarea></label>
+        <label>Quotation attribution<input name="quoteCredit" maxlength="300"></label>
+        <label>Story<textarea name="context" maxlength="15000" rows="8"></textarea></label>
+        <p>Around 100–200 words is a useful starting point. Leave this empty for photographs that stand on their own.</p>
+        <label>Original notes or documentary extract<textarea name="extract" maxlength="15000" rows="5"></textarea></label>
+        <label>Extract attribution<input name="extractCredit" maxlength="500"></label>
+        <label>Sources<textarea name="sources" rows="4"></textarea></label>
+        <p>One source per line: title | https://example.com/article</p>
+        <label>Documentary media path or URL<input name="documentarySrc" maxlength="2000"></label>
+        <p>Use a video or audio file in assets or musicsources, or an http or https media URL.</p>
+        <label>Documentary title<input name="documentaryTitle" maxlength="2000"></label>
+      </fieldset>
+    </details>
+  </template>
+</main>
+</body>
+</html>
