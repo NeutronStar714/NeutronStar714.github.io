@@ -5863,3 +5863,39 @@ Muji Volcanic Crater with Kungay Mountains in the background, shot by border hig
 A piece of wetland shot from border highway Z683
 ```
 
+
+## Rock
+
+### `rock.two-band-members-holding-guitar-effect-d138553d`
+
+```text
+Two band members holding guitar effects pedalboards in the studio
+```
+
+### `rock.band-members-recording-guitar-together-9d972970`
+
+```text
+Band members recording guitar together in the studio
+```
+
+
+## Rock
+
+### `rock.a-collage-of-g10-band-members-on-stage-d1411f63`
+
+```text
+A collage of G10 band members on stage
+```
+
+### `rock.edor-i-and-ryan-h-x-investigating-equi-dce4fe28`
+
+```text
+Edor, I and Ryan H. X. investigating equipment for recording guitar
+```
+
+### `rock.edor-and-i-preparing-our-pedalboards-f-ba0afeb6`
+
+```text
+Edor and I preparing our pedalboards for recording and live performance
+```
+

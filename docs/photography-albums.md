@@ -70,7 +70,13 @@ It has no slideshow playback or arrow/zoom buttons over the main photo. Left/rig
 arrow keys and swipe navigate; wheel/pinch zoom and drag to pan remain supported.
 Double-click the photo to magnify it or return it to its fitted size.
 Escape closes the viewer and returns focus.
-The global music player survives page changes and continues while viewing albums.
+The global player survives page changes. Impromptu in C is background music only
+for Photography: entering this section starts or resumes its repeating playback,
+pausing any previous excerpt or demo. Leaving Photography pauses the BGM and
+preserves its position. Its Play button is disabled elsewhere; each music section
+still controls its own tracks. A manual BGM pause is respected while browsing
+photographs, and re-entering Photography starts it again. On a direct visit,
+browser autoplay rules may require the first click or the player's Play button.
 
 The public page also has two continuous rows of photograph previews above the
 album covers, taking roughly half the viewport height. They move in opposite
