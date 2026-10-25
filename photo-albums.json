@@ -2,6 +2,19 @@
   "version": 1,
   "albums": [
     {
+      "id": "e21aa7faa7074d77a2ed43f3e48fb98a",
+      "photoIds": [
+        "9e8a4ca9c0ad443fb0d93aca77bfd95b",
+        "e5cd357202de4f65a076152ee2029d48",
+        "dab2bead913d4a83878950c63c1e879d",
+        "4295c7e1c2184398b250d0333a4674fe",
+        "b207c25404b2492f93437f21dbbc5255",
+        "df016ff41e684197938b43669d6bab11"
+      ],
+      "title": "A Tajik Wedding",
+      "coverId": "dab2bead913d4a83878950c63c1e879d"
+    },
+    {
       "id": "road-systems",
       "title": "Road systems across the country",
       "photoIds": [
@@ -15,7 +28,20 @@
         "candidate-08",
         "candidate-09"
       ],
-      "coverId": "candidate-01"
+      "coverId": "candidate-02"
+    },
+    {
+      "id": "e1f723c7385f404994dea3c157b07dad",
+      "photoIds": [
+        "c3a0c2d832d14e458f247cb892f37026",
+        "943db98354b141f9b4e2db89be10b372",
+        "ec5447a672104b9d9be58e994e94c0b4",
+        "9b8235ccadb7476ebbdc66f327ac0cd9",
+        "e7b8a65ea48d4f37855f1eec9bb66c5e",
+        "dd34dfc0e4fb4908b4c99635c8966436"
+      ],
+      "title": "Kashgar and G314",
+      "coverId": "c3a0c2d832d14e458f247cb892f37026"
     },
     {
       "id": "blue-hour",
@@ -26,7 +52,8 @@
         "candidate-12",
         "candidate-13",
         "candidate-14",
-        "candidate-15"
+        "candidate-15",
+        "060c34839b6e49b28ef5feee78da2ead"
       ],
       "coverId": "candidate-10"
     },
@@ -36,7 +63,8 @@
       "photoIds": [
         "candidate-22",
         "candidate-23",
-        "candidate-24"
+        "candidate-24",
+        "132ddafcb71b439587f386809f9a4d64"
       ],
       "coverId": "candidate-22"
     },
@@ -54,314 +82,742 @@
       "id": "hiking",
       "title": "Hiking, on the way",
       "photoIds": [
-        "candidate-15",
+        "candidate-18",
         "candidate-16",
         "candidate-17",
-        "candidate-18"
+        "candidate-15",
+        "060c34839b6e49b28ef5feee78da2ead",
+        "d5f10229ca2847d7af6db8124a5cf88e",
+        "bdaef343f3af4ea2a939546c7effe0fb",
+        "a2b0741116ae45408cda24bec26b9b12",
+        "96e3dd46320f405c9e06d2666f4a7acc",
+        "b5398c81c35c4a0ba7731890bca9fc23",
+        "998b2c41eb9b4fbb8f7fbd61f18aa8ed",
+        "80be54edc278405e82fe9c4c5a828442",
+        "de52821c71e14d94ad2f562d4cd4aab8",
+        "2781395b7a5e4972845e4816eb802ea5"
       ],
-      "coverId": "candidate-16"
+      "coverId": "candidate-18"
     },
     {
       "id": "band",
       "title": "Shots for the band",
       "photoIds": [
         "candidate-25",
-        "candidate-26"
+        "candidate-26",
+        "ed9c619e7ea947c094a76841162cb7c4",
+        "ea2a99848fcc4881b43bcbbf7a5d6c62",
+        "36421a0b98d34e3fb7c2b9848d088889",
+        "5093e33bc8bb4d3c9b02adf7c3652290",
+        "bbbbc6c26da145cba5ee057fba559bf4"
       ],
       "coverId": "candidate-25"
+    },
+    {
+      "id": "fba366e226b2431482cf1f6ff3dc8231",
+      "photoIds": [
+        "6fea62dee0e84fe99d2570cbdd9c9435",
+        "d9fdc600ed8b404187a85af0db555ed8"
+      ],
+      "title": "Artistic Photos",
+      "coverId": "6fea62dee0e84fe99d2570cbdd9c9435"
+    },
+    {
+      "id": "a1dd63d7ef324aa4bbb58ad41644d14c",
+      "photoIds": [
+        "d9b45730eb3e44078b1ed55c4d79a06f",
+        "d42d5ddd96a4423ebffa1e4280af7fb5",
+        "7ce5971822ed4d96ac5683f3937cd4bd",
+        "888ad04b3d7c465ca937a571908dbf9e"
+      ],
+      "title": "The Loong Lantern Festival",
+      "coverId": "d9b45730eb3e44078b1ed55c4d79a06f"
     }
   ],
   "photos": [
     {
       "id": "candidate-01",
       "filename": "1.JPG",
-      "caption": "",
+      "caption": "Saihongqiao Interchange in downtown Nanjing",
       "src": "assets/photo-albums/01-full.webp",
       "screen": "assets/photo-albums/01-screen.webp",
       "thumbnail": "assets/photo-albums/01-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.saihongqiao-interchange-in-downtown-na-cc48e629"
     },
     {
       "id": "candidate-02",
       "filename": "2.JPG",
-      "caption": "",
+      "caption": "Saihongqiao Interchange in downtown Nanjing",
       "src": "assets/photo-albums/02-full.webp",
       "screen": "assets/photo-albums/02-screen.webp",
       "thumbnail": "assets/photo-albums/02-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.saihongqiao-interchange-in-downtown-na-cc48e629"
     },
     {
       "id": "candidate-03",
       "filename": "3.JPG",
-      "caption": "",
+      "caption": "Banqiao, an abandoned development zone with \"historical looking\" bridges",
       "src": "assets/photo-albums/03-full.webp",
       "screen": "assets/photo-albums/03-screen.webp",
       "thumbnail": "assets/photo-albums/03-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.banqiao-an-abandoned-development-zone-c3dd9367"
     },
     {
       "id": "candidate-04",
       "filename": "4.JPG",
-      "caption": "",
+      "caption": "National freeway G4211, Banqiao section, shot in winter",
       "src": "assets/photo-albums/04-full.webp",
       "screen": "assets/photo-albums/04-screen.webp",
       "thumbnail": "assets/photo-albums/04-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.national-freeway-g4211-banqiao-section-162c2a63"
     },
     {
       "id": "candidate-05",
       "filename": "5.JPG",
-      "caption": "",
+      "caption": "The Jiading to Minhang expressway, the highest bridges in Shanghai",
       "src": "assets/photo-albums/05-full.webp",
       "screen": "assets/photo-albums/05-screen.webp",
       "thumbnail": "assets/photo-albums/05-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.the-jiading-to-minhang-expressway-the-03d8b835"
     },
     {
       "id": "candidate-06",
       "filename": "6.JPG",
-      "caption": "",
+      "caption": "The Jiading to Minhang expressway, ramps shot from underneath",
       "src": "assets/photo-albums/06-full.webp",
       "screen": "assets/photo-albums/06-screen.webp",
       "thumbnail": "assets/photo-albums/06-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.the-jiading-to-minhang-expressway-ramp-88ae0e6c"
     },
     {
       "id": "candidate-07",
       "filename": "7.JPG",
-      "caption": "",
+      "caption": "An unfinished road intercepted by an urban village in Jiangning, Nanjing",
       "src": "assets/photo-albums/07-full.webp",
       "screen": "assets/photo-albums/07-screen.webp",
       "thumbnail": "assets/photo-albums/07-thumb.webp",
       "width": 7728,
-      "height": 5152
+      "height": 5152,
+      "captionKey": "photography.an-unfinished-road-intercepted-by-an-u-48eeb1fb"
     },
     {
       "id": "candidate-08",
       "filename": "8.JPG",
-      "caption": "",
+      "caption": "The unfinished road under highspeed railway viaducts in Jiangning, Nanjing",
       "src": "assets/photo-albums/08-full.webp",
       "screen": "assets/photo-albums/08-screen.webp",
       "thumbnail": "assets/photo-albums/08-thumb.webp",
       "width": 7728,
-      "height": 5152
+      "height": 5152,
+      "captionKey": "photography.the-unfinished-road-under-highspeed-ra-a3ba5eba"
     },
     {
       "id": "candidate-09",
       "filename": "9.JPG",
-      "caption": "",
+      "caption": "An exit of Nanjing's ring expressway, G42 section shot at night",
       "src": "assets/photo-albums/09-full.webp",
       "screen": "assets/photo-albums/09-screen.webp",
       "thumbnail": "assets/photo-albums/09-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.an-exit-of-nanjing-s-ring-expressway-g-df2e37fd"
     },
     {
       "id": "candidate-10",
       "filename": "10.JPG",
-      "caption": "",
+      "caption": "Long-exposure shot of a passing highspeed train in the blue hour, near G312, Qixia, Nanjing",
       "src": "assets/photo-albums/10-full.webp",
       "screen": "assets/photo-albums/10-screen.webp",
       "thumbnail": "assets/photo-albums/10-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.long-exposure-shot-of-a-passing-highsp-b6380fea"
     },
     {
       "id": "candidate-11",
       "filename": "11.jpg",
-      "caption": "",
+      "caption": "Nanjing Poly Theater shot on the \"Eye of Nanjing\" bridge in the blue hour",
       "src": "assets/photo-albums/11-full.webp",
       "screen": "assets/photo-albums/11-screen.webp",
       "thumbnail": "assets/photo-albums/11-thumb.webp",
       "width": 7728,
-      "height": 5152
+      "height": 5152,
+      "captionKey": "photography.nanjing-poly-theater-shot-on-the-eye-o-32f43a0e"
     },
     {
       "id": "candidate-12",
       "filename": "12.jpg",
-      "caption": "",
+      "caption": "A dense neighbourhood in Gongbei Port of Entry, Macau. Shot in the blue hour",
       "src": "assets/photo-albums/12-full.webp",
       "screen": "assets/photo-albums/12-screen.webp",
       "thumbnail": "assets/photo-albums/12-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.a-dense-neighbourhood-in-gongbei-port-7c16caf1"
     },
     {
       "id": "candidate-13",
       "filename": "13.JPG",
-      "caption": "",
+      "caption": "Long-exposure shot of a bird in the middle of a stream in Shuhe ancient town, Lijiang, creating a phantom effect.",
       "src": "assets/photo-albums/13-full.webp",
       "screen": "assets/photo-albums/13-screen.webp",
       "thumbnail": "assets/photo-albums/13-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.long-exposure-shot-of-a-bird-in-the-mi-3754a19e"
     },
     {
       "id": "candidate-14",
       "filename": "14.JPG",
-      "caption": "",
+      "caption": "Nanjing Dashengguan Yangtze River Bridge and the railway bridge in the background.",
       "src": "assets/photo-albums/14-full.webp",
       "screen": "assets/photo-albums/14-screen.webp",
       "thumbnail": "assets/photo-albums/14-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.nanjing-dashengguan-yangtze-river-brid-9901961a"
     },
     {
       "id": "candidate-15",
       "filename": "15.JPG",
-      "caption": "",
+      "caption": "Trees with sunset and city lights shot in a hiking path on Zijin Mountain",
       "src": "assets/photo-albums/15-full.webp",
       "screen": "assets/photo-albums/15-screen.webp",
       "thumbnail": "assets/photo-albums/15-thumb.webp",
       "width": 4912,
-      "height": 3264
+      "height": 3264,
+      "captionKey": "photography.trees-with-sunset-and-city-lights-shot-e35853d5"
     },
     {
       "id": "candidate-16",
       "filename": "16.JPG",
-      "caption": "",
+      "caption": "Ridge of Zijin Mountain, with the city in the distance",
       "src": "assets/photo-albums/16-full.webp",
       "screen": "assets/photo-albums/16-screen.webp",
       "thumbnail": "assets/photo-albums/16-thumb.webp",
       "width": 4912,
-      "height": 3264
+      "height": 3264,
+      "captionKey": "photography.ridge-of-zijin-mountain-with-the-city-b2f810e6"
     },
     {
       "id": "candidate-17",
       "filename": "17.JPG",
-      "caption": "",
+      "caption": "Sunset on the peak of Zijin Mountain, with Zifeng Tower and Xuanwu Lake in the distance.",
       "src": "assets/photo-albums/17-full.webp",
       "screen": "assets/photo-albums/17-screen.webp",
       "thumbnail": "assets/photo-albums/17-thumb.webp",
       "width": 4912,
-      "height": 3264
+      "height": 3264,
+      "captionKey": "photography.sunset-on-the-peak-of-zijin-mountain-w-e6846d74"
     },
     {
       "id": "candidate-18",
       "filename": "18.JPG",
-      "caption": "",
+      "caption": "William in shades, and the northern section of Nanjing, shot on Zijin Mountain",
       "src": "assets/photo-albums/18-full.webp",
       "screen": "assets/photo-albums/18-screen.webp",
       "thumbnail": "assets/photo-albums/18-thumb.webp",
       "width": 5472,
-      "height": 3648
+      "height": 3648,
+      "captionKey": "photography.william-in-shades-and-the-northern-sec-0635deb0"
     },
     {
       "id": "candidate-19",
       "filename": "19.JPG",
-      "caption": "",
+      "caption": "A high jump athlete captured with slow-shutter panning in the 2025 NFLS Sport Festival",
       "src": "assets/photo-albums/19-full.webp",
       "screen": "assets/photo-albums/19-screen.webp",
       "thumbnail": "assets/photo-albums/19-thumb.webp",
       "width": 6000,
-      "height": 4000
+      "height": 4000,
+      "captionKey": "photography.a-high-jump-athlete-captured-with-slow-92878634"
     },
     {
       "id": "candidate-20",
       "filename": "20.JPG",
-      "caption": "",
+      "caption": "A 200m run athlete captured with slow-shutter panning in the 2024 NFLS Sport Festival",
       "src": "assets/photo-albums/20-full.webp",
       "screen": "assets/photo-albums/20-screen.webp",
       "thumbnail": "assets/photo-albums/20-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.a-200m-run-athlete-captured-with-slow-448e204c"
     },
     {
       "id": "candidate-21",
       "filename": "21.jpg",
-      "caption": "",
+      "caption": "Ryan H. X. captured with slow-shutter panning, running 4x100m relay in the 2024 NFLS Sport Festival",
       "src": "assets/photo-albums/21-full.webp",
       "screen": "assets/photo-albums/21-screen.webp",
       "thumbnail": "assets/photo-albums/21-thumb.webp",
       "width": 5158,
-      "height": 3439
+      "height": 3439,
+      "captionKey": "photography.ryan-h-x-captured-with-slow-shutter-pa-ad43cab5"
     },
     {
       "id": "candidate-22",
       "filename": "22.JPG",
-      "caption": "",
+      "caption": "Filming a music video with Ryan H. X. at G312",
       "src": "assets/photo-albums/22-full.webp",
       "screen": "assets/photo-albums/22-screen.webp",
       "thumbnail": "assets/photo-albums/22-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.filming-a-music-video-with-ryan-h-x-at-4cd1fb25"
     },
     {
       "id": "candidate-23",
       "filename": "23.JPG",
-      "caption": "",
+      "caption": "The first sunrise of 2025, shot on the peak of Zijin Mountain",
       "src": "assets/photo-albums/23-full.webp",
       "screen": "assets/photo-albums/23-screen.webp",
       "thumbnail": "assets/photo-albums/23-thumb.webp",
       "width": 6192,
-      "height": 4128
+      "height": 4128,
+      "captionKey": "photography.the-first-sunrise-of-2025-shot-on-the-8d0bb3b2"
     },
     {
       "id": "candidate-24",
       "filename": "24.JPG",
-      "caption": "",
+      "caption": "Yellow street lights on the not-yet-opened Qinhuaiwan Bridge",
       "src": "assets/photo-albums/24-full.webp",
       "screen": "assets/photo-albums/24-screen.webp",
       "thumbnail": "assets/photo-albums/24-thumb.webp",
       "width": 5472,
-      "height": 3648
+      "height": 3648,
+      "captionKey": "photography.yellow-street-lights-on-the-not-yet-op-a8811fb6"
     },
     {
       "id": "candidate-25",
       "filename": "25.JPG",
-      "caption": "",
+      "caption": "Ryan C. X. (left) and William (right) walking on Qinhuaiwan bridge at night, after rehearsal",
       "src": "assets/photo-albums/25-full.webp",
       "screen": "assets/photo-albums/25-screen.webp",
       "thumbnail": "assets/photo-albums/25-thumb.webp",
       "width": 7728,
-      "height": 5152
+      "height": 5152,
+      "captionKey": "photography.ryan-c-x-left-and-william-right-walkin-d06e1896"
     },
     {
       "id": "candidate-26",
       "filename": "26.jpg",
-      "caption": "",
+      "caption": "Having fun with William (left) and Ryan (right) on the not-yet-opened Qinhuaiwan bridge after late night rehearsal",
       "src": "assets/photo-albums/26-full.webp",
       "screen": "assets/photo-albums/26-screen.webp",
       "thumbnail": "assets/photo-albums/26-thumb.webp",
       "width": 7728,
-      "height": 5152
-    },
-    {
-      "id": "a2c963cf70414496be964e9b0ce817d8",
-      "placeId": "71debcacf8384a43a8c25ac592e6cde4",
-      "src": "assets/photography/a2c963cf70414496be964e9b0ce817d8.jpg",
-      "caption": "A cow enjoying hay in the winter of Lijiang, Yunnan at the foot of the Jade Dragon Snow Mountain",
-      "captionKey": "photography.a-cow-enjoying-hay-in-the-winter-of-li-4662fda1",
-      "width": 7728,
       "height": 5152,
-      "preview": "assets/photography/a2c963cf70414496be964e9b0ce817d8-preview.webp",
-      "thumbnail": "assets/photography/a2c963cf70414496be964e9b0ce817d8-thumbnail.webp",
-      "coordinates": null,
-      "filename": "a2c963cf70414496be964e9b0ce817d8",
-      "screen": "assets/photography/a2c963cf70414496be964e9b0ce817d8.jpg"
+      "captionKey": "photography.having-fun-with-william-left-and-ryan-fe11e7cf"
     },
     {
-      "id": "490b8fb3957948a89001e22779ed588f",
-      "placeId": "395149900e25411c8647f766506e2368",
-      "src": "assets/photography/490b8fb3957948a89001e22779ed588f.jpg",
-      "caption": "Train passing in the blue hour, shot with a 8-second shutter",
-      "captionKey": "photography.train-passing-in-the-blue-hour-shot-wi-5338af64",
+      "id": "d9b45730eb3e44078b1ed55c4d79a06f",
+      "filename": "_DSC0329.JPG",
+      "src": "assets/photo-albums/d9b45730eb3e44078b1ed55c4d79a06f-full.webp",
+      "screen": "assets/photo-albums/d9b45730eb3e44078b1ed55c4d79a06f-screen.webp",
+      "thumbnail": "assets/photo-albums/d9b45730eb3e44078b1ed55c4d79a06f-thumb.webp",
+      "width": 4912,
+      "height": 3264,
+      "caption": "Firework exploding in the sky during the Loong Lantern Festival in Hongguan Village, Wuyuan County",
+      "captionKey": "photography.firework-exploding-in-the-sky-during-t-56edf34b"
+    },
+    {
+      "id": "888ad04b3d7c465ca937a571908dbf9e",
+      "filename": "_DSC0507.JPG",
+      "src": "assets/photo-albums/888ad04b3d7c465ca937a571908dbf9e-full.webp",
+      "screen": "assets/photo-albums/888ad04b3d7c465ca937a571908dbf9e-screen.webp",
+      "thumbnail": "assets/photo-albums/888ad04b3d7c465ca937a571908dbf9e-thumb.webp",
+      "width": 4912,
+      "height": 3264,
+      "caption": "A wedding in Lingjiao Village, Wuyuan County. Thick fog from firecrackers.",
+      "captionKey": "photography.a-wedding-in-lingjiao-village-wuyuan-c-8d0bda87"
+    },
+    {
+      "id": "5093e33bc8bb4d3c9b02adf7c3652290",
+      "filename": "_DSC0107.JPG",
+      "src": "assets/photo-albums/5093e33bc8bb4d3c9b02adf7c3652290-full.webp",
+      "screen": "assets/photo-albums/5093e33bc8bb4d3c9b02adf7c3652290-screen.webp",
+      "thumbnail": "assets/photo-albums/5093e33bc8bb4d3c9b02adf7c3652290-thumb.webp",
       "width": 6192,
       "height": 4128,
-      "coordinates": {
-        "lat": 32.144332,
-        "lng": 118.984223,
-        "source": "manual"
-      },
-      "filename": "490b8fb3957948a89001e22779ed588f",
-      "screen": "assets/photography/490b8fb3957948a89001e22779ed588f.jpg",
-      "thumbnail": "assets/photography/490b8fb3957948a89001e22779ed588f.jpg"
+      "caption": "G10‘s group photo after live at Xiangtang",
+      "captionKey": "photography.g10-s-group-photo-after-live-at-xiangt-63236429"
+    },
+    {
+      "id": "bbbbc6c26da145cba5ee057fba559bf4",
+      "filename": "_DSC0176.JPG",
+      "src": "assets/photo-albums/bbbbc6c26da145cba5ee057fba559bf4-full.webp",
+      "screen": "assets/photo-albums/bbbbc6c26da145cba5ee057fba559bf4-screen.webp",
+      "thumbnail": "assets/photo-albums/bbbbc6c26da145cba5ee057fba559bf4-thumb.webp",
+      "width": 4128,
+      "height": 6192,
+      "caption": "G10‘s group photo after live at Xiangtang",
+      "captionKey": "photography.g10-s-group-photo-after-live-at-xiangt-63236429"
+    },
+    {
+      "id": "d42d5ddd96a4423ebffa1e4280af7fb5",
+      "filename": "_DSC0375.JPG",
+      "src": "assets/photo-albums/d42d5ddd96a4423ebffa1e4280af7fb5-full.webp",
+      "screen": "assets/photo-albums/d42d5ddd96a4423ebffa1e4280af7fb5-screen.webp",
+      "thumbnail": "assets/photo-albums/d42d5ddd96a4423ebffa1e4280af7fb5-thumb.webp",
+      "width": 4912,
+      "height": 3264,
+      "caption": "Firecrackers exploding on the gound during the Loong Lantern Festival",
+      "captionKey": "photography.firecrackers-exploding-on-the-gound-du-124302d3"
+    },
+    {
+      "id": "7ce5971822ed4d96ac5683f3937cd4bd",
+      "filename": "_DSC0420.JPG",
+      "src": "assets/photo-albums/7ce5971822ed4d96ac5683f3937cd4bd-full.webp",
+      "screen": "assets/photo-albums/7ce5971822ed4d96ac5683f3937cd4bd-screen.webp",
+      "thumbnail": "assets/photo-albums/7ce5971822ed4d96ac5683f3937cd4bd-thumb.webp",
+      "width": 4912,
+      "height": 3264,
+      "caption": "The Loong, surrounded by lanterns, in the final dancing phase of the Loong Lantern Festival",
+      "captionKey": "photography.the-loong-surrounded-by-lanterns-in-th-447434f9"
+    },
+    {
+      "id": "bdaef343f3af4ea2a939546c7effe0fb",
+      "filename": "_DSC5909.JPG",
+      "src": "assets/photo-albums/bdaef343f3af4ea2a939546c7effe0fb-full.webp",
+      "screen": "assets/photo-albums/bdaef343f3af4ea2a939546c7effe0fb-screen.webp",
+      "thumbnail": "assets/photo-albums/bdaef343f3af4ea2a939546c7effe0fb-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "The Jade Dragon Snow Mountain at Lijiang, shot on Ganheba (Dry River Valley), with William in the distance",
+      "captionKey": "photography.the-jade-dragon-snow-mountain-at-lijia-9f1b3280"
+    },
+    {
+      "id": "80be54edc278405e82fe9c4c5a828442",
+      "filename": "_DSC5316.JPG",
+      "src": "assets/photo-albums/80be54edc278405e82fe9c4c5a828442-full.webp",
+      "screen": "assets/photo-albums/80be54edc278405e82fe9c4c5a828442-screen.webp",
+      "thumbnail": "assets/photo-albums/80be54edc278405e82fe9c4c5a828442-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "A blurred shot of classmates during our Lijiang trip.",
+      "captionKey": "photography.a-blurred-shot-of-classmates-during-ou-b29bcddf"
+    },
+    {
+      "id": "998b2c41eb9b4fbb8f7fbd61f18aa8ed",
+      "filename": "_DSC5401.JPG",
+      "src": "assets/photo-albums/998b2c41eb9b4fbb8f7fbd61f18aa8ed-full.webp",
+      "screen": "assets/photo-albums/998b2c41eb9b4fbb8f7fbd61f18aa8ed-screen.webp",
+      "thumbnail": "assets/photo-albums/998b2c41eb9b4fbb8f7fbd61f18aa8ed-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "The \"Lonely Tree\" at the foot of the Jade Dragon Snow Mountain, shot at dawn",
+      "captionKey": "photography.the-lonely-tree-at-the-foot-of-the-jad-85ca4a9d"
+    },
+    {
+      "id": "a2b0741116ae45408cda24bec26b9b12",
+      "filename": "_DSC5858.JPG",
+      "src": "assets/photo-albums/a2b0741116ae45408cda24bec26b9b12-full.webp",
+      "screen": "assets/photo-albums/a2b0741116ae45408cda24bec26b9b12-screen.webp",
+      "thumbnail": "assets/photo-albums/a2b0741116ae45408cda24bec26b9b12-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "Hiking with classmates on Ganheba, Lijiang",
+      "captionKey": "photography.hiking-with-classmates-on-ganheba-liji-c633827d"
+    },
+    {
+      "id": "d5f10229ca2847d7af6db8124a5cf88e",
+      "filename": "_DSC5932.JPG",
+      "src": "assets/photo-albums/d5f10229ca2847d7af6db8124a5cf88e-full.webp",
+      "screen": "assets/photo-albums/d5f10229ca2847d7af6db8124a5cf88e-screen.webp",
+      "thumbnail": "assets/photo-albums/d5f10229ca2847d7af6db8124a5cf88e-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "The Jade Dragon Snow Mountain at Lijiang, shot on Ganheba (Dry River Valley), with Ethan and William",
+      "captionKey": "photography.the-jade-dragon-snow-mountain-at-lijia-0508dc83"
+    },
+    {
+      "id": "96e3dd46320f405c9e06d2666f4a7acc",
+      "filename": "_DSC5739.JPG",
+      "src": "assets/photo-albums/96e3dd46320f405c9e06d2666f4a7acc-full.webp",
+      "screen": "assets/photo-albums/96e3dd46320f405c9e06d2666f4a7acc-screen.webp",
+      "thumbnail": "assets/photo-albums/96e3dd46320f405c9e06d2666f4a7acc-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "Luna behind pine leaves, shot on Ganheba, Lijiang",
+      "captionKey": "photography.luna-behind-pine-leaves-shot-on-ganheb-b6c28897"
+    },
+    {
+      "id": "b5398c81c35c4a0ba7731890bca9fc23",
+      "filename": "_DSC5997.JPG",
+      "src": "assets/photo-albums/b5398c81c35c4a0ba7731890bca9fc23-full.webp",
+      "screen": "assets/photo-albums/b5398c81c35c4a0ba7731890bca9fc23-screen.webp",
+      "thumbnail": "assets/photo-albums/b5398c81c35c4a0ba7731890bca9fc23-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "The calcium precipitate area of Ganheba",
+      "captionKey": "photography.the-calcium-precipitate-area-of-ganheb-931048ce"
+    },
+    {
+      "id": "2781395b7a5e4972845e4816eb802ea5",
+      "filename": "_DSC6466.JPG",
+      "src": "assets/photo-albums/2781395b7a5e4972845e4816eb802ea5-full.webp",
+      "screen": "assets/photo-albums/2781395b7a5e4972845e4816eb802ea5-screen.webp",
+      "thumbnail": "assets/photo-albums/2781395b7a5e4972845e4816eb802ea5-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "Horse by the Wenhai Lake, at Lijiang",
+      "captionKey": "photography.horse-by-the-wenhai-lake-at-lijiang-c60667b7"
+    },
+    {
+      "id": "de52821c71e14d94ad2f562d4cd4aab8",
+      "filename": "_DSC6376.JPG",
+      "src": "assets/photo-albums/de52821c71e14d94ad2f562d4cd4aab8-full.webp",
+      "screen": "assets/photo-albums/de52821c71e14d94ad2f562d4cd4aab8-screen.webp",
+      "thumbnail": "assets/photo-albums/de52821c71e14d94ad2f562d4cd4aab8-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "S223: the most spectacular highway in Lijinag",
+      "captionKey": "photography.s223-the-most-spectacular-highway-in-l-cd252cb9"
+    },
+    {
+      "id": "132ddafcb71b439587f386809f9a4d64",
+      "filename": "DSC02870.jpg",
+      "src": "assets/photo-albums/132ddafcb71b439587f386809f9a4d64-full.webp",
+      "screen": "assets/photo-albums/132ddafcb71b439587f386809f9a4d64-screen.webp",
+      "thumbnail": "assets/photo-albums/132ddafcb71b439587f386809f9a4d64-thumb.webp",
+      "width": 5472,
+      "height": 3648,
+      "caption": "Snow in early January, shot from campus",
+      "captionKey": "photography.snow-in-early-january-shot-from-campus-d49812a9"
+    },
+    {
+      "id": "060c34839b6e49b28ef5feee78da2ead",
+      "filename": "_DSC9480.JPG",
+      "src": "assets/photo-albums/060c34839b6e49b28ef5feee78da2ead-full.webp",
+      "screen": "assets/photo-albums/060c34839b6e49b28ef5feee78da2ead-screen.webp",
+      "thumbnail": "assets/photo-albums/060c34839b6e49b28ef5feee78da2ead-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "The Northern part of Nanjing City, with Mufu Mountain in the distance, shot through fog in the blue hour",
+      "captionKey": "photography.the-northern-part-of-nanjing-city-with-f231bdc6"
+    },
+    {
+      "id": "6fea62dee0e84fe99d2570cbdd9c9435",
+      "filename": "_DSC7242_1.jpg",
+      "src": "assets/photo-albums/6fea62dee0e84fe99d2570cbdd9c9435-full.webp",
+      "screen": "assets/photo-albums/6fea62dee0e84fe99d2570cbdd9c9435-screen.webp",
+      "thumbnail": "assets/photo-albums/6fea62dee0e84fe99d2570cbdd9c9435-thumb.webp",
+      "width": 2914,
+      "height": 2914,
+      "caption": "Firefly captured at night in Dr. Sun Yet-sen's Mausoleum",
+      "captionKey": "photography.firefly-captured-at-night-in-dr-sun-ye-facd0b43"
+    },
+    {
+      "id": "ed9c619e7ea947c094a76841162cb7c4",
+      "filename": "_XE54480.JPG",
+      "src": "assets/photo-albums/ed9c619e7ea947c094a76841162cb7c4-full.webp",
+      "screen": "assets/photo-albums/ed9c619e7ea947c094a76841162cb7c4-screen.webp",
+      "thumbnail": "assets/photo-albums/ed9c619e7ea947c094a76841162cb7c4-thumb.webp",
+      "width": 7728,
+      "height": 5152,
+      "caption": "Edor playing Telecaster during rehearsal at school",
+      "captionKey": "photography.edor-playing-telecaster-during-rehears-c84ec3ed"
+    },
+    {
+      "id": "ea2a99848fcc4881b43bcbbf7a5d6c62",
+      "filename": "_XE54482.JPG",
+      "src": "assets/photo-albums/ea2a99848fcc4881b43bcbbf7a5d6c62-full.webp",
+      "screen": "assets/photo-albums/ea2a99848fcc4881b43bcbbf7a5d6c62-screen.webp",
+      "thumbnail": "assets/photo-albums/ea2a99848fcc4881b43bcbbf7a5d6c62-thumb.webp",
+      "width": 7728,
+      "height": 5152,
+      "caption": "Ryan C. X. at rehearsal",
+      "captionKey": "photography.ryan-c-x-at-rehearsal-10107be2"
+    },
+    {
+      "id": "36421a0b98d34e3fb7c2b9848d088889",
+      "filename": "_XE54481.JPG",
+      "src": "assets/photo-albums/36421a0b98d34e3fb7c2b9848d088889-full.webp",
+      "screen": "assets/photo-albums/36421a0b98d34e3fb7c2b9848d088889-screen.webp",
+      "thumbnail": "assets/photo-albums/36421a0b98d34e3fb7c2b9848d088889-thumb.webp",
+      "width": 5152,
+      "height": 7728,
+      "caption": "William playing bass at rehearsal",
+      "captionKey": "photography.william-playing-bass-at-rehearsal-672a682e"
+    },
+    {
+      "id": "d9fdc600ed8b404187a85af0db555ed8",
+      "filename": "DSC08335.jpg",
+      "src": "assets/photo-albums/d9fdc600ed8b404187a85af0db555ed8-full.webp",
+      "screen": "assets/photo-albums/d9fdc600ed8b404187a85af0db555ed8-screen.webp",
+      "thumbnail": "assets/photo-albums/d9fdc600ed8b404187a85af0db555ed8-thumb.webp",
+      "width": 6000,
+      "height": 4000,
+      "caption": "Ryan H. X. on top of a skyscraper in downtown Nanjing, shot with flash and long-exposure",
+      "captionKey": "photography.ryan-h-x-on-top-of-a-skyscraper-in-dow-05469389"
+    },
+    {
+      "id": "dab2bead913d4a83878950c63c1e879d",
+      "filename": "_DSC0544.JPG",
+      "src": "assets/photo-albums/dab2bead913d4a83878950c63c1e879d-full.webp",
+      "screen": "assets/photo-albums/dab2bead913d4a83878950c63c1e879d-screen.webp",
+      "thumbnail": "assets/photo-albums/dab2bead913d4a83878950c63c1e879d-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "Three Tajik girls at the wedding, Taheman Village, Kashgar",
+      "captionKey": "photography.three-tajik-girls-at-the-wedding-tahem-7ce7113f"
+    },
+    {
+      "id": "4295c7e1c2184398b250d0333a4674fe",
+      "filename": "_DSC0561.JPG",
+      "src": "assets/photo-albums/4295c7e1c2184398b250d0333a4674fe-full.webp",
+      "screen": "assets/photo-albums/4295c7e1c2184398b250d0333a4674fe-screen.webp",
+      "thumbnail": "assets/photo-albums/4295c7e1c2184398b250d0333a4674fe-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "Eagle dance at the wedding, Taheman Village, Kashgar",
+      "captionKey": "photography.eagle-dance-at-the-wedding-taheman-vil-21416644"
+    },
+    {
+      "id": "b207c25404b2492f93437f21dbbc5255",
+      "filename": "_DSC0594.JPG",
+      "src": "assets/photo-albums/b207c25404b2492f93437f21dbbc5255-full.webp",
+      "screen": "assets/photo-albums/b207c25404b2492f93437f21dbbc5255-screen.webp",
+      "thumbnail": "assets/photo-albums/b207c25404b2492f93437f21dbbc5255-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "The Sheep Race at the wedding, Taheman Village, Kashgar",
+      "captionKey": "photography.the-sheep-race-at-the-wedding-taheman-8086763b"
+    },
+    {
+      "id": "9e8a4ca9c0ad443fb0d93aca77bfd95b",
+      "filename": "_DSC0527.JPG",
+      "src": "assets/photo-albums/9e8a4ca9c0ad443fb0d93aca77bfd95b-full.webp",
+      "screen": "assets/photo-albums/9e8a4ca9c0ad443fb0d93aca77bfd95b-screen.webp",
+      "thumbnail": "assets/photo-albums/9e8a4ca9c0ad443fb0d93aca77bfd95b-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "Eagle dance at the wedding, Taheman Village, Kashgar",
+      "captionKey": "photography.eagle-dance-at-the-wedding-taheman-vil-21416644"
+    },
+    {
+      "id": "e5cd357202de4f65a076152ee2029d48",
+      "filename": "_DSC0541.JPG",
+      "src": "assets/photo-albums/e5cd357202de4f65a076152ee2029d48-full.webp",
+      "screen": "assets/photo-albums/e5cd357202de4f65a076152ee2029d48-screen.webp",
+      "thumbnail": "assets/photo-albums/e5cd357202de4f65a076152ee2029d48-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "Ada (left) and Rukiya (right) at the wedding, Taheman Village, Kashgar",
+      "captionKey": "photography.ada-left-and-rukiya-right-at-the-weddi-033137fa"
+    },
+    {
+      "id": "df016ff41e684197938b43669d6bab11",
+      "filename": "_DSC0612.JPG",
+      "src": "assets/photo-albums/df016ff41e684197938b43669d6bab11-full.webp",
+      "screen": "assets/photo-albums/df016ff41e684197938b43669d6bab11-screen.webp",
+      "thumbnail": "assets/photo-albums/df016ff41e684197938b43669d6bab11-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "The Sheep Race at the wedding, Taheman Village, Kashgar",
+      "captionKey": "photography.the-sheep-race-at-the-wedding-taheman-8086763b"
+    },
+    {
+      "id": "c3a0c2d832d14e458f247cb892f37026",
+      "filename": "_DSC0879.JPG",
+      "src": "assets/photo-albums/c3a0c2d832d14e458f247cb892f37026-full.webp",
+      "screen": "assets/photo-albums/c3a0c2d832d14e458f247cb892f37026-screen.webp",
+      "thumbnail": "assets/photo-albums/c3a0c2d832d14e458f247cb892f37026-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "This is a series of photos displaying the art of highways and the view around them in Kashgar, all shot from the passenger seat: The Tajikistan-China Border on National Highway G314",
+      "captionKey": "photography.this-is-a-series-of-photos-displaying-378c94f4"
+    },
+    {
+      "id": "943db98354b141f9b4e2db89be10b372",
+      "filename": "_DSC0918.JPG",
+      "src": "assets/photo-albums/943db98354b141f9b4e2db89be10b372-full.webp",
+      "screen": "assets/photo-albums/943db98354b141f9b4e2db89be10b372-screen.webp",
+      "thumbnail": "assets/photo-albums/943db98354b141f9b4e2db89be10b372-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "Red truck running across G314, at Akto County, Kashgar",
+      "captionKey": "photography.red-truck-running-across-g314-at-akto-b30b0b17"
+    },
+    {
+      "id": "ec5447a672104b9d9be58e994e94c0b4",
+      "filename": "_DSC0939.JPG",
+      "src": "assets/photo-albums/ec5447a672104b9d9be58e994e94c0b4-full.webp",
+      "screen": "assets/photo-albums/ec5447a672104b9d9be58e994e94c0b4-screen.webp",
+      "thumbnail": "assets/photo-albums/ec5447a672104b9d9be58e994e94c0b4-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "Bulunkulehu (White Sand Lake or Lake at the Foot of the Mountain) viewed from a branch of G314",
+      "captionKey": "photography.bulunkulehu-white-sand-lake-or-lake-at-9630bef0"
+    },
+    {
+      "id": "9b8235ccadb7476ebbdc66f327ac0cd9",
+      "filename": "_DSC1062.JPG",
+      "src": "assets/photo-albums/9b8235ccadb7476ebbdc66f327ac0cd9-full.webp",
+      "screen": "assets/photo-albums/9b8235ccadb7476ebbdc66f327ac0cd9-screen.webp",
+      "thumbnail": "assets/photo-albums/9b8235ccadb7476ebbdc66f327ac0cd9-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "Exit ramp of an exit of G314, Kashgar",
+      "captionKey": "photography.exit-ramp-of-an-exit-of-g314-kashgar-a229a075"
+    },
+    {
+      "id": "e7b8a65ea48d4f37855f1eec9bb66c5e",
+      "filename": "_DSC1004.JPG",
+      "src": "assets/photo-albums/e7b8a65ea48d4f37855f1eec9bb66c5e-full.webp",
+      "screen": "assets/photo-albums/e7b8a65ea48d4f37855f1eec9bb66c5e-screen.webp",
+      "thumbnail": "assets/photo-albums/e7b8a65ea48d4f37855f1eec9bb66c5e-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "Muji Volcanic Crater with Kungay Mountains in the background, shot by border highway Z683",
+      "captionKey": "photography.muji-volcanic-crater-with-kungay-mount-b7ca95cd"
+    },
+    {
+      "id": "dd34dfc0e4fb4908b4c99635c8966436",
+      "filename": "_DSC1016.JPG",
+      "src": "assets/photo-albums/dd34dfc0e4fb4908b4c99635c8966436-full.webp",
+      "screen": "assets/photo-albums/dd34dfc0e4fb4908b4c99635c8966436-screen.webp",
+      "thumbnail": "assets/photo-albums/dd34dfc0e4fb4908b4c99635c8966436-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": "A piece of wetland shot from border highway Z683",
+      "captionKey": "photography.a-piece-of-wetland-shot-from-border-hi-cd4983b4"
     }
-  ]
+  ],
+  "stripAlbum": {
+    "id": "main-page-strip",
+    "title": "Main page strip",
+    "photoIds": [
+      "candidate-10",
+      "943db98354b141f9b4e2db89be10b372",
+      "candidate-04",
+      "candidate-12",
+      "4295c7e1c2184398b250d0333a4674fe",
+      "candidate-23",
+      "d42d5ddd96a4423ebffa1e4280af7fb5",
+      "candidate-19",
+      "candidate-20",
+      "candidate-18",
+      "ea2a99848fcc4881b43bcbbf7a5d6c62",
+      "6fea62dee0e84fe99d2570cbdd9c9435",
+      "132ddafcb71b439587f386809f9a4d64",
+      "candidate-17",
+      "d5f10229ca2847d7af6db8124a5cf88e",
+      "d9fdc600ed8b404187a85af0db555ed8",
+      "df016ff41e684197938b43669d6bab11",
+      "e7b8a65ea48d4f37855f1eec9bb66c5e"
+    ]
+  }
 }

@@ -6,12 +6,13 @@
 <meta name="theme-color" content="#0b0d0f">
 <meta name="description" content="Photographs by NeutronStar714, from hiking trips across China and places closer to home.">
 <title>Photography — NeutronStar714</title>
+<link rel="icon" type="image/png" sizes="1024x1024" href="assets/neutronstar714-tab.png?v=1">
 <link rel="stylesheet" href="styles.css?v=13">
 <link rel="stylesheet" href="player.css?v=3">
 <link rel="stylesheet" href="site-nav.css?v=4">
-<link rel="stylesheet" href="photography.css?v=6">
+<link rel="stylesheet" href="photography.css?v=11">
 <script defer src="site-player.js?v=6"></script>
-<script defer src="site-nav.js?v=5"></script>
+<script defer src="site-nav.js?v=6"></script>
 <script defer src="site-copy.js?v=5"></script>
 </head>
 <body class="photography-page" id="top">
@@ -24,28 +25,33 @@
     <a data-section="rock" href="rock-band.html">Rock Band</a>
     <a data-section="products" href="products.html">Products</a>
     <a data-section="photography" href="photography.html" aria-current="page">Photography</a>
-    <a data-section="about" href="about.html">About me</a>
   </nav>
 </header>
 <main class="photography-main" id="photography-main">
-  <header class="photography-intro"><h1>Photography</h1><p>Photographs from hiking trips across China, and the people, architecture, and infrastructure around Nanjing.</p></header>
-  <section class="album-grid" aria-label="Photograph albums"></section>
+  <header class="photography-intro"><h1>Photography</h1><aside class="belt-info" aria-live="polite" aria-atomic="true"><p class="belt-info-origin"><span>From</span> <span class="belt-info-album"></span></p><p class="belt-info-caption" hidden></p></aside><p class="photography-description">Photographs from hiking trips across China, and the people, architecture, and infrastructure around Nanjing.</p></header>
+  <section class="photo-belt" aria-label="Photograph previews" hidden>
+    <div class="photo-belt-viewport"></div>
+  </section>
+  <section class="album-collection" aria-labelledby="albums-heading"><h2 id="albums-heading">Albums</h2><div class="album-grid" aria-label="Photograph albums"></div></section>
   <p class="album-load-status" role="status" hidden>Could not load the albums. Please try again.</p>
   <button class="album-retry" type="button" hidden>Try again</button>
 </main>
 <dialog class="album-viewer" aria-labelledby="album-viewer-title">
   <div class="album-viewer-shell">
-    <header class="album-viewer-header"><h2 id="album-viewer-title"></h2><div class="album-viewer-tools"><button type="button" class="slideshow-play">Play slideshow</button><button type="button" class="album-viewer-close" aria-label="Close album">&#215;</button></div></header>
+    <header class="album-viewer-header"><h2 id="album-viewer-title"></h2><button type="button" class="album-viewer-close" aria-label="Close album">&#215;</button></header>
+    <div class="album-workspace">
+    <div class="album-primary">
     <div class="album-stage" tabindex="0" aria-label="Photograph viewer">
       <img class="album-slide" alt="" draggable="false">
       <p class="slide-load-status" role="status" hidden>Loading photograph</p>
-      <button class="slide-previous" type="button" aria-label="Previous photograph">&#8592;</button><button class="slide-next" type="button" aria-label="Next photograph">&#8594;</button>
-      <div class="slide-zoom"><button type="button" class="slide-zoom-out" aria-label="Zoom out">&#8722;</button><button type="button" class="slide-zoom-fit">Fit</button><button type="button" class="slide-zoom-in" aria-label="Zoom in">+</button></div>
     </div>
     <footer class="album-viewer-footer"><div class="slide-writing"><p class="slide-caption" hidden></p><nav class="slide-related" aria-label="This photograph in other albums" hidden></nav></div><span class="slide-position" aria-live="polite" data-site-copy-ignore></span></footer>
+    </div>
+    <nav class="album-carousel" aria-label="Photographs in this album"><div class="album-thumbnails"></div><button type="button" class="carousel-previous" aria-label="Previous photograph">&#8593;</button><button type="button" class="carousel-next" aria-label="Next photograph">&#8595;</button></nav>
+    </div>
   </div>
 </dialog>
-<template id="album-messages"><span>Open album</span><span>See also</span><span>Play slideshow</span><span>Pause slideshow</span><span>Album is empty</span><span>Loading photograph</span><span>Could not load this photograph.</span><span>Try again</span><span>Photograph</span></template>
+<template id="album-messages"><span>Open album</span><span>See also</span><span>Album is empty</span><span>Loading photograph</span><span>Could not load this photograph.</span><span>Try again</span><span>Photograph</span></template>
 <footer class="photography-footer"><span>NeutronStar714</span><a href="#top">Back to top</a></footer>
 </body>
 </html>
