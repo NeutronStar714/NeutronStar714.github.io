@@ -30,7 +30,17 @@ editor action under Editor options. The same enable command brings it back.
   that album membership.
 - Check pool photographs and choose Add selected to album as a keyboard/touch
   alternative to dragging.
-- Set as cover changes the album's cover; the slideshow keeps its own order.
+- To delete pool photographs, check them and choose Delete photographs. After
+  confirmation they are removed from every album, and affected album covers are
+  replaced. Their website image copies and a recovery record are archived under
+  `.local/photo-pool-trash/`; external originals and all Markdown text are kept.
+- Drag an album by its grip to set the album order on the public page. Drop it
+  above or below another album, or use its up/down buttons. This order is saved
+  immediately and persists after reloading the editor.
+- Set as cover changes the album's cover; the album keeps its own photo order.
+  The public cover opens that selected cover photo. Editor saves notify other
+  local gallery tabs immediately; returning to a visible tab also refreshes its
+  album data. The live GitHub site updates after the usual commit and pushes.
 - Create, rename or delete albums. Deleting an album leaves its photos in the pool.
 - Edit an optional caption under each pool photograph and choose Save caption.
 
@@ -49,6 +59,43 @@ hide their display; they never delete earlier writing from the Markdown file.
 Photo 15 belongs to both The blue hour and Hiking, on the way. Its viewer offers
 See also links in both directions, opening that same photograph in the other album.
 
-The viewer supports previous/next, arrow keys, swipe, optional slideshow playback,
-wheel/pinch zoom, drag to pan and Fit. Escape closes the viewer and returns focus.
+The viewer divides its space 2:1 between the selected photograph and a vertical
+carousel of every photograph in that album. The selected card stays at the vertical
+center at full size. Up to three neighbors in each direction shrink progressively
+and overlap behind it, with animated expansion/contraction as selection changes.
+One wheel gesture advances one photograph; trackpad momentum is grouped until
+there has been a 180 ms input gap. Click an exposed card, swipe the carousel,
+use its up/down buttons, or navigate with arrow keys and Home/End.
+It has no slideshow playback or arrow/zoom buttons over the main photo. Left/right
+arrow keys and swipe navigate; wheel/pinch zoom and drag to pan remain supported.
+Double-click the photo to magnify it or return it to its fitted size.
+Escape closes the viewer and returns focus.
 The global music player survives page changes and continues while viewing albums.
+
+The public page also has two continuous rows of photograph previews above the
+album covers, taking roughly half the viewport height. They move in opposite
+directions, with no gaps, frames, or background boxes around individual images.
+The selection is split into disjoint rows, with one extra photo in the first row
+when the total is odd. Neither row is padded with photos from the other row;
+each row repeats only its own sequence for the continuous animation.
+Photographs retain their own aspect ratios. The strip has no pause controls or
+hover/focus/viewer/offscreen pause behavior.
+
+The pinned **Main page strip** album at the top of the private editor chooses
+exactly which photographs appear in the strip, and in what order. It starts with
+the previous strip selection. Drag from the pool to add photographs, reorder them
+within the pinned album, and remove them without affecting other albums. Leaving
+it empty hides the strip. It stays pinned above ordinary albums, has no cover,
+and is not listed among the public album covers. New uploads and changes to
+ordinary albums do not automatically change this selection.
+
+Click a preview to open that photograph in an ordinary album when possible;
+photos curated only for the strip open in the strip selection instead.
+Hovering or focusing a
+preview updates the info box between the heading and introduction: From '[album]',
+followed by its optional caption on up to two lines. The last preview's information
+stays visible so it can be read while the photos continue moving. The strip uses
+thumbnails and never preloads full-resolution images.
+Hover tracking also checks the photo passing beneath a stationary pointer, with
+a light cyan outline on the current photo. The pointer check runs only while the
+cursor is over the strip. The heading row's top padding has been reduced by 80%.

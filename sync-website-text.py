@@ -21,7 +21,7 @@ PAGES = OrderedDict([
     ("discography", "discography.html"),
     ("rock", "rock-band.html"),
     ("products", "products.html"),
-    ("about", "about.html"),
+    ("about", "../tools/archive/about/about.html"),
     ("photography", "photography.html"),
     ("editor", "../tools/photo-album-editor.html"),
 ])
@@ -161,11 +161,14 @@ if album_path.exists():
     albums = json.loads(album_path.read_text(encoding='utf-8'))
     for album in albums['albums']:
         add('photography', album['title'])
+    if albums.get('stripAlbum'):
+        add('photography', albums['stripAlbum']['title'])
     for photo in albums['photos']:
         add('photography', photo.get('caption', ''))
     for message in ('Unknown album', 'Unknown photograph', 'Invalid text', 'Photo exceeds 30 MB',
                     'Photo exceeds 60 megapixels', 'Unsupported image', 'Invalid image',
-                    'Could not write the photograph. Your changes have not been saved.'):
+                    'Could not write the photograph. Your changes have not been saved.',
+                    'Invalid album order', 'Invalid photograph path'):
         add('editor', message)
 
 previous_manifest = []

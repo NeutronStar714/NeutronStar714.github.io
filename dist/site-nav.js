@@ -8,8 +8,7 @@
     'discography.html': { name: 'discography', module: './app.js?v=12' },
     'rock-band.html': { name: 'rock', module: './rock-band.js?v=3' },
     'products.html': { name: 'products', module: './products.js?v=5' },
-    'about.html': { name: 'about' },
-    'photography.html': { name: 'photography', module: './photography.js?v=5' }
+    'photography.html': { name: 'photography', module: './photography.js?v=12' }
   };
   const filename = url => url.pathname.split('/').pop() || 'index.html';
   const pageKey = url => pages[filename(url)] ? filename(url) : null;
@@ -85,8 +84,7 @@
   }
 
   function markCurrent() {
-    const section = current.key === 'about.html' && location.hash === '#photography'
-      ? 'photography' : pages[current.key].name;
+    const section = pages[current.key].name;
     for (const link of nav.querySelectorAll('a')) {
       if (link.dataset.section === section) {
         link.setAttribute('aria-current', section === 'photography' ? 'location' : 'page');

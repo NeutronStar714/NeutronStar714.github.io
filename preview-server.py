@@ -212,6 +212,10 @@ class MediaHandler(SimpleHTTPRequestHandler):
             elif route == '/__album-editor/delete-album':
                 store.delete_album(json.loads(content))
                 self.send_json({'deleted': True})
+            elif route == '/__album-editor/album-order':
+                self.send_json({'albums': store.reorder_albums(json.loads(content))})
+            elif route == '/__album-editor/delete-photos':
+                self.send_json(store.delete_photos(json.loads(content)))
             elif route == '/__album-editor/archive':
                 store.set_enabled(False)
                 self.send_json({'archived': True})

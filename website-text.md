@@ -64,7 +64,7 @@ artistic expression.
 ### `home.i-m-neutronstar714-i-make-electronic-m-f17f7e09`
 
 ```text
-I’m NeutronStar714. I make electronic music, play with my school-based band G10, develop audio effect plugins, and take photographs.
+I’m NeutronStar714. I'm interested in chemistry and music. I create by making electronic music, playing with my school-based rock band G10, developing audio effect plugins, and taking photographs.
 ```
 
 ### `home.explore-the-work-273f3154`
@@ -3355,16 +3355,16 @@ Made by us
 ### `rock.we-recorded-the-instruments-ourselves-e1502525`
 
 ```text
-I wrote this riff while randomly strumming on my guitar, and the lyrics came to me as I was climbing up the Glacial Lake. I recorded a demo and sent it to my bandmates, together, we developed the whole song. As high school students, we don't have sophisticated equipment or substantial budget to rent studios. Instead, we fully utilized our school's equipment and our creativity. For drums, we used a set of four microphones, each two connecting to one of our 2-in sound cards, and plugged into one computer's DAW to set up multi-track recording. For other instruments, we moved all our instruments and amps to a storage room with soundproof materials in the school to simulate studio-like acoustic environment. Finally, I used my knowledge from electronic music to mix all the recorded tracks, massively applying equalizers and compressors to balance different instruments and reduce noise.
+I came up with this riff while randomly strumming on my guitar, and the lyrics came to me as I was climbing up the Glacial Lake. I recorded a demo and sent it to my bandmates, together, we developed the whole song. As high school students, we don't have sophisticated equipment or substantial budget to rent studios. Instead, we fully utilized our school's equipment and our creativity. For drums, we used a set of four microphones, each two connecting to one of our 2-in sound cards, and plugged into one computer's DAW to set up multi-track recording. For other instruments, we moved all our instruments and amps to a storage room with soundproof materials in the school to simulate studio-like acoustic environment. Finally, I used my knowledge from electronic music to mix all the recorded tracks, massively applying equalizers and compressors to balance different instruments and reduce noise.
 
 Credits:
-Drums - Ryan Xu
-Electric guitar - Edor
-Electric guitar, mixing, recording - NeutronStar714
-Bass guitar - MellonKolly
-Recording - CaiJw
-Recording - Besidist
-Artwork - MellonKolly
+Drums - Ryan C. X.
+Electric guitar - Edor F.
+Electric guitar, mixing, recording - Andy F. (NeutronStar714)
+Bass guitar - William H. (MellonKolly)
+Recording - Ryan H. X. (CaiJw)
+Recording - Alex X. (Besidist)
+Artwork - William H.
 
 ```
 
@@ -3373,13 +3373,13 @@ Artwork - MellonKolly
 ### `rock.ryan-xu-playing-the-drums-for-anyone-d-6ea6b2e2`
 
 ```text
-Ryan Xu playing the drums for Anyone during a recording session
+Ryan C. X. playing the drums for Anyone during a recording session
 ```
 
 ### `rock.mellonkolly-recording-bass-for-anyone-8a38aa07`
 
 ```text
-MellonKolly recording bass for Anyone in our mini-studio
+William recording bass for Anyone in our mini-studio
 ```
 
 
@@ -5057,5 +5057,809 @@ Invalid image
 
 ```text
 Could not write the photograph. Your changes have not been saved.
+```
+
+
+## Editor
+
+### `editor.delete-photographs-c691642a`
+
+```text
+Delete photographs
+```
+
+### `editor.drag-albums-to-set-their-order-on-the-861e8bf0`
+
+```text
+Drag albums to set their order on the photography page.
+```
+
+### `editor.drag-to-reorder-album-0db9a9b5`
+
+```text
+Drag to reorder album
+```
+
+### `editor.move-album-earlier-d2005a9c`
+
+```text
+Move album earlier
+```
+
+### `editor.move-album-later-a6d4993d`
+
+```text
+Move album later
+```
+
+### `editor.delete-selected-photographs-from-the-p-6a39f98d`
+
+```text
+Delete selected photographs from the pool and every album?
+```
+
+### `editor.original-source-files-and-website-text-07c986d6`
+
+```text
+Original source files and website-text.md are kept.
+```
+
+### `editor.photographs-deleted-f22e6e99`
+
+```text
+Photographs deleted.
+```
+
+### `editor.invalid-album-order-4c136041`
+
+```text
+Invalid album order
+```
+
+### `editor.invalid-photograph-path-4feb1fcf`
+
+```text
+Invalid photograph path
+```
+
+
+## Photography
+
+### `photography.photograph-previews-7a128943`
+
+```text
+Photograph previews
+```
+
+### `photography.pause-photographs-85ff4d31`
+
+```text
+Pause photographs
+```
+
+### `photography.albums-4c45e72e`
+
+```text
+Albums
+```
+
+### `photography.resume-photographs-5457c73b`
+
+```text
+Resume photographs
+```
+
+
+## Photography
+
+### `photography.from-3f66052a`
+
+```text
+From
+```
+
+
+## Photography
+
+### `photography.saihongqiao-interchange-in-downtown-na-cc48e629`
+
+```text
+Saihongqiao Interchange in downtown Nanjing
+```
+
+
+## Photography
+
+### `photography.banqiao-an-abandoned-development-zone-c3dd9367`
+
+```text
+Banqiao, an abandoned development zone with "historical looking" bridges
+```
+
+
+## Photography
+
+### `photography.national-freeway-g4211-banqiao-section-162c2a63`
+
+```text
+National freeway G4211, Banqiao section, shot in winter
+```
+
+
+## Photography
+
+### `photography.the-jiading-to-minhang-expressway-the-03d8b835`
+
+```text
+The Jiading to Minhang expressway, the highest bridges in Shanghai
+```
+
+
+## Photography
+
+### `photography.the-jiading-to-minhang-expressway-ramp-88ae0e6c`
+
+```text
+The Jiading to Minhang expressway, ramps shot from underneath
+```
+
+
+## Photography
+
+### `photography.an-unfinished-road-intercepted-by-an-u-48eeb1fb`
+
+```text
+An unfinished road intercepted by an urban village in Jiangning, Nanjing
+```
+
+
+## Photography
+
+### `photography.the-unfinished-road-under-highspeed-ra-a3ba5eba`
+
+```text
+The unfinished road under highspeed railway viaducts in Jiangning, Nanjing
+```
+
+
+## Photography
+
+### `photography.an-exit-of-nanjing-s-ring-expressway-g-df2e37fd`
+
+```text
+An exit of Nanjing's ring expressway, G42 section shot at night
+```
+
+
+## Photography
+
+### `photography.long-exposure-shot-of-a-passing-highsp-b6380fea`
+
+```text
+Long-exposure shot of a passing highspeed train in the blue hour, near G312, Qixia, Nanjing
+```
+
+
+## Photography
+
+### `photography.sunset-on-the-peak-of-zijin-mountain-w-e6846d74`
+
+```text
+Sunset on the peak of Zijin Mountain, with Zifeng Tower and Xuanwu Lake in the distance.
+```
+
+
+## Photography
+
+### `photography.ridge-of-zijin-mountain-with-the-city-b2f810e6`
+
+```text
+Ridge of Zijin Mountain, with the city in the distance
+```
+
+
+## Photography
+
+### `photography.trees-with-sunset-and-city-lights-shot-e35853d5`
+
+```text
+Trees with sunset and city lights shot in a hiking path on Zijin Mountain
+```
+
+
+## Photography
+
+### `photography.nanjing-dashengguan-yangtze-river-brid-9901961a`
+
+```text
+Nanjing Dashengguan Yangtze River Bridge and the railway bridge in the background.
+```
+
+
+## Photography
+
+### `photography.long-exposure-shot-of-a-bird-in-the-mi-3754a19e`
+
+```text
+Long-exposure shot of a bird in the middle of a stream in Shuhe ancient town, Lijiang, creating a phantom effect.
+```
+
+
+## Photography
+
+### `photography.nanjing-poly-theater-shot-on-the-eye-o-32f43a0e`
+
+```text
+Nanjing Poly Theater shot on the "Eye of Nanjing" bridge in the blue hour
+```
+
+
+## Photography
+
+### `photography.a-dense-neighbourhood-in-gongbei-port-7c16caf1`
+
+```text
+A dense neighbourhood in Gongbei Port of Entry, Macau. Shot in the blue hour
+```
+
+
+## Photography
+
+### `photography.william-in-shades-and-the-northern-sec-0635deb0`
+
+```text
+William in shades, and the northern section of Nanjing, shot on Zijin Mountain
+```
+
+
+## Photography
+
+### `photography.photographs-in-this-album-ea5c6cf1`
+
+```text
+Photographs in this album
+```
+
+
+## Photography
+
+### `photography.ryan-left-and-william-right-walking-on-7378c98a`
+
+```text
+Ryan (left) and William (right) walking on Qinhuaiwan bridge at night, after rehearsal
+```
+
+
+## Photography
+
+### `photography.having-fun-with-william-left-and-ryan-fe11e7cf`
+
+```text
+Having fun with William (left) and Ryan (right) on the not-yet-opened Qinhuaiwan bridge after late night rehearsal
+```
+
+
+## Photography
+
+### `photography.a-high-jump-athlete-captured-with-slow-92878634`
+
+```text
+A high jump athlete captured with slow-shutter panning in the 2025 NFLS Sport Festival
+```
+
+
+## Photography
+
+### `photography.a-200m-run-athlete-captured-with-slow-448e204c`
+
+```text
+A 200m run athlete captured with slow-shutter panning in the 2024 NFLS Sport Festival
+```
+
+
+## Photography
+
+### `photography.ryan-xu-captured-with-slow-shutter-pan-ef6f419b`
+
+```text
+Ryan Xu captured with slow-shutter panning, running 4x100m relay in the 2024 NFLS Sport Festival
+```
+
+
+## Photography
+
+### `photography.text-9555ffd7`
+
+```text
+↑
+```
+
+### `photography.text-fc486696`
+
+```text
+↓
+```
+
+
+## Editor
+
+### `editor.these-photographs-appear-in-the-moving-d5d3aae6`
+
+```text
+These photographs appear in the moving strip on the photography page. Arrange them here without changing your other albums. An empty selection hides the strip.
+```
+
+### `editor.pinned-f9312169`
+
+```text
+Pinned
+```
+
+
+## Photography
+
+### `photography.main-page-strip-2fd7c2e7`
+
+```text
+Main page strip
+```
+
+
+## Photography
+
+### `photography.ryan-c-x-left-and-william-right-walkin-d06e1896`
+
+```text
+Ryan C. X. (left) and William (right) walking on Qinhuaiwan bridge at night, after rehearsal
+```
+
+
+## Photography
+
+### `photography.ryan-h-x-0982e365`
+
+```text
+Ryan H. X.
+```
+
+
+## Photography
+
+### `photography.filming-a-music-video-with-ryan-h-x-at-4cd1fb25`
+
+```text
+Filming a music video with Ryan H. X. at G312
+```
+
+
+## Photography
+
+### `photography.the-first-sunrise-of-2025-shot-on-the-8d0bb3b2`
+
+```text
+The first sunrise of 2025, shot on the peak of Zijin Mountain
+```
+
+
+## Photography
+
+### `photography.yellow-street-lights-on-the-not-yet-op-a8811fb6`
+
+```text
+Yellow street lights on the not-yet-opened Qinhuaiwan Bridge
+```
+
+
+## Photography
+
+### `photography.ryan-h-x-captured-with-slow-shutter-pa-ad43cab5`
+
+```text
+Ryan H. X. captured with slow-shutter panning, running 4x100m relay in the 2024 NFLS Sport Festival
+```
+
+
+## Photography
+
+### `photography.firework-exploding-in-the-sky-during-t-2f694c63`
+
+```text
+Firework exploding in the sky during the Dragon Lantern Festival in Hongguan Village, Wuyuan County
+```
+
+
+## Photography
+
+### `photography.a-wedding-in-lingjiao-village-wuyuan-c-8d0bda87`
+
+```text
+A wedding in Lingjiao Village, Wuyuan County. Thick fog from firecrackers.
+```
+
+
+## Photography
+
+### `photography.firecrackers-exploding-on-the-gound-du-3cbd7766`
+
+```text
+Firecrackers exploding on the gound during the Dragon Lantern Festival
+```
+
+
+## Photography
+
+### `photography.firework-exploding-in-the-sky-during-t-56edf34b`
+
+```text
+Firework exploding in the sky during the Loong Lantern Festival in Hongguan Village, Wuyuan County
+```
+
+
+## Photography
+
+### `photography.firecrackers-exploding-on-the-gound-du-124302d3`
+
+```text
+Firecrackers exploding on the gound during the Loong Lantern Festival
+```
+
+
+## Photography
+
+### `photography.the-loong-surrounded-by-lanterns-in-th-b722b550`
+
+```text
+The Loong, surrounded by lanterns, in the final phase of the Loong Lantern Festival
+```
+
+
+## Photography
+
+### `photography.the-loong-surrounded-by-lanterns-in-th-447434f9`
+
+```text
+The Loong, surrounded by lanterns, in the final dancing phase of the Loong Lantern Festival
+```
+
+
+## Photography
+
+### `photography.the-jade-dragon-snow-mountain-shot-on-a0c35ef6`
+
+```text
+The Jade Dragon Snow Mountain, shot on Ganheba (Dry River Valley), with William in the distance
+```
+
+
+## Photography
+
+### `photography.a-blurred-shot-of-classmates-during-ou-b29bcddf`
+
+```text
+A blurred shot of classmates during our Lijiang trip.
+```
+
+
+## Photography
+
+### `photography.the-jade-dragon-snow-mountain-at-lijia-9f1b3280`
+
+```text
+The Jade Dragon Snow Mountain at Lijiang, shot on Ganheba (Dry River Valley), with William in the distance
+```
+
+
+## Photography
+
+### `photography.the-lonely-tree-at-the-foot-of-the-jad-85ca4a9d`
+
+```text
+The "Lonely Tree" at the foot of the Jade Dragon Snow Mountain, shot at dawn
+```
+
+
+## Photography
+
+### `photography.hiking-with-classmates-on-ganheba-liji-c633827d`
+
+```text
+Hiking with classmates on Ganheba, Lijiang
+```
+
+
+## Photography
+
+### `photography.the-jade-dragon-snow-mountain-at-lijia-0508dc83`
+
+```text
+The Jade Dragon Snow Mountain at Lijiang, shot on Ganheba (Dry River Valley), with Ethan and William
+```
+
+
+## Photography
+
+### `photography.luna-behind-pine-leaves-shot-on-ganheb-b6c28897`
+
+```text
+Luna behind pine leaves, shot on Ganheba, Lijiang
+```
+
+
+## Photography
+
+### `photography.the-calcium-precipitate-area-of-ganheb-931048ce`
+
+```text
+The calcium precipitate area of Ganheba
+```
+
+
+## Photography
+
+### `photography.horse-by-the-wenhai-lake-at-lijiang-c60667b7`
+
+```text
+Horse by the Wenhai Lake, at Lijiang
+```
+
+
+## Photography
+
+### `photography.s223-the-most-spectacular-highway-in-l-cd252cb9`
+
+```text
+S223: the most spectacular highway in Lijinag
+```
+
+
+## Photography
+
+### `photography.snow-in-early-january-shot-from-campus-d49812a9`
+
+```text
+Snow in early January, shot from campus
+```
+
+
+## Photography
+
+### `photography.the-northern-part-of-nanjing-city-with-f231bdc6`
+
+```text
+The Northern part of Nanjing City, with Mufu Mountain in the distance, shot through fog in the blue hour
+```
+
+
+## Photography
+
+### `photography.firefly-captured-at-night-in-dr-sun-ye-facd0b43`
+
+```text
+Firefly captured at night in Dr. Sun Yet-sen's Mausoleum
+```
+
+
+## Photography
+
+### `photography.edor-f-playing-telecaster-during-rehea-f70aa902`
+
+```text
+Edor F. playing Telecaster during rehearsal at school
+```
+
+
+## Photography
+
+### `photography.ryan-c-x-at-rehearsal-10107be2`
+
+```text
+Ryan C. X. at rehearsal
+```
+
+
+## Photography
+
+### `photography.edor-playing-telecaster-during-rehears-c84ec3ed`
+
+```text
+Edor playing Telecaster during rehearsal at school
+```
+
+
+## Photography
+
+### `photography.william-playing-bass-at-rehearsal-672a682e`
+
+```text
+William playing bass at rehearsal
+```
+
+
+## Photography
+
+### `photography.g10-s-group-photo-after-live-at-xiangt-63236429`
+
+```text
+G10‘s group photo after live at Xiangtang
+```
+
+
+## Photography
+
+### `photography.artistic-photos-b5e70045`
+
+```text
+Artistic Photos
+```
+
+
+## Photography
+
+### `photography.ryan-h-x-on-top-of-a-skyscraper-in-dow-05469389`
+
+```text
+Ryan H. X. on top of a skyscraper in downtown Nanjing, shot with flash and long-exposure
+```
+
+
+## Photography
+
+### `photography.the-loong-lantern-festival-7cfc8f3c`
+
+```text
+The Loong Lantern Festival
+```
+
+
+## Photography
+
+### `photography.a-tajik-wedding-27c825f2`
+
+```text
+A Tajik Wedding
+```
+
+
+## Photography
+
+### `photography.kashgar-and-g314-f29bb471`
+
+```text
+Kashgar and G314
+```
+
+
+## Photography
+
+### `photography.three-tajik-girls-at-the-wedding-tahem-7ce7113f`
+
+```text
+Three Tajik girls at the wedding, Taheman Village, Kashgar
+```
+
+
+## Photography
+
+### `photography.eagle-dance-at-the-wedding-taheman-vil-21416644`
+
+```text
+Eagle dance at the wedding, Taheman Village, Kashgar
+```
+
+
+## Photography
+
+### `photography.the-sheep-race-at-the-wedding-taheman-8086763b`
+
+```text
+The Sheep Race at the wedding, Taheman Village, Kashgar
+```
+
+
+## Photography
+
+### `photography.ada-left-and-rukiya-right-at-the-weddi-033137fa`
+
+```text
+Ada (left) and Rukiya (right) at the wedding, Taheman Village, Kashgar
+```
+
+
+## Photography
+
+### `photography.the-tajikistan-china-border-on-nationa-5e45f25f`
+
+```text
+The Tajikistan-China Border on National Highway G314
+```
+
+
+## Photography
+
+### `photography.this-is-a-series-of-photos-displaying-6501b8f0`
+
+```text
+This is a series of photos displaying the art of highways and the view around them in Kashgar: The Tajikistan-China Border on National Highway G314
+```
+
+
+## Photography
+
+### `photography.bulunkulehu-white-sand-lake-viewed-fro-1bbc3243`
+
+```text
+Bulunkulehu (White Sand Lake) viewed from a branch of G314
+```
+
+
+## Photography
+
+### `photography.bulunkulehu-white-sand-lake-or-lake-at-9630bef0`
+
+```text
+Bulunkulehu (White Sand Lake or Lake at the Foot of the Mountain) viewed from a branch of G314
+```
+
+
+## Photography
+
+### `photography.exit-ramp-of-an-exit-of-g314-kashgar-a229a075`
+
+```text
+Exit ramp of an exit of G314, Kashgar
+```
+
+
+## Photography
+
+### `photography.this-is-a-series-of-photos-displaying-378c94f4`
+
+```text
+This is a series of photos displaying the art of highways and the view around them in Kashgar, all shot from the passenger seat: The Tajikistan-China Border on National Highway G314
+```
+
+
+## Photography
+
+### `photography.red-truck-running-across-g314-at-akto-b30b0b17`
+
+```text
+Red truck running across G314, at Akto County, Kashgar
+```
+
+
+## Photography
+
+### `photography.muji-volcanic-crater-with-kungay-mount-6bd8065f`
+
+```text
+Muji Volcanic Crater with Kungay Mountains in the background
+```
+
+
+## Photography
+
+### `photography.muji-volcanic-crater-with-kungay-mount-8f2f2f94`
+
+```text
+Muji Volcanic Crater with Kungay Mountains in the background, shot by Z683
+```
+
+
+## Photography
+
+### `photography.muji-volcanic-crater-with-kungay-mount-b7ca95cd`
+
+```text
+Muji Volcanic Crater with Kungay Mountains in the background, shot by border highway Z683
+```
+
+
+## Photography
+
+### `photography.a-piece-of-wetland-shot-from-border-hi-cd4983b4`
+
+```text
+A piece of wetland shot from border highway Z683
 ```
 

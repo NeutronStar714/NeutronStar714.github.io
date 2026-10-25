@@ -4,3 +4,17 @@
 
 @media(max-width:600px){.pool-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0}.pool-photo img{height:110px}.pool-photo{padding:6px}.pool-actions>span{font-size:12px}}
 @media(min-width:901px){.album-editor{position:sticky;top:60px;align-self:start;max-height:calc(100dvh - 80px);overflow-y:auto;padding-right:8px}}
+.pool-file-actions{display:flex;flex-direction:column;align-items:stretch;gap:8px;flex-shrink:0}
+#delete-photos{color:#edc3ba;border-color:#83605b;background:transparent}
+.album-order-help{font-size:13px;line-height:1.5;color:#b5c2ca;margin:0 0 12px}
+.album-order-row{display:grid;grid-template-columns:28px minmax(0,1fr) 28px;gap:6px;align-items:stretch}
+.pinned-album-row{display:grid;gap:5px;padding-bottom:14px;margin-bottom:6px;border-bottom:1px solid #52606a}
+.pinned-label{font-size:12px;color:#b5d6e4}
+.pinned-album-row>[data-album-id]{width:100%}
+#strip-album-help{font-size:13px;color:#c3dce6;line-height:1.5}
+#album-list .album-drag-handle{padding:4px;justify-content:center;background:transparent;border-color:transparent;cursor:grab;font-size:24px;touch-action:none}
+#album-list .album-drag-handle:active{cursor:grabbing}
+#album-list .album-order-row>[data-album-id]{min-width:0;width:100%;padding:8px;gap:8px}
+.album-order-row>[data-album-id]>span:first-child{overflow-wrap:anywhere}
+.album-order-controls{display:flex;flex-direction:column;justify-content:center;gap:3px}
+#album-list .album-order-controls button{padding:2px;min-width:26px;min-height:27px;justify-content:center}
