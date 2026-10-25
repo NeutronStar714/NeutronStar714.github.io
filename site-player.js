@@ -39,12 +39,12 @@
   ambient.preload = 'auto';
   ambient.loop = true;
   let shouldPlay = saved.shouldPlay === true;
-  let scrollAttempted = saved.scrollAttempted === true || shouldPlay;
+  let inPhotography = false;
   let active = { audio: ambient, title: songTitle, excerpt: false, cover: starCover };
   const registered = new WeakSet();
 
   function saveState() {
-    try { sessionStorage.setItem(storageKey, JSON.stringify({ shouldPlay, scrollAttempted, time: ambient.currentTime || 0 })); }
+    try { sessionStorage.setItem(storageKey, JSON.stringify({ shouldPlay, time: ambient.currentTime || 0 })); }
     catch { /* The player still works without session storage. */ }
   }
   if (Number.isFinite(saved.time) && saved.time > 0) {
@@ -76,21 +76,32 @@
     dock.classList.toggle('is-playing', playing);
     const action = authored(`${playing ? 'Pause' : 'Play'} ${title}`);
     if (playButton.getAttribute('aria-label') !== action) playButton.setAttribute('aria-label', action);
+    playButton.disabled = audio === ambient && !inPhotography;
     let message = 'Paused';
     if (playing) message = excerpt ? 'Excerpt' : 'On repeat';
     message = authored(message);
     if (status.textContent !== message) status.textContent = message;
   }
   function tryAmbient() {
-    if (!shouldPlay || active.audio !== ambient) return Promise.resolve(false);
+    if (!inPhotography || !shouldPlay || active.audio !== ambient) return Promise.resolve(false);
     return ambient.play().then(() => { sync(); return true; }).catch(() => { sync(); return false; });
   }
-  function startBackground() {
-    if (scrollAttempted || active.audio !== ambient) return;
-    scrollAttempted = true;
-    shouldPlay = true;
+  function updateSection() {
+    const wasInPhotography = inPhotography;
+    inPhotography = document.body.classList.contains('photography-page');
+    if (!inPhotography) {
+      ambient.pause();
+    } else if (!wasInPhotography) {
+      // One shared media element preserves the BGM position between visits.
+      // Switch before pausing the previous track so its release cannot restart it.
+      const previous = active.audio;
+      active = { audio: ambient, title: songTitle, excerpt: false, cover: starCover };
+      if (previous !== ambient) previous.pause();
+      shouldPlay = true;
+      tryAmbient();
+    }
     saveState();
-    tryAmbient();
+    sync();
   }
   function release(audio) {
     if (active.audio !== audio) return;
@@ -136,7 +147,10 @@
       if (audio === ambient) { shouldPlay = false; saveState(); }
       audio.pause();
     } else {
-      if (audio === ambient) { shouldPlay = true; scrollAttempted = true; saveState(); }
+      if (audio === ambient) {
+        if (!inPhotography) return;
+        shouldPlay = true; saveState();
+      }
       audio.play().catch(sync);
     }
     sync();
@@ -146,38 +160,23 @@
     if (Number.isFinite(audio.duration)) audio.currentTime = Number(seek.value) / 100 * audio.duration;
     sync();
   });
-  ['loadedmetadata', 'timeupdate', 'play', 'pause', 'ended'].forEach(event => ambient.addEventListener(event, sync));
+  ['loadedmetadata', 'timeupdate', 'pause', 'ended'].forEach(event => ambient.addEventListener(event, sync));
+  ambient.addEventListener('play', () => {
+    if (!inPhotography) ambient.pause();
+    sync();
+  });
   window.addEventListener('sitecopychange', sync);
   window.addEventListener('pagehide', saveState);
-  {
-    // In-page links that begin the scroll provide the gesture Chrome requires.
-    document.addEventListener('click', event => {
-      if (document.body.classList.contains('home-hub') && event.target instanceof Element &&
-          event.target.closest('a[href="#work"]')) startBackground();
-    });
-    const onScroll = () => {
-      if (!document.body.classList.contains('home-hub') || window.scrollY < 12 || scrollAttempted) return;
-      startBackground();
-      window.removeEventListener('scroll', onScroll);
-    };
-    if (!scrollAttempted) window.addEventListener('scroll', onScroll, { passive: true });
-    // Keyboard scrolling has user activation, so start within that key event.
-    document.addEventListener('keydown', event => {
-      if (!document.body.classList.contains('home-hub')) return;
-      const interactive = event.target instanceof Element && event.target.closest('button, a, input, select, textarea, [contenteditable]');
-      if (!scrollAttempted && !interactive && !event.altKey && !event.ctrlKey && !event.metaKey && ['ArrowDown', 'PageDown', 'Space', 'End'].includes(event.code)) startBackground();
-    });
-    // Wheel scrolling alone may be blocked; the next ordinary gesture can complete playback.
-    function retryAfterGesture(event) {
-      if (!document.body.classList.contains('home-hub')) return;
-      if (!scrollAttempted || !shouldPlay || active.audio !== ambient || !ambient.paused) return;
-      if (event.target instanceof Element && event.target.closest('.music-dock, .player')) return;
-      tryAmbient();
-    }
-    document.addEventListener('pointerdown', retryAfterGesture);
-    document.addEventListener('touchend', retryAfterGesture);
-    document.addEventListener('keydown', retryAfterGesture);
+  // A direct Photography load may need its first ordinary gesture to start.
+  // Manual pause clears shouldPlay, so browsing photos never overrides that choice.
+  function retryAfterGesture(event) {
+    if (!inPhotography || !shouldPlay || active.audio !== ambient || !ambient.paused) return;
+    if (event.target instanceof Element && event.target.closest('.music-dock, .player')) return;
+    tryAmbient();
   }
-  sync();
-  if (shouldPlay) tryAmbient();
+  document.addEventListener('pointerdown', retryAfterGesture);
+  document.addEventListener('touchend', retryAfterGesture);
+  document.addEventListener('keydown', retryAfterGesture);
+  window.addEventListener('sitepagechange', updateSection);
+  updateSection();
 })();
