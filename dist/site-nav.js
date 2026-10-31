@@ -4,9 +4,9 @@
   if (!header || !nav) return;
 
   const pages = {
-    'index.html': { name: 'home', module: './neutron-star.js?v=9' },
-    'discography.html': { name: 'discography', module: './app.js?v=12' },
-    'rock-band.html': { name: 'rock', module: './rock-band.js?v=3' },
+    'index.html': { name: 'home', module: './neutron-star.js?v=10' },
+    'discography.html': { name: 'discography', module: './app.js?v=17' },
+    'rock-band.html': { name: 'rock', module: './rock-band.js?v=4' },
     'products.html': { name: 'products', module: './products.js?v=5' },
     'photography.html': { name: 'photography', module: './photography.js?v=12' }
   };
@@ -17,6 +17,20 @@
   const cache = new Map();
   let navigation = 0;
   let current;
+  let rockScroll;
+
+  function cancelRockScroll() {
+    if (!rockScroll) return;
+    rockScroll.cancelled = true;
+    cancelAnimationFrame(rockScroll.frame);
+    rockScroll = null;
+  }
+  for (const event of ['wheel', 'touchstart', 'pointerdown', 'resize']) {
+    window.addEventListener(event, cancelRockScroll, { passive: true });
+  }
+  window.addEventListener('keydown', event => {
+    if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' ', 'Escape'].includes(event.key)) cancelRockScroll();
+  });
 
   for (const link of document.querySelectorAll('link[rel="stylesheet"]')) {
     styles.set(new URL(link.href).pathname, { link, ready: Promise.resolve() });
@@ -53,7 +67,7 @@
   async function mountFunction(key) {
     if (key === 'discography.html') {
       await Promise.all([
-        import('./releases.js'), import('./release-notes.js?v=10'), import('./waveforms.js')
+        import('./releases.js?v=3'), import('./release-notes.js?v=10'), import('./waveforms.js')
       ]);
     }
     return pages[key].module ? (await import(pages[key].module)).mount : null;
@@ -119,11 +133,43 @@
     else window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }
 
-  async function navigate(url, { pop = false, point = null } = {}) {
+  async function scrollToRockCaption(entry, motion) {
+    const caption = entry.root.querySelector('.rock-banner figcaption');
+    const photo = entry.root.querySelector('.rock-banner-image img');
+    if (!caption) { cancelRockScroll(); return; }
+    // The banner must have its final height before choosing a scroll destination.
+    await Promise.all([document.fonts.ready, photo?.decode().catch(() => {})]);
+    if (motion.cancelled || current !== entry || motion.id !== navigation) return;
+    const range = document.createRange();
+    range.selectNodeContents(caption);
+    const start = scrollY;
+    const destination = Math.max(0, start + range.getBoundingClientRect().top - header.getBoundingClientRect().bottom - 12);
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      window.scrollTo({ top: destination, behavior: 'instant' });
+      rockScroll = null;
+      return;
+    }
+    const began = performance.now();
+    function advance(now) {
+      if (motion.cancelled || motion.id !== navigation || current !== entry) return;
+      const progress = Math.min(1, (now - began) / 1400);
+      const eased = progress < .5 ? 4 * progress ** 3 : 1 - (-2 * progress + 2) ** 3 / 2;
+      window.scrollTo({ top: start + (destination - start) * eased, behavior: 'instant' });
+      if (progress < 1) motion.frame = requestAnimationFrame(advance);
+      else rockScroll = null;
+    }
+    motion.frame = requestAnimationFrame(advance);
+  }
+
+  async function navigate(url, { pop = false, point = null, rockIntro = false } = {}) {
+    cancelRockScroll();
     const id = ++navigation;
+    const motion = rockIntro ? { id, cancelled: false, frame: 0 } : null;
+    if (motion) rockScroll = motion;
     try {
       const next = await loadPage(pageKey(url));
       if (id !== navigation) return;
+      const changedPage = next !== current;
       current.scroll = { x: scrollX, y: scrollY };
       if (!pop) {
         history.replaceState({ ...history.state, scroll: current.scroll }, '', location.href);
@@ -152,7 +198,10 @@
       }
       markCurrent();
       window.dispatchEvent(new CustomEvent('sitepagechange', { detail: { root: current.root } }));
-      positionPage(url, point || (pop && !url.hash ? current.scroll : null));
+      if (motion && !motion.cancelled) {
+        if (changedPage) window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        scrollToRockCaption(current, motion);
+      } else positionPage(url, point || (pop && !url.hash ? current.scroll : null));
       current.lifecycle?.activate?.();
       const main = current.root.querySelector('main');
       if (main && !pop) {
@@ -191,7 +240,7 @@
     const url = new URL(link.href);
     if (url.origin !== location.origin || !pageKey(url) || url.search) return;
     event.preventDefault();
-    initialMount.then(() => navigate(url));
+    initialMount.then(() => navigate(url, { rockIntro: pageKey(url) === 'rock-band.html' && !url.hash }));
   });
   window.addEventListener('popstate', event => {
     const url = new URL(location.href);

@@ -84,6 +84,12 @@ music = json.loads(subprocess.check_output(["node", "-e", node_program], cwd=ROO
 
 for index, release in enumerate(music["releases"], 1):
     add("discography", release["title"])
+    year, month, day = release['date'].split('-')
+    form = 'EP' if release['type'] == 'EP' else release['type'].lower()
+    article = 'An' if form in ('album', 'EP') else 'A'
+    add('discography', f'{article} {form} released on {month}/{day}/{year}.')
+    for link in release.get('links', []):
+        add('discography', link['label'])
     add("discography", release["type"].upper())
     add("discography", release["date"].replace("-", "."))
     add("discography", release["date"][:4])
@@ -109,7 +115,7 @@ for note in music["notes"]:
         add("discography", f"{count} {'track' if count == 1 else 'tracks'}")
 
 for value in (
-    "Listen to selected excerpts", "About this release", "Tracklist", "track", "tracks",
+    "Listen to selected excerpts", "About this release", "Tracklist", "track", "tracks", "Next release",
     "Excerpt", "Could not load this excerpt. Please try again.",
     "Electronic music from 2020 to 2025", "2025 – 2020",
 ):

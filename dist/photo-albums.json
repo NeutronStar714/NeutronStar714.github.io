@@ -26,7 +26,14 @@
         "candidate-06",
         "candidate-07",
         "candidate-08",
-        "candidate-09"
+        "candidate-09",
+        "5b5c76cbc9ed4d40b42882e62b73014a",
+        "78f089a311074a799be100adb5e112e7",
+        "499b5ae249a443c280e7a71e39eb5cf2",
+        "de8be0b589294d60ad931d6010b15a5f",
+        "9397a5d236da4fe8a81ce68f41565c6a",
+        "71dc2eaf06474b4b9313f8498cc12285",
+        "4d4ed1383e954df08fa1ea3349bc8410"
       ],
       "coverId": "candidate-02"
     },
@@ -53,9 +60,48 @@
         "candidate-13",
         "candidate-14",
         "candidate-15",
-        "060c34839b6e49b28ef5feee78da2ead"
+        "060c34839b6e49b28ef5feee78da2ead",
+        "bc68137b193344088fd360a337f7b217",
+        "1d00ae98cd4a463984457ea3ee57a707",
+        "e682faa6a43e42058a0ab4cce3f89924"
       ],
       "coverId": "candidate-10"
+    },
+    {
+      "id": "band",
+      "title": "Shots for the band",
+      "photoIds": [
+        "candidate-25",
+        "candidate-26",
+        "ed9c619e7ea947c094a76841162cb7c4",
+        "ea2a99848fcc4881b43bcbbf7a5d6c62",
+        "36421a0b98d34e3fb7c2b9848d088889",
+        "5093e33bc8bb4d3c9b02adf7c3652290",
+        "bbbbc6c26da145cba5ee057fba559bf4",
+        "8547c2a52a054096a5526b5788f786b5"
+      ],
+      "coverId": "candidate-25"
+    },
+    {
+      "id": "7f6ab942089b4ff9b2cfb787ea9b5930",
+      "photoIds": [
+        "71526f22b6d34d1e96736489a426798e",
+        "df5c56e59e4041f8ae8675d1e989090f",
+        "992012f0688044568a3bb41dba2d270a",
+        "af50e8f9fdb942c191d81339cbd3e93e",
+        "9b6543184f0f4e0e8a07108081734eff",
+        "12035b7f1d6548339548afc9f4eb8da1",
+        "720f7e11c02d4a6b84de31f4c7463fe1",
+        "d35c02ae816e4fce932e0b39f07c3297",
+        "f2cc975e6aa4406e9a248bd49246468a",
+        "19ec862efdc549e3bfd61f605974b572",
+        "ab563e4624fa46a6815338a78f627d77",
+        "5ba2863c64aa4f639b7a75a06470a77d",
+        "e5cd357202de4f65a076152ee2029d48",
+        "d9fdc600ed8b404187a85af0db555ed8"
+      ],
+      "title": "Portraits",
+      "coverId": "71526f22b6d34d1e96736489a426798e"
     },
     {
       "id": "3300-kelvin",
@@ -64,7 +110,8 @@
         "candidate-22",
         "candidate-23",
         "candidate-24",
-        "132ddafcb71b439587f386809f9a4d64"
+        "132ddafcb71b439587f386809f9a4d64",
+        "f6c8f5e34e734b489ed30106f051dabb"
       ],
       "coverId": "candidate-22"
     },
@@ -74,7 +121,9 @@
       "photoIds": [
         "candidate-19",
         "candidate-20",
-        "candidate-21"
+        "candidate-21",
+        "bd74cf000af74aab86cc8da9b0ba379a",
+        "3fe1f1b2122745a5847fdbf4d20564b7"
       ],
       "coverId": "candidate-19"
     },
@@ -95,29 +144,30 @@
         "998b2c41eb9b4fbb8f7fbd61f18aa8ed",
         "80be54edc278405e82fe9c4c5a828442",
         "de52821c71e14d94ad2f562d4cd4aab8",
-        "2781395b7a5e4972845e4816eb802ea5"
+        "2781395b7a5e4972845e4816eb802ea5",
+        "992012f0688044568a3bb41dba2d270a",
+        "d1f0a158eb9c46e0808080950a0acd40",
+        "78f089a311074a799be100adb5e112e7",
+        "af50e8f9fdb942c191d81339cbd3e93e",
+        "b8df58c312804e81a43fdae4d82b7c65"
       ],
       "coverId": "candidate-18"
-    },
-    {
-      "id": "band",
-      "title": "Shots for the band",
-      "photoIds": [
-        "candidate-25",
-        "candidate-26",
-        "ed9c619e7ea947c094a76841162cb7c4",
-        "ea2a99848fcc4881b43bcbbf7a5d6c62",
-        "36421a0b98d34e3fb7c2b9848d088889",
-        "5093e33bc8bb4d3c9b02adf7c3652290",
-        "bbbbc6c26da145cba5ee057fba559bf4"
-      ],
-      "coverId": "candidate-25"
     },
     {
       "id": "fba366e226b2431482cf1f6ff3dc8231",
       "photoIds": [
         "6fea62dee0e84fe99d2570cbdd9c9435",
-        "d9fdc600ed8b404187a85af0db555ed8"
+        "d9fdc600ed8b404187a85af0db555ed8",
+        "7c7c0b359cf3447ca7399ac2f393d12e",
+        "499b5ae249a443c280e7a71e39eb5cf2",
+        "8a9f7d2aaa034892967f09bb7a6e07a9",
+        "03b22b7797d1484e9c722b8e298b346e",
+        "6b83520ebd8646caa3930b1dc823d14c",
+        "648d398c17fb4021859ac5b011b99f39",
+        "168a43fa20874cee84208c139f6543f3",
+        "ebd8e5a5fedd489798edf7d288280b76",
+        "718f44ea28e448669fa76ecfa6aaf402",
+        "71dc2eaf06474b4b9313f8498cc12285"
       ],
       "title": "Artistic Photos",
       "coverId": "6fea62dee0e84fe99d2570cbdd9c9435"
@@ -132,6 +182,18 @@
       ],
       "title": "The Loong Lantern Festival",
       "coverId": "d9b45730eb3e44078b1ed55c4d79a06f"
+    },
+    {
+      "id": "d66b0e848a264f3ea37584ae6900cf4b",
+      "photoIds": [
+        "dcd50915cc1a4e9d9ab43df013391e00",
+        "648d398c17fb4021859ac5b011b99f39",
+        "3459016d76f140789945314f66be9a93",
+        "b1c59224f093421ba3a455c728cf5459",
+        "candidate-11"
+      ],
+      "title": "The City of Nanjing",
+      "coverId": "dcd50915cc1a4e9d9ab43df013391e00"
     }
   ],
   "photos": [
@@ -402,7 +464,7 @@
     {
       "id": "candidate-25",
       "filename": "25.JPG",
-      "caption": "Ryan C. X. (left) and William (right) walking on Qinhuaiwan bridge at night, after rehearsal",
+      "caption": "Ryan Y. X. (left) and William (right) walking on Qinhuaiwan bridge at night, after rehearsal",
       "src": "assets/photo-albums/25-full.webp",
       "screen": "assets/photo-albums/25-screen.webp",
       "thumbnail": "assets/photo-albums/25-thumb.webp",
@@ -638,7 +700,7 @@
       "thumbnail": "assets/photo-albums/ea2a99848fcc4881b43bcbbf7a5d6c62-thumb.webp",
       "width": 7728,
       "height": 5152,
-      "caption": "Ryan C. X. at rehearsal",
+      "caption": "Ryan Y. X. at rehearsal",
       "captionKey": "photography.ryan-c-x-at-rehearsal-10107be2"
     },
     {
@@ -794,6 +856,457 @@
       "height": 4128,
       "caption": "A piece of wetland shot from border highway Z683",
       "captionKey": "photography.a-piece-of-wetland-shot-from-border-hi-cd4983b4"
+    },
+    {
+      "id": "7c7c0b359cf3447ca7399ac2f393d12e",
+      "filename": "DSC01078.JPG",
+      "src": "assets/photo-albums/7c7c0b359cf3447ca7399ac2f393d12e-full.webp",
+      "screen": "assets/photo-albums/7c7c0b359cf3447ca7399ac2f393d12e-screen.webp",
+      "thumbnail": "assets/photo-albums/7c7c0b359cf3447ca7399ac2f393d12e-thumb.webp",
+      "width": 6000,
+      "height": 4000,
+      "caption": ""
+    },
+    {
+      "id": "499b5ae249a443c280e7a71e39eb5cf2",
+      "filename": "DSC01075.JPG",
+      "src": "assets/photo-albums/499b5ae249a443c280e7a71e39eb5cf2-full.webp",
+      "screen": "assets/photo-albums/499b5ae249a443c280e7a71e39eb5cf2-screen.webp",
+      "thumbnail": "assets/photo-albums/499b5ae249a443c280e7a71e39eb5cf2-thumb.webp",
+      "width": 6000,
+      "height": 4000,
+      "caption": ""
+    },
+    {
+      "id": "8a9f7d2aaa034892967f09bb7a6e07a9",
+      "filename": "_DSC9851.JPG",
+      "src": "assets/photo-albums/8a9f7d2aaa034892967f09bb7a6e07a9-full.webp",
+      "screen": "assets/photo-albums/8a9f7d2aaa034892967f09bb7a6e07a9-screen.webp",
+      "thumbnail": "assets/photo-albums/8a9f7d2aaa034892967f09bb7a6e07a9-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "03b22b7797d1484e9c722b8e298b346e",
+      "filename": "_DSC9888.JPG",
+      "src": "assets/photo-albums/03b22b7797d1484e9c722b8e298b346e-full.webp",
+      "screen": "assets/photo-albums/03b22b7797d1484e9c722b8e298b346e-screen.webp",
+      "thumbnail": "assets/photo-albums/03b22b7797d1484e9c722b8e298b346e-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "6b83520ebd8646caa3930b1dc823d14c",
+      "filename": "_DSC9705.JPG",
+      "src": "assets/photo-albums/6b83520ebd8646caa3930b1dc823d14c-full.webp",
+      "screen": "assets/photo-albums/6b83520ebd8646caa3930b1dc823d14c-screen.webp",
+      "thumbnail": "assets/photo-albums/6b83520ebd8646caa3930b1dc823d14c-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "71526f22b6d34d1e96736489a426798e",
+      "filename": "_1140103.JPG",
+      "src": "assets/photo-albums/71526f22b6d34d1e96736489a426798e-full.webp",
+      "screen": "assets/photo-albums/71526f22b6d34d1e96736489a426798e-screen.webp",
+      "thumbnail": "assets/photo-albums/71526f22b6d34d1e96736489a426798e-thumb.webp",
+      "width": 4272,
+      "height": 2856,
+      "caption": ""
+    },
+    {
+      "id": "168a43fa20874cee84208c139f6543f3",
+      "filename": "_DSC9950.JPG",
+      "src": "assets/photo-albums/168a43fa20874cee84208c139f6543f3-full.webp",
+      "screen": "assets/photo-albums/168a43fa20874cee84208c139f6543f3-screen.webp",
+      "thumbnail": "assets/photo-albums/168a43fa20874cee84208c139f6543f3-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "df5c56e59e4041f8ae8675d1e989090f",
+      "filename": "DSC01673.JPG",
+      "src": "assets/photo-albums/df5c56e59e4041f8ae8675d1e989090f-full.webp",
+      "screen": "assets/photo-albums/df5c56e59e4041f8ae8675d1e989090f-screen.webp",
+      "thumbnail": "assets/photo-albums/df5c56e59e4041f8ae8675d1e989090f-thumb.webp",
+      "width": 3648,
+      "height": 5472,
+      "caption": ""
+    },
+    {
+      "id": "648d398c17fb4021859ac5b011b99f39",
+      "filename": "_DSC2791.JPG",
+      "src": "assets/photo-albums/648d398c17fb4021859ac5b011b99f39-full.webp",
+      "screen": "assets/photo-albums/648d398c17fb4021859ac5b011b99f39-screen.webp",
+      "thumbnail": "assets/photo-albums/648d398c17fb4021859ac5b011b99f39-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "e682faa6a43e42058a0ab4cce3f89924",
+      "filename": "_DSC2812.JPG",
+      "src": "assets/photo-albums/e682faa6a43e42058a0ab4cce3f89924-full.webp",
+      "screen": "assets/photo-albums/e682faa6a43e42058a0ab4cce3f89924-screen.webp",
+      "thumbnail": "assets/photo-albums/e682faa6a43e42058a0ab4cce3f89924-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "5b5c76cbc9ed4d40b42882e62b73014a",
+      "filename": "DSC02083.JPG",
+      "src": "assets/photo-albums/5b5c76cbc9ed4d40b42882e62b73014a-full.webp",
+      "screen": "assets/photo-albums/5b5c76cbc9ed4d40b42882e62b73014a-screen.webp",
+      "thumbnail": "assets/photo-albums/5b5c76cbc9ed4d40b42882e62b73014a-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "992012f0688044568a3bb41dba2d270a",
+      "filename": "_DSF1166.JPG",
+      "src": "assets/photo-albums/992012f0688044568a3bb41dba2d270a-full.webp",
+      "screen": "assets/photo-albums/992012f0688044568a3bb41dba2d270a-screen.webp",
+      "thumbnail": "assets/photo-albums/992012f0688044568a3bb41dba2d270a-thumb.webp",
+      "width": 6240,
+      "height": 4160,
+      "caption": ""
+    },
+    {
+      "id": "78f089a311074a799be100adb5e112e7",
+      "filename": "PA030627.JPG",
+      "src": "assets/photo-albums/78f089a311074a799be100adb5e112e7-full.webp",
+      "screen": "assets/photo-albums/78f089a311074a799be100adb5e112e7-screen.webp",
+      "thumbnail": "assets/photo-albums/78f089a311074a799be100adb5e112e7-thumb.webp",
+      "width": 5184,
+      "height": 3888,
+      "caption": ""
+    },
+    {
+      "id": "af50e8f9fdb942c191d81339cbd3e93e",
+      "filename": "PA041207.JPG",
+      "src": "assets/photo-albums/af50e8f9fdb942c191d81339cbd3e93e-full.webp",
+      "screen": "assets/photo-albums/af50e8f9fdb942c191d81339cbd3e93e-screen.webp",
+      "thumbnail": "assets/photo-albums/af50e8f9fdb942c191d81339cbd3e93e-thumb.webp",
+      "width": 5184,
+      "height": 3888,
+      "caption": ""
+    },
+    {
+      "id": "9b6543184f0f4e0e8a07108081734eff",
+      "filename": "PA051463.png",
+      "src": "assets/photo-albums/9b6543184f0f4e0e8a07108081734eff-full.webp",
+      "screen": "assets/photo-albums/9b6543184f0f4e0e8a07108081734eff-screen.webp",
+      "thumbnail": "assets/photo-albums/9b6543184f0f4e0e8a07108081734eff-thumb.webp",
+      "width": 3888,
+      "height": 3888,
+      "caption": ""
+    },
+    {
+      "id": "12035b7f1d6548339548afc9f4eb8da1",
+      "filename": "IMG_0028.JPG",
+      "src": "assets/photo-albums/12035b7f1d6548339548afc9f4eb8da1-full.webp",
+      "screen": "assets/photo-albums/12035b7f1d6548339548afc9f4eb8da1-screen.webp",
+      "thumbnail": "assets/photo-albums/12035b7f1d6548339548afc9f4eb8da1-thumb.webp",
+      "width": 3000,
+      "height": 4000,
+      "caption": ""
+    },
+    {
+      "id": "f6c8f5e34e734b489ed30106f051dabb",
+      "filename": "_DSC5283.JPG",
+      "src": "assets/photo-albums/f6c8f5e34e734b489ed30106f051dabb-full.webp",
+      "screen": "assets/photo-albums/f6c8f5e34e734b489ed30106f051dabb-screen.webp",
+      "thumbnail": "assets/photo-albums/f6c8f5e34e734b489ed30106f051dabb-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "d1f0a158eb9c46e0808080950a0acd40",
+      "filename": "_DSF1404.JPG",
+      "src": "assets/photo-albums/d1f0a158eb9c46e0808080950a0acd40-full.webp",
+      "screen": "assets/photo-albums/d1f0a158eb9c46e0808080950a0acd40-screen.webp",
+      "thumbnail": "assets/photo-albums/d1f0a158eb9c46e0808080950a0acd40-thumb.webp",
+      "width": 6240,
+      "height": 4160,
+      "caption": ""
+    },
+    {
+      "id": "720f7e11c02d4a6b84de31f4c7463fe1",
+      "filename": "_DSF1616.JPG",
+      "src": "assets/photo-albums/720f7e11c02d4a6b84de31f4c7463fe1-full.webp",
+      "screen": "assets/photo-albums/720f7e11c02d4a6b84de31f4c7463fe1-screen.webp",
+      "thumbnail": "assets/photo-albums/720f7e11c02d4a6b84de31f4c7463fe1-thumb.webp",
+      "width": 6240,
+      "height": 4160,
+      "caption": ""
+    },
+    {
+      "id": "de8be0b589294d60ad931d6010b15a5f",
+      "filename": "DSC02554.jpg",
+      "src": "assets/photo-albums/de8be0b589294d60ad931d6010b15a5f-full.webp",
+      "screen": "assets/photo-albums/de8be0b589294d60ad931d6010b15a5f-screen.webp",
+      "thumbnail": "assets/photo-albums/de8be0b589294d60ad931d6010b15a5f-thumb.webp",
+      "width": 5472,
+      "height": 3648,
+      "caption": ""
+    },
+    {
+      "id": "eeaa345d92824b71b72d8b7735cd86b1",
+      "filename": "_DSC6256.JPG",
+      "src": "assets/photo-albums/eeaa345d92824b71b72d8b7735cd86b1-full.webp",
+      "screen": "assets/photo-albums/eeaa345d92824b71b72d8b7735cd86b1-screen.webp",
+      "thumbnail": "assets/photo-albums/eeaa345d92824b71b72d8b7735cd86b1-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "dcd50915cc1a4e9d9ab43df013391e00",
+      "filename": "DSC03218_1.jpg",
+      "src": "assets/photo-albums/dcd50915cc1a4e9d9ab43df013391e00-full.webp",
+      "screen": "assets/photo-albums/dcd50915cc1a4e9d9ab43df013391e00-screen.webp",
+      "thumbnail": "assets/photo-albums/dcd50915cc1a4e9d9ab43df013391e00-thumb.webp",
+      "width": 3648,
+      "height": 4864,
+      "caption": ""
+    },
+    {
+      "id": "b8df58c312804e81a43fdae4d82b7c65",
+      "filename": "_DSF0542.JPG",
+      "src": "assets/photo-albums/b8df58c312804e81a43fdae4d82b7c65-full.webp",
+      "screen": "assets/photo-albums/b8df58c312804e81a43fdae4d82b7c65-screen.webp",
+      "thumbnail": "assets/photo-albums/b8df58c312804e81a43fdae4d82b7c65-thumb.webp",
+      "width": 6240,
+      "height": 4160,
+      "caption": ""
+    },
+    {
+      "id": "5ba2863c64aa4f639b7a75a06470a77d",
+      "filename": "_DSC4151.jpg",
+      "src": "assets/photo-albums/5ba2863c64aa4f639b7a75a06470a77d-full.webp",
+      "screen": "assets/photo-albums/5ba2863c64aa4f639b7a75a06470a77d-screen.webp",
+      "thumbnail": "assets/photo-albums/5ba2863c64aa4f639b7a75a06470a77d-thumb.webp",
+      "width": 4128,
+      "height": 6192,
+      "caption": ""
+    },
+    {
+      "id": "397767eb9dd24f829a127fce2ada32b3",
+      "filename": "_DSC4035.jpg",
+      "src": "assets/photo-albums/397767eb9dd24f829a127fce2ada32b3-full.webp",
+      "screen": "assets/photo-albums/397767eb9dd24f829a127fce2ada32b3-screen.webp",
+      "thumbnail": "assets/photo-albums/397767eb9dd24f829a127fce2ada32b3-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "4f796a638b3c46199c46df672a5707ff",
+      "filename": "_DSC3972.jpg",
+      "src": "assets/photo-albums/4f796a638b3c46199c46df672a5707ff-full.webp",
+      "screen": "assets/photo-albums/4f796a638b3c46199c46df672a5707ff-screen.webp",
+      "thumbnail": "assets/photo-albums/4f796a638b3c46199c46df672a5707ff-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "d35c02ae816e4fce932e0b39f07c3297",
+      "filename": "DSC01989.JPG",
+      "src": "assets/photo-albums/d35c02ae816e4fce932e0b39f07c3297-full.webp",
+      "screen": "assets/photo-albums/d35c02ae816e4fce932e0b39f07c3297-screen.webp",
+      "thumbnail": "assets/photo-albums/d35c02ae816e4fce932e0b39f07c3297-thumb.webp",
+      "width": 3648,
+      "height": 5472,
+      "caption": ""
+    },
+    {
+      "id": "f2cc975e6aa4406e9a248bd49246468a",
+      "filename": "DSC02232.JPG",
+      "src": "assets/photo-albums/f2cc975e6aa4406e9a248bd49246468a-full.webp",
+      "screen": "assets/photo-albums/f2cc975e6aa4406e9a248bd49246468a-screen.webp",
+      "thumbnail": "assets/photo-albums/f2cc975e6aa4406e9a248bd49246468a-thumb.webp",
+      "width": 5472,
+      "height": 3648,
+      "caption": ""
+    },
+    {
+      "id": "b1c59224f093421ba3a455c728cf5459",
+      "filename": "_DSC2685.JPG",
+      "src": "assets/photo-albums/b1c59224f093421ba3a455c728cf5459-full.webp",
+      "screen": "assets/photo-albums/b1c59224f093421ba3a455c728cf5459-screen.webp",
+      "thumbnail": "assets/photo-albums/b1c59224f093421ba3a455c728cf5459-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "3459016d76f140789945314f66be9a93",
+      "filename": "_DSC8118_1.jpg",
+      "src": "assets/photo-albums/3459016d76f140789945314f66be9a93-full.webp",
+      "screen": "assets/photo-albums/3459016d76f140789945314f66be9a93-screen.webp",
+      "thumbnail": "assets/photo-albums/3459016d76f140789945314f66be9a93-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "718f44ea28e448669fa76ecfa6aaf402",
+      "filename": "_DSC8354.JPG",
+      "src": "assets/photo-albums/718f44ea28e448669fa76ecfa6aaf402-full.webp",
+      "screen": "assets/photo-albums/718f44ea28e448669fa76ecfa6aaf402-screen.webp",
+      "thumbnail": "assets/photo-albums/718f44ea28e448669fa76ecfa6aaf402-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "ebd8e5a5fedd489798edf7d288280b76",
+      "filename": "_DSC8251.JPG",
+      "src": "assets/photo-albums/ebd8e5a5fedd489798edf7d288280b76-full.webp",
+      "screen": "assets/photo-albums/ebd8e5a5fedd489798edf7d288280b76-screen.webp",
+      "thumbnail": "assets/photo-albums/ebd8e5a5fedd489798edf7d288280b76-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "19ec862efdc549e3bfd61f605974b572",
+      "filename": "_XE54491.JPG",
+      "src": "assets/photo-albums/19ec862efdc549e3bfd61f605974b572-full.webp",
+      "screen": "assets/photo-albums/19ec862efdc549e3bfd61f605974b572-screen.webp",
+      "thumbnail": "assets/photo-albums/19ec862efdc549e3bfd61f605974b572-thumb.webp",
+      "width": 7728,
+      "height": 5152,
+      "caption": ""
+    },
+    {
+      "id": "bc68137b193344088fd360a337f7b217",
+      "filename": "_DSC9341.JPG",
+      "src": "assets/photo-albums/bc68137b193344088fd360a337f7b217-full.webp",
+      "screen": "assets/photo-albums/bc68137b193344088fd360a337f7b217-screen.webp",
+      "thumbnail": "assets/photo-albums/bc68137b193344088fd360a337f7b217-thumb.webp",
+      "width": 4128,
+      "height": 6192,
+      "caption": ""
+    },
+    {
+      "id": "bd74cf000af74aab86cc8da9b0ba379a",
+      "filename": "_DSC9763.JPG",
+      "src": "assets/photo-albums/bd74cf000af74aab86cc8da9b0ba379a-full.webp",
+      "screen": "assets/photo-albums/bd74cf000af74aab86cc8da9b0ba379a-screen.webp",
+      "thumbnail": "assets/photo-albums/bd74cf000af74aab86cc8da9b0ba379a-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "3fe1f1b2122745a5847fdbf4d20564b7",
+      "filename": "_DSC9799.JPG",
+      "src": "assets/photo-albums/3fe1f1b2122745a5847fdbf4d20564b7-full.webp",
+      "screen": "assets/photo-albums/3fe1f1b2122745a5847fdbf4d20564b7-screen.webp",
+      "thumbnail": "assets/photo-albums/3fe1f1b2122745a5847fdbf4d20564b7-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "9397a5d236da4fe8a81ce68f41565c6a",
+      "filename": "DSC01633.JPG",
+      "src": "assets/photo-albums/9397a5d236da4fe8a81ce68f41565c6a-full.webp",
+      "screen": "assets/photo-albums/9397a5d236da4fe8a81ce68f41565c6a-screen.webp",
+      "thumbnail": "assets/photo-albums/9397a5d236da4fe8a81ce68f41565c6a-thumb.webp",
+      "width": 5472,
+      "height": 3648,
+      "caption": ""
+    },
+    {
+      "id": "71dc2eaf06474b4b9313f8498cc12285",
+      "filename": "_DSC5755.JPG",
+      "src": "assets/photo-albums/71dc2eaf06474b4b9313f8498cc12285-full.webp",
+      "screen": "assets/photo-albums/71dc2eaf06474b4b9313f8498cc12285-screen.webp",
+      "thumbnail": "assets/photo-albums/71dc2eaf06474b4b9313f8498cc12285-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "1d00ae98cd4a463984457ea3ee57a707",
+      "filename": "_DSC5729.JPG",
+      "src": "assets/photo-albums/1d00ae98cd4a463984457ea3ee57a707-full.webp",
+      "screen": "assets/photo-albums/1d00ae98cd4a463984457ea3ee57a707-screen.webp",
+      "thumbnail": "assets/photo-albums/1d00ae98cd4a463984457ea3ee57a707-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "4d4ed1383e954df08fa1ea3349bc8410",
+      "filename": "_DSC5625.JPG",
+      "src": "assets/photo-albums/4d4ed1383e954df08fa1ea3349bc8410-full.webp",
+      "screen": "assets/photo-albums/4d4ed1383e954df08fa1ea3349bc8410-screen.webp",
+      "thumbnail": "assets/photo-albums/4d4ed1383e954df08fa1ea3349bc8410-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "8945263d50b94921a981f65522944ffb",
+      "filename": "DSC02951_1.jpg",
+      "src": "assets/photo-albums/8945263d50b94921a981f65522944ffb-full.webp",
+      "screen": "assets/photo-albums/8945263d50b94921a981f65522944ffb-screen.webp",
+      "thumbnail": "assets/photo-albums/8945263d50b94921a981f65522944ffb-thumb.webp",
+      "width": 5472,
+      "height": 3648,
+      "caption": ""
+    },
+    {
+      "id": "8912a047c30942c6a93db7e5231cc7e0",
+      "filename": "DSC02879_1.jpg",
+      "src": "assets/photo-albums/8912a047c30942c6a93db7e5231cc7e0-full.webp",
+      "screen": "assets/photo-albums/8912a047c30942c6a93db7e5231cc7e0-screen.webp",
+      "thumbnail": "assets/photo-albums/8912a047c30942c6a93db7e5231cc7e0-thumb.webp",
+      "width": 5472,
+      "height": 3648,
+      "caption": ""
+    },
+    {
+      "id": "bc26c17e98724c1eadf36ba0fafb8fd6",
+      "filename": "_DSC4765.JPG",
+      "src": "assets/photo-albums/bc26c17e98724c1eadf36ba0fafb8fd6-full.webp",
+      "screen": "assets/photo-albums/bc26c17e98724c1eadf36ba0fafb8fd6-screen.webp",
+      "thumbnail": "assets/photo-albums/bc26c17e98724c1eadf36ba0fafb8fd6-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "ab563e4624fa46a6815338a78f627d77",
+      "filename": "_DSC4549.JPG",
+      "src": "assets/photo-albums/ab563e4624fa46a6815338a78f627d77-full.webp",
+      "screen": "assets/photo-albums/ab563e4624fa46a6815338a78f627d77-screen.webp",
+      "thumbnail": "assets/photo-albums/ab563e4624fa46a6815338a78f627d77-thumb.webp",
+      "width": 6192,
+      "height": 4128,
+      "caption": ""
+    },
+    {
+      "id": "8547c2a52a054096a5526b5788f786b5",
+      "filename": "微信图片_20260610230802_877_59.jpg",
+      "src": "assets/photo-albums/8547c2a52a054096a5526b5788f786b5-full.webp",
+      "screen": "assets/photo-albums/8547c2a52a054096a5526b5788f786b5-screen.webp",
+      "thumbnail": "assets/photo-albums/8547c2a52a054096a5526b5788f786b5-thumb.webp",
+      "width": 5070,
+      "height": 4000,
+      "caption": "After G10's performance at Nanjing 1701 Live House, me holding my signed pedalboard, shot by Ryan H. X.",
+      "captionKey": "photography.after-g10-s-performance-at-nanjing-170-2ec3254a"
     }
   ],
   "stripAlbum": {
@@ -806,8 +1319,6 @@
       "candidate-12",
       "4295c7e1c2184398b250d0333a4674fe",
       "candidate-23",
-      "d42d5ddd96a4423ebffa1e4280af7fb5",
-      "candidate-19",
       "candidate-20",
       "candidate-18",
       "ea2a99848fcc4881b43bcbbf7a5d6c62",
@@ -816,8 +1327,12 @@
       "candidate-17",
       "d5f10229ca2847d7af6db8124a5cf88e",
       "d9fdc600ed8b404187a85af0db555ed8",
-      "df016ff41e684197938b43669d6bab11",
-      "e7b8a65ea48d4f37855f1eec9bb66c5e"
+      "e7b8a65ea48d4f37855f1eec9bb66c5e",
+      "499b5ae249a443c280e7a71e39eb5cf2",
+      "a2b0741116ae45408cda24bec26b9b12",
+      "4f796a638b3c46199c46df672a5707ff",
+      "648d398c17fb4021859ac5b011b99f39",
+      "df5c56e59e4041f8ae8675d1e989090f"
     ]
   }
 }

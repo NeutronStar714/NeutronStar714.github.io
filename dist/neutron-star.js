@@ -230,6 +230,9 @@ const visibility = new IntersectionObserver(entries => {
   if (visible) requestRender();
 });
 visibility.observe(scene);
+root.querySelector('.portrait-trigger')?.addEventListener('keydown', event => {
+  if (event.key === 'Escape') { event.preventDefault(); event.currentTarget.blur(); }
+});
 document.addEventListener('visibilitychange', requestRender);
 sizeScene();
 

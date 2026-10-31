@@ -7,11 +7,11 @@
 <meta name="description" content="NeutronStar714's electronic music, G10 recordings, audio plugins, and photography.">
 <title>NeutronStar714</title>
 <link rel="icon" type="image/png" sizes="1024x1024" href="assets/neutronstar714-tab.png?v=1">
-<link rel="stylesheet" href="styles.css?v=13">
-<link rel="stylesheet" href="landing.css?v=11">
+<link rel="stylesheet" href="styles.css?v=19">
+<link rel="stylesheet" href="landing.css?v=14">
 <link rel="stylesheet" href="player.css?v=3">
 <script defer src="site-player.js?v=7"></script>
-<script defer src="site-nav.js?v=6"></script>
+<script defer src="site-nav.js?v=15"></script>
 <script defer src="site-copy.js?v=5"></script>
 <link rel="stylesheet" href="site-nav.css?v=4">
 </head>
@@ -44,7 +44,20 @@
         <div class="orbit-satellite" style="--phase:-36s"><div class="orbit-offset"><div class="orbit-counter"><a class="orbit-link photography-orbit" href="photography.html"><span class="orbit-picture"><img src="assets/home-blue-hour.webp" alt="" width="720" height="480" decoding="async"></span><span class="orbit-label">Photography</span></a></div></div></div>
       </div>
     </nav>
-    <div class="orbit-controls"><button class="orbit-pause" type="button" aria-pressed="false"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path class="orbit-pause-icon" d="M5 3v10M11 3v10" fill="none" stroke="currentColor" stroke-width="2"/><path class="orbit-play-icon" d="m5 3 8 5-8 5Z" fill="currentColor"/></svg><span>Pause orbit</span></button><p class="opening-lead">I’m NeutronStar714. I make electronic music, build audio effects, record with my band G10, and take photographs.</p></div>
+    <div class="orbit-controls"><button class="orbit-pause" type="button" aria-pressed="false"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path class="orbit-pause-icon" d="M5 3v10M11 3v10" fill="none" stroke="currentColor" stroke-width="2"/><path class="orbit-play-icon" d="m5 3 8 5-8 5Z" fill="currentColor"/></svg><span>Pause orbit</span></button>
+      <p class="opening-lead intro-footprint" aria-hidden="true">I’m NeutronStar714. I make electronic music, build audio effects, record with my band G10, and take photographs.</p>
+      <aside class="home-chat">
+        <figure class="home-portrait">
+          <button class="portrait-trigger" type="button" aria-label="Enlarge portrait" aria-describedby="home-portrait-caption"><img src="assets/home-portrait.webp" width="720" height="568" alt="NeutronStar714 holding his signed pedalboard after G10's performance" decoding="async"></button>
+          <figcaption id="home-portrait-caption">After G10's performance at Nanjing 1701 Live House, me holding my signed pedalboard, shot by Ryan H. X.</figcaption>
+          <div class="portrait-polaroid" aria-hidden="true">
+            <img src="assets/home-portrait.webp" width="720" height="568" alt="" decoding="async">
+            <p class="portrait-expanded-caption">After G10's performance at Nanjing 1701 Live House, me holding my signed pedalboard, shot by Ryan H. X.</p>
+          </div>
+        </figure>
+        <div class="home-intro-bubble"><p class="opening-lead">I’m NeutronStar714. I make electronic music, build audio effects, record with my band G10, and take photographs.</p></div>
+      </aside>
+    </div>
   </section>
 </main>
 <template id="home-messages"><span data-message="pause">Pause orbit</span><span data-message="resume">Resume orbit</span></template>

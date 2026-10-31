@@ -1,5 +1,5 @@
 export function mount(root) {
-(() => {
+const audioLifecycle = (() => {
   const audio = root.querySelector('#anyone-audio');
   const player = root.querySelector('.single-player');
   const button = root.querySelector('.single-play');
@@ -7,6 +7,26 @@ export function mount(root) {
   const clock = root.querySelector('.single-time');
   const error = root.querySelector('.single-error');
   if (!audio || !player || !button || !seek || !clock) return;
+  const visitKey = 'nts-rock-intro-played';
+  let consumed = false, attempted = false;
+  try { consumed = sessionStorage.getItem(visitKey) === 'yes'; } catch {}
+
+  async function playAnyone() {
+    if (audio.ended) audio.currentTime = 0;
+    if (audio.error) audio.load();
+    if (window.siteAudio) await window.siteAudio.playTrack(audio, 'G10 - Anyone', {
+      cover: 'assets/g10-anyone-cover.webp', excerpt: false
+    });
+    else await audio.play();
+  }
+  function autoplay() {
+    if (root.hidden || consumed || attempted) return;
+    attempted = true;
+    playAnyone().then(() => {
+      consumed = true;
+      try { sessionStorage.setItem(visitKey, 'yes'); } catch {}
+    }).catch(sync);
+  }
 
   function formatTime(seconds) {
     if (!Number.isFinite(seconds)) return '0:00';
@@ -27,13 +47,8 @@ export function mount(root) {
   button.addEventListener('click', async () => {
     error.hidden = true;
     if (!audio.paused) { audio.pause(); return; }
-    if (audio.ended) audio.currentTime = 0;
     try {
-      if (audio.error) audio.load();
-      if (window.siteAudio) await window.siteAudio.playTrack(audio, 'G10 - Anyone', {
-        cover: 'assets/g10-anyone-cover.webp', excerpt: false
-      });
-      else await audio.play();
+      await playAnyone();
     } catch { error.hidden = false; }
     sync();
   });
@@ -48,6 +63,8 @@ export function mount(root) {
   audio.addEventListener('error', () => { error.hidden = false; sync(); });
   window.addEventListener('sitecopychange', () => { if (!root.hidden) sync(); });
   sync();
+  autoplay();
+  return { activate: autoplay, deactivate() { attempted = false; } };
 })();
 
 (() => {
@@ -72,4 +89,8 @@ export function mount(root) {
   layoutStory();
 })();
 
+return {
+  activate() { audioLifecycle?.activate(); },
+  deactivate() { audioLifecycle?.deactivate(); }
+};
 }
