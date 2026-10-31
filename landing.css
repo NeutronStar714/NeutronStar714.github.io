@@ -62,3 +62,43 @@ body.home-hub,body.home-hub.site-player-enabled{--paper:#0b0c0e;--ink:#f0f0ec;ba
 @media(max-height:450px) and (min-width:601px){.home-hub .orbit-controls .opening-lead{max-width:440px;font-size:13px;line-height:1.4}.orbit-pause{min-height:26px;font-size:11px;padding-block:3px}.orbit-system{--picture-size:24px}}
 
 @media(min-width:951px) and (min-height:651px){.home-hub .opening{position:relative;grid-template-rows:minmax(0,1fr) auto}.home-hub .opening-copy{position:absolute;top:0;left:0;z-index:4;pointer-events:none}.home-hub .orbit-system{max-width:none}}
+
+.home-hub .opening{position:relative}
+.intro-footprint{visibility:hidden;pointer-events:none}
+.home-chat{position:absolute;right:0;bottom:0;display:grid;gap:10px;width:min(430px,100%);pointer-events:none}
+.home-portrait{display:grid;grid-template-columns:minmax(0,1fr) 96px;align-items:center;gap:14px;margin:0;min-width:0}
+.home-portrait img{grid-column:2;grid-row:1;display:block;width:96px;height:auto;border-radius:10px;box-shadow:0 6px 22px #0005}
+.home-portrait figcaption{grid-column:1;grid-row:1;margin:0;color:#a9b5bb;font:10px/1.45 'Cascadia Code',monospace;overflow-wrap:anywhere;text-align:right}
+.home-intro-bubble{position:relative;min-width:0;padding:12px 16px;border:1px solid #bad5e333;border-radius:16px 16px 4px 16px;background:#172026ed;box-shadow:0 8px 28px #0003}
+.home-intro-bubble::before{content:"";position:absolute;right:34px;top:-7px;width:12px;height:12px;rotate:45deg;background:#172026;border-left:1px solid #bad5e333;border-top:1px solid #bad5e333}
+.home-hub .orbit-controls .home-chat .opening-lead{display:block;max-width:none;margin:0;text-align:left;font:14px/1.45 Arial,sans-serif;color:#d6dfe2}
+@media(max-width:600px){
+ .home-chat{width:calc(100% - 65px);gap:8px}
+ .home-portrait{grid-template-columns:minmax(0,1fr) 64px;gap:10px}
+ .home-portrait img{width:64px;border-radius:7px}
+ .home-portrait figcaption{font-size:8px;line-height:1.35}
+ .home-intro-bubble{padding:8px 10px;border-radius:12px 12px 3px 12px}
+ .home-intro-bubble::before{right:22px}
+ .home-hub .orbit-controls .home-chat .opening-lead{font-size:11px;line-height:1.35}
+}
+@media(max-height:450px) and (min-width:601px){
+ .home-chat{width:360px;gap:8px}
+ .home-portrait{grid-template-columns:minmax(0,1fr) 64px;gap:10px}
+ .home-portrait img{width:64px}
+ .home-portrait figcaption{font-size:8px;line-height:1.35}
+ .home-intro-bubble{padding:8px 10px}
+ .home-hub .orbit-controls .home-chat .opening-lead{font-size:11px;line-height:1.35}
+}
+
+.home-portrait{position:relative;--portrait-thumb:96px}
+.portrait-trigger{grid-column:2;grid-row:1;display:block;width:var(--portrait-thumb);padding:0;border:0;border-radius:10px;background:none;pointer-events:auto;cursor:zoom-in}
+.portrait-trigger img{width:100%}
+.portrait-polaroid{position:absolute;right:0;bottom:0;z-index:8;box-sizing:border-box;width:calc(var(--portrait-thumb)*4 + 24px);padding:12px;background:#f5f0e5;color:#292826;border-radius:2px;box-shadow:0 18px 55px #0009;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(10px) scale(.25) rotate(-4deg);transform-origin:bottom right;transition:opacity .2s ease,transform .3s cubic-bezier(.2,.8,.2,1),visibility .3s}
+.home-portrait .portrait-polaroid img{display:block;width:100%;height:auto;border-radius:0;box-shadow:none}
+.portrait-polaroid .portrait-expanded-caption{margin:14px 5px 8px;color:#292826;font:12px/1.5 'Cascadia Code',monospace;text-align:left;overflow-wrap:anywhere}
+.home-portrait:hover .portrait-polaroid,.home-portrait:focus-within .portrait-polaroid{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0) scale(1) rotate(-2deg)}
+.home-chat:has(.home-portrait:hover),.home-chat:focus-within{z-index:6}
+.home-portrait:hover>figcaption,.home-portrait:focus-within>figcaption{opacity:0}
+@media(max-width:600px){.home-portrait{--portrait-thumb:64px}}
+@media(max-height:450px) and (min-width:601px){.home-portrait{--portrait-thumb:64px}}
+@media(max-height:500px){.portrait-polaroid{position:fixed;right:18px;bottom:52px}.home-portrait .portrait-polaroid img{max-height:calc(100dvh - var(--home-header-height,82px) - 190px);object-fit:contain}}

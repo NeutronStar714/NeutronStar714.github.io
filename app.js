@@ -11,10 +11,30 @@ window.releases.forEach((release, index) => {
  section.style.setProperty('--album-accent', window.waveformData.colors[release.cover] || '#b9d8ed');
  section.className = 'release'; section.id = 'release-' + (index + 1);
  const titleID = section.id + '-title'; section.setAttribute('aria-labelledby', titleID);
+ const [year, month, day] = release.date.split('-');
+ const form = release.type === 'EP' ? 'EP' : release.type.toLowerCase();
+ const summary = `${['album', 'EP'].includes(form) ? 'An' : 'A'} ${form} released on ${month}/${day}/${year}.`;
  section.innerHTML = `<span class="release-number">${String(index+1).padStart(2,'0')}</span>
- <div class="title-block"><div class="meta">${escapeHTML(release.type.toUpperCase())}</div><h2 id="${titleID}">${escapeHTML(release.title)}</h2><time datetime="${release.date}">${release.date.replaceAll('-','.')}</time></div>
+ <div class="title-block"><h2 id="${titleID}">${escapeHTML(release.title)}</h2><p class="meta release-summary"><time datetime="${release.date}">${escapeHTML(summary)}</time></p></div>
  <div class="art-and-audio"><img class="cover" src="${mediaURL(release.cover)}" alt="${escapeHTML(release.title)} cover artwork" width="600" height="600" loading="${index===0?'eager':'lazy'}"><div class="excerpt-label">Listen to selected excerpts</div><div class="players"></div></div>
  <div class="notes"><p class="notes-label">About this release</p><p>${escapeHTML(release.description || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.')}</p><div class="links"></div></div>`;
+ if (index < window.releases.length - 1) {
+  const cueStart = window.waveformData.colors[release.cover] || '#b9d8ed';
+  const cueEnd = cueStart;
+  const heading = document.createElement('div'); heading.className = 'release-heading';
+  const title = section.querySelector('.title-block'); title.before(heading); heading.append(title);
+  const nextButton = document.createElement('button');
+  nextButton.type = 'button'; nextButton.className = 'release-next';
+  nextButton.style.setProperty('--cue-start', cueStart); nextButton.style.setProperty('--cue-end', cueEnd);
+  nextButton.setAttribute('aria-label', 'Next release'); nextButton.title = 'Next release';
+  nextButton.innerHTML = `<svg viewBox="0 0 96 96" width="96" height="96" aria-hidden="true"><defs><linearGradient id="release-cue-${index}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${cueStart}"/><stop offset="1" stop-color="${cueEnd}"/></linearGradient></defs><g fill="none" stroke="url(#release-cue-${index})" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path class="cue-chevron" d="m14 18 34 25 34-25"/><path class="cue-chevron" d="m24 43 24 18 24-18"/><path class="cue-chevron" d="m34 65 14 11 14-11"/></g></svg>`;
+  nextButton.addEventListener('click', () => {
+   const next = root.querySelector('#release-' + (index + 2));
+   next?.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+   next?.setAttribute('tabindex', '-1'); next?.focus({ preventScroll: true });
+  });
+  heading.append(nextButton);
+ }
  const notesPanel = section.querySelector('.notes');
  notesPanel.tabIndex = 0;
  notesPanel.setAttribute('role', 'region');
@@ -30,6 +50,16 @@ window.releases.forEach((release, index) => {
  }
  for (const link of release.links) {
   if (!/^https:\/\//i.test(link.url)) continue;
+  if (link.placement === 'excerpts') {
+   const a = document.createElement('a');
+   a.className = 'release-listen-link'; a.href = link.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+   a.innerHTML = `<span>${escapeHTML(link.label)}</span><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>`;
+   const excerpts = section.querySelector('.art-and-audio');
+   excerpts.classList.add('compact-excerpts');
+   excerpts.style.setProperty('--excerpt-count', release.clips.length);
+   excerpts.append(a);
+   continue;
+  }
   const a = document.createElement('a'); a.href = link.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = link.label + ' ↗';section.querySelector('.links').append(a);
  }
  for (const file of release.clips) {
@@ -157,6 +187,26 @@ addEventListener('pointerup',()=>{pointerDown=false;},{passive:true});
 addEventListener('pointercancel',()=>{pointerDown=false;},{passive:true});
 addEventListener('resize',scheduleFocus);reducedMotion.addEventListener('change',scheduleFocus);focusCarousel();
 
-return { activate: scheduleFocus, deactivate() { cancelAnimationFrame(frame); frame=0; clearTimeout(snapTimer); pointerDown=false; snapping=false; } };
+const introVisitKey = 'nts-discography-intro-played';
+let introConsumed = false, introStarted = false;
+try { introConsumed = sessionStorage.getItem(introVisitKey) === 'yes'; } catch {}
+function playIntro() {
+ if (root.hidden || introStarted || introConsumed) return;
+ introStarted = true;
+ const file = 'exc04_As_Bright_as_Sun.mp3';
+ const audio = mediaPlayers.find(item => item.getAttribute('src') === mediaURL(file));
+ if (!audio || !audio.paused) return;
+ if (audio.ended) audio.currentTime = 0;
+ const attempt = window.siteAudio
+  ? window.siteAudio.playTrack(audio, 'As Bright as Sun', { cover: mediaURL(window.releases.find(release => release.clips.includes(file)).cover), excerpt: true })
+  : audio.play();
+ // Direct visits may need a browser gesture; the ordinary Play control remains available.
+ attempt?.then(() => {
+  introConsumed = true;
+  try { sessionStorage.setItem(introVisitKey, 'yes'); } catch {}
+ }).catch(() => {});
+}
+playIntro();
+return { activate() { scheduleFocus(); playIntro(); }, deactivate() { introStarted=false; cancelAnimationFrame(frame); frame=0; clearTimeout(snapTimer); pointerDown=false; snapping=false; } };
 
 }

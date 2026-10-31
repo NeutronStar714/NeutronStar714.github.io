@@ -64,7 +64,7 @@ artistic expression.
 ### `home.i-m-neutronstar714-i-make-electronic-m-f17f7e09`
 
 ```text
-I’m NeutronStar714. I'm interested in chemistry and music. I create by making electronic music, playing with my school-based rock band G10, developing audio effect plugins, and taking photographs.
+My name is Andy Feng, or NeutronStar714. I'm interested in chemistry and music. I create by making electronic music, playing with my school-based rock band G10, developing audio effect plugins, and taking photographs.
 ```
 
 ### `home.explore-the-work-273f3154`
@@ -3358,7 +3358,7 @@ Made by us
 I came up with this riff while randomly strumming on my guitar, and the lyrics came to me as I was climbing up the Glacial Lake. I recorded a demo and sent it to my bandmates, together, we developed the whole song. As high school students, we don't have sophisticated equipment or substantial budget to rent studios. Instead, we fully utilized our school's equipment and our creativity. For drums, we used a set of four microphones, each two connecting to one of our 2-in sound cards, and plugged into one computer's DAW to set up multi-track recording. For other instruments, we moved all our instruments and amps to a storage room with soundproof materials in the school to simulate studio-like acoustic environment. Finally, I used my knowledge from electronic music to mix all the recorded tracks, massively applying equalizers and compressors to balance different instruments and reduce noise.
 
 Credits:
-Drums - Ryan C. X.
+Drums - Ryan Y. X.
 Electric guitar - Edor F.
 Electric guitar, mixing, recording - Andy F. (NeutronStar714)
 Bass guitar - William H. (MellonKolly)
@@ -3373,7 +3373,7 @@ Artwork - William H.
 ### `rock.ryan-xu-playing-the-drums-for-anyone-d-6ea6b2e2`
 
 ```text
-Ryan C. X. playing the drums for Anyone during a recording session
+Ryan Y. X. playing the drums for Anyone during a recording session
 ```
 
 ### `rock.mellonkolly-recording-bass-for-anyone-8a38aa07`
@@ -5410,7 +5410,7 @@ Main page strip
 ### `photography.ryan-c-x-left-and-william-right-walkin-d06e1896`
 
 ```text
-Ryan C. X. (left) and William (right) walking on Qinhuaiwan bridge at night, after rehearsal
+Ryan Y. X. (left) and William (right) walking on Qinhuaiwan bridge at night, after rehearsal
 ```
 
 
@@ -5653,7 +5653,7 @@ Edor F. playing Telecaster during rehearsal at school
 ### `photography.ryan-c-x-at-rehearsal-10107be2`
 
 ```text
-Ryan C. X. at rehearsal
+Ryan Y. X. at rehearsal
 ```
 
 
@@ -5897,5 +5897,158 @@ Edor, I and Ryan H. X. investigating equipment for recording guitar
 
 ```text
 Edor and I preparing our pedalboards for recording and live performance
+```
+
+
+## Photography
+
+### `photography.ryan-y-x-left-and-william-right-walkin-9c7747a4`
+
+```text
+Ryan Y. X. (left) and William (right) walking on Qinhuaiwan bridge at night, after rehearsal
+```
+
+### `photography.ryan-y-x-at-rehearsal-9eba3e7b`
+
+```text
+Ryan Y. X. at rehearsal
+```
+
+
+## Discography
+
+### `discography.listen-on-bandcamp-bdc45c23`
+
+```text
+Listen on Bandcamp
+```
+
+
+## Discography
+
+### `discography.next-release-b224e1f3`
+
+```text
+Next release
+```
+
+
+## Discography
+
+### `discography.an-album-released-on-10-07-2025-698d5ef0`
+
+```text
+An album released on 10/07/2025.
+```
+
+### `discography.a-collection-released-on-12-31-2024-c235cef4`
+
+```text
+A collection released on 12/31/2024.
+```
+
+### `discography.a-single-released-on-09-16-2024-e07a9aff`
+
+```text
+A single released on 09/16/2024.
+```
+
+### `discography.an-album-released-on-08-23-2024-49e48b70`
+
+```text
+An album released on 08/23/2024.
+```
+
+### `discography.an-album-released-on-07-07-2023-781fc8c0`
+
+```text
+An album released on 07/07/2023.
+```
+
+### `discography.an-ep-released-on-03-21-2023-fb0d6168`
+
+```text
+An EP released on 03/21/2023.
+```
+
+### `discography.an-album-released-on-07-15-2021-cc224ff7`
+
+```text
+An album released on 07/15/2021.
+```
+
+### `discography.an-album-released-on-12-16-2020-48db978e`
+
+```text
+An album released on 12/16/2020.
+```
+
+
+## Photography
+
+### `photography.the-city-of-nanjing-fc24f8fa`
+
+```text
+The City of Nanjing
+```
+
+
+## Photography
+
+### `photography.portraits-37538469`
+
+```text
+Portraits
+```
+
+
+## Photography
+
+### `photography.me-holding-my-signed-pedalboard-shot-b-1d56a050`
+
+```text
+Me holding my signed pedalboard, shot by Ryan H. X.
+```
+
+
+## Photography
+
+### `photography.after-performance-at-nanjing-1701-live-a5517328`
+
+```text
+After performance at Nanjing 1701 Live House, me holding my signed pedalboard, shot by Ryan H. X.
+```
+
+
+## Photography
+
+### `photography.after-g10-s-performance-at-nanjing-170-2ec3254a`
+
+```text
+After G10's performance at Nanjing 1701 Live House, me holding my signed pedalboard, shot by Ryan H. X.
+```
+
+
+## Home
+
+### `home.neutronstar714-holding-his-signed-peda-fd45e126`
+
+```text
+NeutronStar714 holding his signed pedalboard after G10's performance
+```
+
+### `home.after-g10-s-performance-at-nanjing-170-2ec3254a`
+
+```text
+After G10's performance at Nanjing 1701 Live House, me holding my signed pedalboard, shot by Ryan H. X.
+```
+
+
+## Home
+
+### `home.enlarge-portrait-ec71372d`
+
+```text
+Enlarge portrait
 ```
 

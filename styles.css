@@ -83,6 +83,24 @@ html{scroll-snap-type:none}.release,.year-divider{scroll-snap-align:none}
 .release-tracklist li{padding-left:5px;margin:7px 0;overflow-wrap:anywhere}
 .release-tracklist li::marker{color:#ffffff80;font-size:12px}
 .notes .links:empty{display:none}
+.release-heading{position:relative;min-width:0;grid-column:1;grid-row:1;align-self:center}
+.release:first-child .release-heading{container-type:inline-size}
+.release:nth-child(even) .release-heading{grid-column:3}
+.release-next{position:relative;left:-22px;display:grid;place-items:center;width:112px;height:100px;margin:32px 0 0;padding:2px 8px;border:0;border-radius:0;background:none;color:var(--cue-end);cursor:pointer;transition:filter .25s,transform .25s;filter:drop-shadow(0 3px 8px color-mix(in srgb,var(--cue-end) 28%,transparent))}
+.release-next svg{display:block;width:96px;height:96px;overflow:visible}
+.cue-chevron{transform-box:fill-box;transform-origin:center;opacity:.45}
+.cue-chevron:nth-child(2){opacity:.72;animation-delay:.12s!important}
+.cue-chevron:nth-child(3){opacity:1;animation-delay:.24s!important}
+.release-next:hover,.release-next:focus-visible{transform:translateY(4px);filter:drop-shadow(0 0 10px color-mix(in srgb,var(--cue-start) 65%,transparent)) drop-shadow(0 8px 16px color-mix(in srgb,var(--cue-end) 45%,transparent))}
+.release-next:focus-visible{outline:2px dashed var(--cue-end);outline-offset:6px}
+.release-next:hover .cue-chevron,.release-next:focus-visible .cue-chevron{animation:release-cue-flow .85s ease-in-out infinite}
+@keyframes release-cue-flow{0%,100%{transform:translateY(-3px);opacity:.4}50%{transform:translateY(4px);opacity:1}}
+@media(max-width:800px){.release-heading{width:100%;max-width:80%}.release-heading>.title-block{max-width:none}.release-next{position:relative;top:auto;left:-20px;width:96px;height:82px;margin:22px 0 0;padding:0 8px}.release-next svg{width:80px;height:80px}}
+@media(prefers-reduced-motion:reduce){.release-next{transition:none}.release-next:hover .cue-chevron,.release-next:focus-visible .cue-chevron{animation:none}}
+.release-listen-link{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:42px;margin-top:12px;padding:10px 14px;border:1px solid var(--album-accent);border-radius:3px;background:color-mix(in srgb,var(--album-accent) 12%,transparent);color:var(--album-accent);font:400 14px/1.4 Arial,sans-serif;text-decoration:none}
+.release-listen-link svg{flex-shrink:0}
+.release-listen-link:hover{background:color-mix(in srgb,var(--album-accent) 24%,transparent)}
+.release-listen-link:focus-visible{outline:2px solid var(--album-accent);outline-offset:4px}
 @media(max-width:800px){.release .notes{max-height:32svh;padding-right:8px}}
 
 /* A 90% presentation at normal browser zoom; keep viewport scroll geometry intact. */
@@ -93,3 +111,21 @@ html{scroll-snap-type:none}.release,.year-divider{scroll-snap-align:none}
 
 
 @font-face{font-family:'Cascadia Code';src:url('assets/fonts/CascadiaCode.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+.release .title-block{text-align:left!important}
+.discography-page .release h2{font-size:clamp(39px,4.5vw,64.5px)}
+.discography-page .release:first-child h2{font-size:min(34px,11cqw);white-space:nowrap;overflow-wrap:normal}
+.release .release-summary{margin:0;line-height:1.6;letter-spacing:.02em;overflow-wrap:anywhere}
+.release .release-summary time{font:inherit;color:inherit}
+@media(min-width:801px) and (max-width:1050px){.discography-page .release h2{font-size:42px}}
+@media(max-width:800px){.discography-page .release h2{font-size:39px}.discography-page .release:first-child h2{font-size:min(26px,11cqw)}.discography-page .release:first-child{padding-top:170px}}
+
+/* Compact only the linked excerpt stack. Keep its outer footprint so the
+   centered artwork and introductory label retain their original positions. */
+.release .compact-excerpts{--excerpt-row-saving:34px;padding-bottom:calc(var(--excerpt-row-saving)*var(--excerpt-count) + 4px)}
+.compact-excerpts .player{padding:6px 0}
+.compact-excerpts .track-heading{margin-bottom:4px}
+.compact-excerpts .track-times{margin-top:3px}
+.compact-excerpts .wave-seek,.compact-excerpts .wave-base svg,.compact-excerpts .wave-played svg{height:32px}
+.compact-excerpts .release-listen-link{margin-top:8px}
+@media(min-width:801px) and (max-height:850px){.release .compact-excerpts{--excerpt-row-saving:22px}.compact-excerpts .wave-seek,.compact-excerpts .wave-base svg,.compact-excerpts .wave-played svg{height:28px}}
+@media(max-width:800px){.release .compact-excerpts{--excerpt-row-saving:12px}.compact-excerpts .player{padding:5px 0}.compact-excerpts .track-heading{margin-bottom:3px}.compact-excerpts .track-times{margin-top:2px}.compact-excerpts .wave-seek,.compact-excerpts .wave-base svg,.compact-excerpts .wave-played svg{height:24px}}
