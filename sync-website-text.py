@@ -10,6 +10,7 @@ from pathlib import Path
 import re
 import shutil
 import subprocess
+from website_copy import ATTR_KEYS, TEXT_KEY, MARKER, read_markdown, render_html
 
 
 ROOT = Path(__file__).resolve().parent
@@ -26,6 +27,8 @@ PAGES = OrderedDict([
     ("editor", "../tools/photo-album-editor.html"),
 ])
 entries: OrderedDict[str, dict[str, str]] = OrderedDict()
+previous_manifest = json.loads(MANIFEST.read_text(encoding='utf-8')) if MANIFEST.exists() else []
+originals = {item['key']: item['source'] for item in previous_manifest}
 
 
 def normalize(value: str) -> str:
@@ -47,24 +50,38 @@ class TextInventory(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.page = page
         self.skipped = 0
+        self.bound_text = False
+
+    def handle_comment(self, data: str) -> None:
+        if data.startswith(MARKER):
+            self.bound_text = True
+            source = originals.get(data[len(MARKER):])
+            if source is not None:
+                add(self.page, source)
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        self.bound_text = False
         if tag in {"script", "style"}:
             self.skipped += 1
             return
         attributes = dict(attrs)
+        if TEXT_KEY in attributes:
+            self.bound_text = True
+            add(self.page, originals[attributes[TEXT_KEY]])
+        keys = json.loads(attributes.get(ATTR_KEYS, '{}'))
         for name in ("alt", "aria-label", "aria-valuetext", "title", "placeholder"):
             if attributes.get(name):
-                add(self.page, attributes[name])
+                add(self.page, originals.get(keys.get(name), attributes[name]))
         if tag == "meta" and attributes.get("name") == "description":
-            add(self.page, attributes.get("content", ""))
+            add(self.page, originals.get(keys.get('content'), attributes.get("content", "")))
 
     def handle_endtag(self, tag: str) -> None:
+        self.bound_text = False
         if tag in {"script", "style"}:
             self.skipped = max(0, self.skipped - 1)
 
     def handle_data(self, data: str) -> None:
-        if not self.skipped:
+        if not self.skipped and not self.bound_text:
             add(self.page, data)
 
 
@@ -177,9 +194,6 @@ if album_path.exists():
                     'Invalid album order', 'Invalid photograph path'):
         add('editor', message)
 
-previous_manifest = []
-if MANIFEST.exists():
-    previous_manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
 known_manifest = {item["key"] for item in previous_manifest}
 previous_manifest.extend(item for key, item in entries.items() if key not in known_manifest)
 MANIFEST.write_text(json.dumps(previous_manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -209,4 +223,13 @@ if new_entries:
 
 # Deployment uses this mirror. The preview server serves the working-directory original.
 shutil.copyfile(MARKDOWN, DIST / MARKDOWN.name)
+values = read_markdown(MARKDOWN.read_text(encoding='utf-8'))
+for page, filename in PAGES.items():
+    path = DIST / filename
+    # Archived pages and private tools retain their original sources.
+    if path.parent == DIST:
+        html = path.read_text(encoding='utf-8')
+        rendered = render_html(html, page, previous_manifest, values)
+        if rendered != html:
+            path.write_text(rendered, encoding='utf-8', newline='\n')
 print(f"{len(entries)} current strings; appended {len(new_entries)} entries to {MARKDOWN.name}")

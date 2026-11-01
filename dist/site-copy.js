@@ -57,8 +57,13 @@
   function applyText(node) {
     if (node.parentElement?.closest('script, style, noscript, textarea, [data-site-copy-ignore], .site-page[hidden]')) return;
     const raw = node.nodeValue;
-    if (!normalize(raw) && !textBindings.has(node)) return;
-    const key = entryFor(raw, textBindings.get(node));
+    const marker = node.previousSibling;
+    const explicitKey = node.parentElement?.getAttribute('data-site-copy-text') ||
+      (marker?.nodeType === Node.COMMENT_NODE && marker.data.startsWith('site-copy:')
+        ? marker.data.slice('site-copy:'.length) : null);
+    const binding = textBindings.get(node);
+    if (!normalize(raw) && !binding && !explicitKey) return;
+    const key = binding ? entryFor(raw, binding) : copy.has(explicitKey) ? explicitKey : entryFor(raw);
     if (!key || !copy.has(key)) { textBindings.delete(node); return; }
     const edited = copy.get(key);
     const match = /^(\s*)([\s\S]*?)(\s*)$/.exec(raw);
@@ -75,7 +80,9 @@
       if (!element.hasAttribute(name)) continue;
       if (name === 'content' && !(element.matches('meta[name="description"]'))) continue;
       const raw = element.getAttribute(name);
-      const key = entryFor(raw, bindings.get(name));
+      const explicitKeys = JSON.parse(element.getAttribute('data-site-copy-keys') || '{}');
+      const binding = bindings.get(name);
+      const key = binding ? entryFor(raw, binding) : copy.has(explicitKeys[name]) ? explicitKeys[name] : entryFor(raw);
       if (!key || !copy.has(key)) { bindings.delete(name); continue; }
       const edited = copy.get(key);
       bindings.set(name, { key, last: edited, source: canonical.get(key) });
@@ -88,8 +95,15 @@
     if (root.nodeType !== Node.ELEMENT_NODE) return;
     applyAttributes(root);
     root.querySelectorAll('*').forEach(applyAttributes);
-    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-    while (walker.nextNode()) applyText(walker.currentNode);
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_COMMENT);
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      if (node.nodeType === Node.TEXT_NODE) applyText(node);
+      else if (node.data.startsWith('site-copy:') && node.nextSibling?.nodeType !== Node.TEXT_NODE) {
+        // Empty editable entries still need a text node when filled in later.
+        node.after(document.createTextNode(''));
+      }
+    }
   }
 
 

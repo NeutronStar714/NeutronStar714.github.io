@@ -10,6 +10,7 @@ import secrets
 from urllib.parse import urlsplit
 from photography_store import PhotographyStore
 from photo_albums_store import PhotoAlbumStore
+from website_copy import read_markdown, render_html
 
 ROOT = Path(__file__).resolve().parent
 PHOTO_STORE = PhotographyStore(ROOT)
@@ -233,6 +234,22 @@ class MediaHandler(SimpleHTTPRequestHandler):
 
     def send_media_head(self):
         path = Path(self.translate_path(self.path))
+        if path.is_dir():
+            path = path / 'index.html'
+        page = {'index.html': 'home', 'discography.html': 'discography',
+                'rock-band.html': 'rock', 'products.html': 'products',
+                'photography.html': 'photography'}.get(path.name)
+        root = self.server.photo_store.root
+        if page and path.is_file() and (root / 'dist/website-text-map.json').is_file():
+            import io
+            manifest = json.loads((root / 'dist/website-text-map.json').read_text(encoding='utf-8'))
+            values = read_markdown((root / 'website-text.md').read_text(encoding='utf-8'))
+            payload = render_html(path.read_text(encoding='utf-8'), page, manifest, values).encode('utf-8')
+            self.send_response(200)
+            self.send_header('Content-Type', 'text/html; charset=utf-8')
+            self.send_header('Content-Length', str(len(payload)))
+            self.end_headers()
+            return io.BytesIO(payload)
         if not path.is_file() or not self.headers.get('Range'):
             return super().send_head()
         size = path.stat().st_size
